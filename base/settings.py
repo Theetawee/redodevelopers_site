@@ -161,7 +161,7 @@ else:
 
 
     
-    STATIC_URL=''
+    STATIC_URL='https://theetawee.github.io/company_staticfiles/'
     
     
     
