@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -144,7 +144,7 @@ else:
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'neondb',
-        'USER': 'foreverinc',
+        'USER': 'tee',
         'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST': "ep-blue-violet-792186.us-east-2.aws.neon.tech",
         'PORT': '5432',
