@@ -7,3 +7,6 @@ def index(request):
 
 def services(request):
     return render(request,'main/services.html')
+
+def policy(request):
+    return render(request,'main/privacy.html')
