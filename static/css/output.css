@@ -1170,6 +1170,10 @@ input:checked + .toggle-bg{
   margin-top: 1rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1276,6 +1280,10 @@ input:checked + .toggle-bg{
 
 .max-w-screen-xl{
   max-width: 1280px;
+}
+
+.max-w-screen-sm{
+  max-width: 640px;
 }
 
 .flex-1{
@@ -1785,6 +1793,10 @@ input:checked + .toggle-bg{
   line-height: 1;
 }
 
+.leading-tight{
+  line-height: 1.25;
+}
+
 .tracking-tight{
   letter-spacing: -0.025em;
 }
@@ -2084,6 +2096,11 @@ input:checked + .toggle-bg{
 :is(.dark .dark\:bg-orange-600){
   --tw-bg-opacity: 1;
   background-color: rgb(208 56 1 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-slate-900){
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:bg-opacity-80){
