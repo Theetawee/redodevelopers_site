@@ -1,0 +1,7 @@
+asgiref
+Django
+django-debug-toolbar
+django-dotenv
+psycopg2
+sqlparse
+tzdata
