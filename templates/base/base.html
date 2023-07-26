@@ -7,17 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include 'base/pwa.html' %}
     {% include 'base/seo.html' %}
+    {% include 'base/theming.html' %}
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
-    <title>{% block title%} Redo polls{% endblock %}</title>
+    <title>{% block title%} Redo {% endblock %}</title>
 </head>
-<body>
+<body class="bg-white dark:bg-slate-800">
+    <header>
    {% include 'base/nav.html' %}
+   </header>
    {% include 'base/messages.html' %}
    <main>
     {% block content %}
     {% endblock %}
    </main>
    {% include 'base/footer.html' %}
-    <script src="{% static 'js/main.js' %}"></script>
+   {% include 'base/themingScript.html' %}
+    <script src="{% static 'js/main.js' %}" defer></script>
 </body>
 </html>
