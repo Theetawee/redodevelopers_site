@@ -4,17 +4,31 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://redodevelopers.site/</loc>
-  <lastmod>2023-07-26T20:09:15+00:00</lastmod>
+  <lastmod>2023-07-27T08:50:43+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://redodevelopers.site/about/</loc>
+  <lastmod>2023-07-27T08:50:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://redodevelopers.site/services/</loc>
-  <lastmod>2023-07-26T20:09:15+00:00</lastmod>
+  <lastmod>2023-07-27T08:50:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://redodevelopers.site/contact/</loc>
+  <lastmod>2023-07-27T08:50:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://redodevelopers.site/privacy-policy/</loc>
+  <lastmod>2023-07-27T08:50:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
