@@ -48,3 +48,7 @@ def contact(request):
             return redirect('contact')   
         
     return render(request,'main/contact.html')
+
+
+def about(request):
+    return render(request,'main/about.html' )
