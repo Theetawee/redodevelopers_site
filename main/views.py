@@ -24,3 +24,6 @@ def robots(request):
 
 def sitemap(request):
     return render(request,'main/sitemap.xml')
+
+def contact(request):
+    return render(request,'main/contact.html')
