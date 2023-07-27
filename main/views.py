@@ -1,7 +1,9 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 import os
 from pathlib import Path
+from django.core.mail import send_mail
+from django.contrib import messages
 
 
 # Create your views here.
@@ -26,4 +28,23 @@ def sitemap(request):
     return render(request,'main/sitemap.xml')
 
 def contact(request):
+    if request.method=='POST':
+        email=request.POST['email']
+        subject=request.POST['subject']
+        user_message=request.POST['message']
+        message=f'Email from: {email}\n Message: {user_message}'
+        try:
+            send_mail(
+                subject,
+                message,
+                'redodevs@gmail.com',
+                ['redodevs@gmail.com'],
+                fail_silently=True
+            )
+            messages.success(request,'Your message was successfully received.')
+            return redirect('home')
+        except:
+            messages.error(request,'We ran into an issue please try again')
+            return redirect('contact')   
+        
     return render(request,'main/contact.html')
