@@ -1,0 +1,78 @@
+{% extends 'base/base.html' %}
+{% block content %}{% load static %}
+
+<div class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
+  <div class="flex justify-between px-4 mx-auto max-w-4xl ">
+      <div class="mx-auto w-full max-w-4xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+          <header class="mb-4 lg:mb-6 not-format">
+              <address class="flex items-center mb-6 not-italic">
+                  <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+                      <img class="mr-4 w-16 h-16 rounded-full" src="{% static 'images/hero.webp' %}" alt="Pattawee Drake">
+                      <div>
+                          <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">Pattawee Drake</a>
+                          <p class="text-base font-light text-gray-500 dark:text-gray-400">Developer, educator & Co-founder Redo Developers</p>
+                          <p class="text-base font-light text-gray-500 dark:text-gray-400">
+  <time pubdate datetime="{{ date|date:'Y-m-d' }}" title="{{ date|date:'F jS, Y' }}">
+    {{ date|date:'F jS, Y' }}
+  </time>
+</p>
+
+                      </div>
+                  </div>
+              </address>
+              <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Hey there!</h1>
+          </header>
+          <div class="dark:text-white text-gray-900">
+          <p class="lead dark:text-white text-gray-900">Are you ready to supercharge yourself and bussiness journey and be at the forefront of innovation? Look no further because we've got something extraordinary in store for you!</p>
+          <h2 class="my-5 text-2xl">Introducing the Redo Developers Newsletter</h2>
+          <p class="lead">Get ready to embark on an exhilarating ride with the Redo Developers Newsletter - your passport to the latest updates, cutting-edge insights, and game-changing trends, all delivered directly to your inbox! Stay informed and never miss a beat in the dynamic world of Software.</p>
+          
+         <div class="my-5 text-2xl">
+  Claim Your Exclusive Spot: Free Access to All Brand New Redo Software Solutions
+</div>
+<p class="lead">
+  As a token of our appreciation, we're rolling out the red carpet for the first 100 subscribers! Secure your VIP status and enjoy FREE access to explore and experience our entire suite of brand new Redo Software Solutions. Be among the privileged few to get a taste of what's to come!
+</p>
+<div class="my-5 text-2xl">
+  Why Join the Redo Developers Community?
+</div>
+<ul class="list-disc pl-8">
+  <li class="mb-3">Stay Ahead with Innovation: Get exclusive sneak peeks into our groundbreaking software developments.</li>
+  <li class="mb-3">Expert Insights: Benefit from expert tips and techniques to elevate your software projects to new heights.</li>
+  <li class="mb-3">Revolutionary Tools: Our Redo Software Solutions are designed to empower and simplify your work, boosting productivity like never before.</li>
+  <li class="mb-3">Networking Hub: Connect with a thriving community of passionate software enthusiasts, exchanging ideas and experiences.</li>
+</ul>
+<div class="my-5">
+  <p>Are You In? Secure Your Spot Today!</p>
+  
+</div>
+<p>
+  Don't miss this incredible opportunity to be part of a select group that will shape the future of software solutions. Be an insider, be an influencer - join the Redo Developers Newsletter now!
+</p>
+<p>
+  But hurry, this exclusive offer won't last long. Once the first 100 spots are gone, they're gone!
+</p>
+<div class="my-5">
+  <a href="{% url 'home' %}#newsletter" class="bg-orange-500 text-white px-4 py-2 rounded mt-3 inline-block">Yes, Count Me In!</a>
+</div>
+<p>
+  Should you have any questions or need assistance, don't hesitate to reach out to our friendly team at <a href="mailto:redodevs@gmail.com" class="text-blue-500 underline">redodevs@gmail.com</a> or <a href="{% url 'contact' %}" class="text-blue-500 underline">Contact us</a>. We're here to help!
+</p><br>
+<p>
+  Get ready to redefine your software journey with Redo Developers - the future awaits!
+</p>
+<p class="my-3">
+  Best regards,<br>
+  Pattawee Drake<br>
+  Developer @Redo Developers
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+
+{% endblock %}

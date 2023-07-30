@@ -144,9 +144,9 @@ else:
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'neondb',
-        'USER': 'tee',
+        'USER': 'redodevs',
         'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': "ep-blue-violet-792186.us-east-2.aws.neon.tech",
+        'HOST': "ep-green-mouse-30061062.us-east-2.aws.neon.tech",
         'PORT': '5432',
     }
     }
