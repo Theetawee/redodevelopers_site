@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -35,6 +35,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     "debug_toolbar",
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.github',
+    'accounts'
+
 ]
 
 MIDDLEWARE = [
@@ -137,6 +144,7 @@ if DEBUG == True:
     INTERNAL_IPS = [
         "127.0.0.1",
     ]
+    SITE_ID = 1
     
 else:
     #ALLOWED_HOSTS = [''] update allowed hosts for production
@@ -177,3 +185,42 @@ EMAIL_USE_TLS = True
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
+
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        # For each OAuth based provider, either add a ``SocialApp``
+        # (``socialaccount`` app) containing the required client
+        # credentials, or list them here:
+        'APP': {
+            'client_id': '1476157159827-g5gr7r9ht5gg4n4m5ehkqt77lgsd4qid.apps.googleusercontent com',
+            'secret': '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',
+            'key': ''
+        }
+    }
+}
+
+
+SOCIALACCOUNT_PROVIDERS = {
+    'globus': {
+        'SCOPE': [
+            'openid',
+            'profile',
+            'email',
+            'urn:globus:auth:scope:transfer.api.globus.org:all'
+        ]
+    }
+}
+
+
+ACCOUNT_MAX_EMAIL_ADDRESSES= 2
+ACCOUNT_EMAIL_VERIFICATION ='none' #none #mandatory #optional
+ACCOUNT_EMAIL_REQUIRED =True
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS =1
+ACCOUNT_LOGOUT_REDIRECT_URL ='account_login'
+LOGIN_REDIRECT_URL='home'
+ACCOUNT_AUTHENTICATION_METHOD='username_email'
+ACCOUNT_USERNAME_MIN_LENGTH =4
+ACCOUNT_SIGNUP_REDIRECT_URL='account_info'
+
+
