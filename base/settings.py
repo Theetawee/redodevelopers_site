@@ -57,7 +57,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'base.urls'
-
+SITE_ID=1
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -145,7 +145,7 @@ if DEBUG == True:
     INTERNAL_IPS = [
         "127.0.0.1",
     ]
-    SITE_ID = 1
+    
     
 else:
     #ALLOWED_HOSTS = [''] update allowed hosts for production
