@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'main',
     "debug_toolbar",
     'allauth',
@@ -193,8 +194,8 @@ SOCIALACCOUNT_PROVIDERS = {
         # (``socialaccount`` app) containing the required client
         # credentials, or list them here:
         'APP': {
-            'client_id': '1476157159827-g5gr7r9ht5gg4n4m5ehkqt77lgsd4qid.apps.googleusercontent com',
-            'secret': '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',
+            'client_id': os.environ.get('GOOGLE_ID'),
+            'secret': os.environ.get('GOOGLE_SECRET'),
             'key': ''
         }
     }
@@ -202,16 +203,17 @@ SOCIALACCOUNT_PROVIDERS = {
 
 
 SOCIALACCOUNT_PROVIDERS = {
-    'globus': {
+    'google': {
         'SCOPE': [
-            'openid',
             'profile',
             'email',
-            'urn:globus:auth:scope:transfer.api.globus.org:all'
-        ]
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        },
+        'OAUTH_PKCE_ENABLED': True,
     }
 }
-
 
 ACCOUNT_MAX_EMAIL_ADDRESSES= 2
 ACCOUNT_EMAIL_VERIFICATION ='none' #none #mandatory #optional
@@ -221,6 +223,6 @@ ACCOUNT_LOGOUT_REDIRECT_URL ='account_login'
 LOGIN_REDIRECT_URL='home'
 ACCOUNT_AUTHENTICATION_METHOD='username_email'
 ACCOUNT_USERNAME_MIN_LENGTH =4
-ACCOUNT_SIGNUP_REDIRECT_URL='account_info'
+ACCOUNT_SIGNUP_REDIRECT_URL='home'
 
 
