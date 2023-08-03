@@ -145,7 +145,7 @@ if DEBUG == True:
         "127.0.0.1",
     ]
     
-    
+    ACCOUNT_DEFAULT_HTTP_PROTOCOL ='http'
 else:
     #ALLOWED_HOSTS = [''] update allowed hosts for production
     DATABASES = {
@@ -168,7 +168,7 @@ else:
     # DEFAULT_FILE_STORAGE='cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
-    
+    ACCOUNT_DEFAULT_HTTP_PROTOCOL ='https'
     STATIC_URL='https://theetawee.github.io/company_staticfiles/'
     
     
@@ -215,7 +215,7 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 ACCOUNT_MAX_EMAIL_ADDRESSES= 2
-ACCOUNT_EMAIL_VERIFICATION ='none' #none #mandatory #optional
+ACCOUNT_EMAIL_VERIFICATION ='mandatory'  #none mandatory #optional
 ACCOUNT_EMAIL_REQUIRED =True
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS =1
 ACCOUNT_LOGOUT_REDIRECT_URL ='account_login'
@@ -223,5 +223,4 @@ LOGIN_REDIRECT_URL='home'
 ACCOUNT_AUTHENTICATION_METHOD='username_email'
 ACCOUNT_USERNAME_MIN_LENGTH =4
 ACCOUNT_SIGNUP_REDIRECT_URL='home'
-
-
+ACCOUNT_EMAIL_SUBJECT_PREFIX ='Redo Developers.'
