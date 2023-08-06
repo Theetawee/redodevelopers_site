@@ -4,26 +4,11 @@ import os
 from pathlib import Path
 from django.core.mail import send_mail
 from django.contrib import messages
-from .models import Newsletter
-from django.db import IntegrityError
-from django.core.exceptions import ValidationError
 from datetime import datetime
 
 
 def index(request):
-    if request.POST:
-        email = request.POST.get('email')
-        try:
-            new_user = Newsletter.objects.create(email=email)
-            new_user.save()
-            messages.success(request, 'You have successfully subscribed to our newsletter.')
-            return redirect('home')
-        except IntegrityError:
-            messages.error(request, 'This email is already subscribed to our newsletter.')
-            return redirect('home')
-        except ValidationError:
-            messages.error(request, 'Invalid email format. Please enter a valid email address.')
-            return redirect('home')
+    
     return render(request, 'main/index.html')
 
 

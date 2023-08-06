@@ -150,14 +150,11 @@ else:
     #ALLOWED_HOSTS = [''] update allowed hosts for production
     DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'neondb',
-        'USER': 'redodevs',
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': "ep-green-mouse-30061062.us-east-2.aws.neon.tech",
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
     }
+    
 
     # CLOUDINARY_STORAGE={
     #     'CLOUD_NAME': 'dnb8rethz',
