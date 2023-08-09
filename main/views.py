@@ -32,9 +32,10 @@ def sitemap(request):
 def contact(request):
     if request.method=='POST':
         email=request.POST['email']
+        name=request.POST['name']
         subject=request.POST['subject']
         user_message=request.POST['message']
-        message=f'Email from: {email}\n Message: {user_message}'
+        message=f'Email from: {email}\nName:{name}\n Message: {user_message}'
         try:
             send_mail(
                 subject,
