@@ -19,8 +19,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+#DEBUG = os.environ.get('DEBUG',False) == 'true'
+DEBUG=False
 ALLOWED_HOSTS = ["*"]
 
 
@@ -120,12 +120,19 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+STATIC_URL = 'static/'
+MEDIA_URL='media/'
+
+
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'static'),
+    os.path.join(BASE_DIR,'media')
+]
+    
 
 if DEBUG == True:
     
-    STATIC_URL = 'static/'
-    MEDIA_URL='media/'
-
+    
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -133,12 +140,7 @@ if DEBUG == True:
     }
     }
     
-    STATICFILES_DIRS=[
-        os.path.join(BASE_DIR,'static'),
-        os.path.join(BASE_DIR,'media')
-    ]
     STATIC_ROOT=os.path.join(BASE_DIR,'static_cdn')
-    
     MEDIA_ROOT=os.path.join(BASE_DIR,'media_cdn')
 
     INTERNAL_IPS = [
