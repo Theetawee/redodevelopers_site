@@ -60,3 +60,10 @@ def about(request):
 def community(request):
     date=datetime.now().date()
     return render(request,'main/community.html',{'date':date})
+
+
+def custom_404_view(request,exception):
+    return render(request, 'main/error.html', status=404)
+
+def custom_500_view(request):
+    return render(request, 'main/505.html', status=500)

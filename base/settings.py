@@ -20,7 +20,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = os.environ.get('DEBUG',False) == 'true'
-DEBUG=False
+DEBUG=os.environ.get('DEBUG','False').lower()=='true'
+
 ALLOWED_HOSTS = ["*"]
 
 
@@ -35,13 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'main',
-    "debug_toolbar",
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
-    'accounts'
-
 ]
 
 MIDDLEWARE = [
@@ -52,11 +46,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = 'base.urls'
-SITE_ID=1
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -143,31 +136,13 @@ if DEBUG == True:
     STATIC_ROOT=os.path.join(BASE_DIR,'static_cdn')
     MEDIA_ROOT=os.path.join(BASE_DIR,'media_cdn')
 
-    INTERNAL_IPS = [
-        "127.0.0.1",
-    ]
-    
-    ACCOUNT_DEFAULT_HTTP_PROTOCOL ='http'
 else:
-    #ALLOWED_HOSTS = [''] update allowed hosts for production
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
     }
-    
-
-    # CLOUDINARY_STORAGE={
-    #     'CLOUD_NAME': 'dnb8rethz',
-    #     'API_KEY': os.environ.get('API_KEY'),
-    #     'API_SECRET': os.environ.get('API_SECRET')
-    # }
-    
-    # DEFAULT_FILE_STORAGE='cloudinary_storage.storage.MediaCloudinaryStorage'
-
-
-    ACCOUNT_DEFAULT_HTTP_PROTOCOL ='https'
     STATIC_URL='https://theetawee.github.io/company_staticfiles/'
     
     
@@ -185,41 +160,3 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        # For each OAuth based provider, either add a ``SocialApp``
-        # (``socialaccount`` app) containing the required client
-        # credentials, or list them here:
-        'APP': {
-            'client_id': os.environ.get('GOOGLE_ID'),
-            'secret': os.environ.get('GOOGLE_SECRET'),
-            'key': ''
-        }
-    }
-}
-
-
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        'SCOPE': [
-            'profile',
-            'email',
-        ],
-        'AUTH_PARAMS': {
-            'access_type': 'online',
-        },
-        'OAUTH_PKCE_ENABLED': True,
-    }
-}
-
-ACCOUNT_MAX_EMAIL_ADDRESSES= 2
-ACCOUNT_EMAIL_VERIFICATION ='mandatory'  #none mandatory #optional
-ACCOUNT_EMAIL_REQUIRED =True
-ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS =1
-ACCOUNT_LOGOUT_REDIRECT_URL ='account_login'
-LOGIN_REDIRECT_URL='home'
-ACCOUNT_AUTHENTICATION_METHOD='username_email'
-ACCOUNT_USERNAME_MIN_LENGTH =4
-ACCOUNT_SIGNUP_REDIRECT_URL='home'
-ACCOUNT_EMAIL_SUBJECT_PREFIX ='Redo Developers.'
