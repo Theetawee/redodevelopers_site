@@ -53,15 +53,6 @@ def contact(request):
     return render(request,'main/contact.html')
 
 
-def about(request):
-    return render(request,'main/about.html' )
-
-
-def community(request):
-    date=datetime.now().date()
-    return render(request,'main/community.html',{'date':date})
-
-
 def custom_404_view(request,exception):
     return render(request, 'main/error.html', status=404)
 

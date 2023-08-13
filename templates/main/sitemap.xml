@@ -10,11 +10,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://redodevelopers.site/about/</loc>
-    <lastmod>2023-08-13T10:00:00+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://redodevelopers.site/services/</loc>
     <lastmod>2023-08-13T10:00:00+00:00</lastmod>
     <priority>0.8</priority>
@@ -29,10 +24,4 @@
     <lastmod>2023-08-13T10:00:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://redodevelopers.site/redo-community/</loc>
-    <lastmod>2023-08-13T10:00:00+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>

@@ -1,5 +1,5 @@
 from django.urls import path,re_path
-from .views import index,services,policy,sitemap,robots,contact,about,community
+from .views import index,services,policy,sitemap,robots,contact
 
 
 urlpatterns=[
@@ -9,6 +9,4 @@ urlpatterns=[
     path('sitemap/',sitemap,name='sitemap'),
     re_path(r'^robots\.txt$', robots, name='robots'),
     path('contact/',contact,name='contact'),
-    path('about/',about,name='about'),
-    path('redo-community/',community,name='community')
 ]
