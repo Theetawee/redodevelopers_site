@@ -1,14 +1,4 @@
-/**
-* Template Name: HeroBiz
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/**
-* Check out variables.css for easy customization of colors, typography, and other repetitive properties
-*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1120,7 +1110,6 @@ section {
   inset: -60px 0 0 -60px;
   z-index: -1;
   content: "";
-  background: url("../img/about-bg.png") top left;
   background-repeat: no-repeat;
 }
 
@@ -1638,7 +1627,6 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
