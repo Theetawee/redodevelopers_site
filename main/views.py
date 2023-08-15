@@ -11,6 +11,8 @@ def index(request):
     
     return render(request, 'main/index.html')
 
+def proposal(request):
+    return redirect('https://docs.google.com/document/d/e/2PACX-1vSX_hPfOJ1zkVIqCf9PyuxpfChEPok4kjI21GgrDMF0ITs1NeEOLY4KujpAcDyCwat-a_Y0TR1-3nqA/pub#h.3at9u9s4e0vp')
 
 
 def services(request):
