@@ -140,11 +140,17 @@ if DEBUG == True:
     MEDIA_ROOT=os.path.join(BASE_DIR,'media_cdn')
 
 else:
+    # To use Neon with Django, you have to create a Project on Neon and specify the project connection settings in your settings.py in the same way as for standalone Postgres.
+
     DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'neondb',
+            'USER': 'tawee.drake',
+            'PASSWORD': os.environ.get('DB_PASSWORD'),
+            'HOST': 'ep-long-mouse-26088479.us-east-2.aws.neon.tech',
+            'PORT': '5432',
+        }
     }
     STATIC_URL='https://theetawee.github.io/company_staticfiles/'
     
