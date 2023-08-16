@@ -20,6 +20,7 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body class="bg-white dark:bg-gray-800">
+    {% include 'base/messages.html' %}
     {% include 'base/nav.html' %}
     <main class="min-h-screen" id="main">
         {% block content %}

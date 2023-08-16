@@ -47,7 +47,7 @@ def contact(request):
                 fail_silently=True
             )
             messages.success(request,'Your message was successfully received.')
-            return redirect('home')
+            return redirect('contact')
         except:
             messages.error(request,'We ran into an issue please try again')
             return redirect('contact')   
