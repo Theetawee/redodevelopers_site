@@ -14,6 +14,7 @@ def index(request):
 def company(request):
     return render(request,'main/about.html')
 
+
 def services(request):
     return render(request,'main/services.html')
 
