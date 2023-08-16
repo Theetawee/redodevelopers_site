@@ -62,3 +62,11 @@ def custom_404_view(request,exception):
 
 def custom_500_view(request):
     return render(request, 'main/505.html', status=500)
+
+def newsletter(request):
+    if request.POST:
+        email=request.POST['email']
+        messages.success(request, f'Added {email}')
+        referring_url = request.META.get('HTTP_REFERER')
+        return redirect(referring_url)
+    return redirect('home')

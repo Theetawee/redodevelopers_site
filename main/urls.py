@@ -1,5 +1,5 @@
 from django.urls import path,re_path
-from .views import index,services,policy,sitemap,robots,contact,company,solutions
+from .views import index,services,policy,sitemap,robots,contact,company,solutions,newsletter
 
 
 urlpatterns=[
@@ -10,5 +10,6 @@ urlpatterns=[
     re_path(r'^robots\.txt$', robots, name='robots'),
     path('contact/',contact,name='contact'),
     path('company/',company,name='about'),
-    path('solutions/',solutions,name='solutions')
+    path('solutions/',solutions,name='solutions'),
+    path('newsletter/',newsletter,name='news')
 ]
