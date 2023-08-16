@@ -11,9 +11,8 @@ def index(request):
     
     return render(request, 'main/index.html')
 
-def proposal(request):
-    return render(request,'main/proposal.html')
-
+def company(request):
+    return render(request,'main/about.html')
 
 def services(request):
     return render(request,'main/services.html')

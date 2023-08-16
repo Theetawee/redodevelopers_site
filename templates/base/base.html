@@ -15,17 +15,21 @@
     <meta name="geo.placename" content="Kampala" />
     <meta name="geo.position" content="0.317714;32.581354" />
     <meta name="ICBM" content="0.317714, 32.581354" />
-
     {% block head%}{% endblock %}
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body class="bg-white dark:bg-gray-800">
     {% include 'base/nav.html' %}
-    <main>
+    <main class="min-h-screen" id="main">
         {% block content %}
         {% endblock %}
     </main>
+
+{% include 'base/cookie.html' %}
+
+
+
     {% include 'base/footer.html' %}
     <script src="{% static 'js/flowbite.js' %}"></script>
     {% include 'base/themingScript.html' %}
