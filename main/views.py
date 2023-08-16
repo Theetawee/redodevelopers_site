@@ -4,8 +4,7 @@ import os
 from pathlib import Path
 from django.core.mail import send_mail
 from django.contrib import messages
-from datetime import datetime
-
+from .models import Newsletter
 
 def index(request):
     
@@ -64,9 +63,21 @@ def custom_500_view(request):
     return render(request, 'main/505.html', status=500)
 
 def newsletter(request):
+    referring_url = request.META.get('HTTP_REFERER')
     if request.POST:
         email=request.POST['email']
+        if Newsletter.objects.filter(email=email).exists():
+            messages.warning(request,f'{email} is already subscribed to our newsletter!')
+            return redirect(referring_url)
+        new=Newsletter.objects.create(email=email)
+        new.save()
+        send_mail(
+                'Newsletter',
+                f'New newsletter subscription from {email}',
+                'redodevs@gmail.com',
+                ['redodevs@gmail.com'],
+                fail_silently=True
+            )
         messages.success(request, f'Added {email}')
-        referring_url = request.META.get('HTTP_REFERER')
         return redirect(referring_url)
     return redirect('home')

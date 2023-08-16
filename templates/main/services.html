@@ -1,147 +1,68 @@
 {% extends 'base/base.html' %}
-{% block title %}Our Services - Redo io{% endblock %}
-{% block description %}Explore the comprehensive range of software solutions offered by Redo io. From web development to custom software, we're here to meet your digital needs.{% endblock %}
-
+{% block head %}
+<link rel="canonical" href="https://redodevelopers.site/services/" />
+{% include 'base/seo.html' %}
+{% endblock %}
+{% block des %}Discover the comprehensive software services we offer at Redo io. From custom software development to consulting and support, we have you covered.{% endblock %}
+{% block title %}Services - Redo io{% endblock %}
 {% block content %}
 {% load static %}
 
-<div class="container mt-5 pt-5">
-    <h1 class="mb-4 mt-5">Our Services</h1>
-    <div class="row">
-        <div class="col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="{% static 'images/web.jpg'%}" class="card-img-top object-fit-contain" height="200px" alt="Web Development">
-                <div class="card-body">
-                    <h5 class="card-title">Web Development</h5>
-                    <p class="card-text">
-                        Our Web Development service empowers businesses with impactful online presence. We specialize in creating websites that not only look stunning but also deliver seamless user experiences. From dynamic single-page applications to comprehensive e-commerce platforms, we tailor solutions to meet your unique requirements.
-                    </p>
-                    <div>
-                        <h4>Key Expertise</h4>
-                        <ul>
-                            <li><strong>Modern Design:</strong> We utilize HTML, CSS, and JavaScript to create responsive and modern designs that adapt seamlessly to different devices and screen sizes.
-                            </li>
-                            <li><strong>Dynamic Interfaces:</strong> We leverage frameworks like React, Angular, and Vue to develop dynamic and interactive user interfaces that engage visitors
-                            </li>
-                            <li><strong>Robust Backend:</strong> Our expertise includes backend technologies such as Node.js, Django, and Ruby on Rails, ensuring smooth functionality and server-side logic.
-                            </li>
-                            <li><strong>Data Management</strong> We seamlessly integrate databases to handle data efficiently, providing a seamless user experience.
-                            </li>
-                        </ul>
-                    </div>
-                    <p>Whether you need a captivating portfolio website, an engaging blog platform, or a full-fledged e-commerce site, our Web Development service is designed to bring your vision to life and help you achieve your online goals.</p>
-                    <p>Ready to take your online presence to the next level? Contact us to learn more about how our Web Development service can benefit your business.</p>
-                </div>
+<section class="bg-white dark:bg-gray-900 py-10">
+    <div class="container mx-auto px-4">
+        <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Our Services</h2>
+        <p class="mb-8 lg:mb-16 font-light text-gray-500 dark:text-gray-400 sm:text-xl">
+            At Redo io, we offer a range of software services designed to empower businesses and streamline operations. Whether you're looking for custom software development, consultation, or ongoing support, we have the expertise to fulfill your needs.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm">
+                <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Custom Software Development</h3>
+                <p class="text-gray-500 dark:text-gray-400">We create tailored software solutions that cater to your unique business requirements. Our development process focuses on innovation, scalability, and user-centric design.</p>
             </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="{% static 'images/software.jpg'%}" class="card-img-top object-fit-contain" height="200px" alt="Web Development">
-                <div class="card-body">
-                    <h5 class="card-title">Custom Software Development</h5>
-                    <p class="card-text">
-                        At Redo io, we understand that every business is unique, and off-the-shelf software often falls short in meeting specific requirements. Our Custom Software Development service is designed to create bespoke solutions that align perfectly with your business processes and objectives.
-                    </p>
-                    <div>
-                        <h4>Our Approach to Custom Software Development:</h4>
-                        <ul>
-                            <li><strong>Requirement Analysis: </strong> We begin by diving deep into your business processes and understanding your pain points, objectives, and potential areas for optimization.
-
-
-                            </li>
-                            <li><strong>Tailored Solutions:</strong> Based on your requirements, we design and develop software that is tailored to your business, ensuring optimal efficiency and a competitive edge.
-                            </li>
-                            <li><strong>Collaborative Development:</strong> Our team maintains constant communication with you throughout the development process, keeping you informed about progress and seeking your feedback.
-                            </li>
-                            <li><strong>Scalability and Flexibility:</strong>  Our custom solutions are designed with scalability in mind, allowing your software to grow and adapt as your business evolves.
-                            </li>
-                        </ul>
-                    </div>
-                    <h4>Unlocking Efficiency and Growth:</h4>
-                    <p>Our Custom Software Development service is all about delivering solutions that empower your business. Whether it's streamlining internal processes, enhancing customer interactions, or enabling data-driven decision-making, our custom software is a catalyst for efficiency and growth.</p>
-                    <p>Ready to transform the way your business operates? Contact us to explore how our Custom Software Development service can provide you with tailored solutions that propel your business forward.</p>
-                </div>
+            <div class="p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm">
+                <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Consultation & Strategy</h3>
+                <p class="text-gray-500 dark:text-gray-400">Our experts provide strategic guidance to help you navigate the complex landscape of technology. From project planning to technology selection, we're here to advise you.</p>
             </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="{% static 'images/cons.jpg'%}" class="card-img-top object-fit-contain" height="200px" alt="Web Development">
-                <div class="card-body">
-                    <h5 class="card-title">IT Consulting</h5>
-                    <p class="card-text">
-                        In the rapidly evolving landscape of technology, making informed decisions about your IT infrastructure and strategies is crucial for achieving business success. At [Your Company Name], our IT Consulting services provide you with expert guidance to navigate the complex world of technology and harness its potential to drive innovation and growth.
-                    </p>
-                    <p class="card-text">
-                        As technology becomes more integral to business operations, having a strategic approach to IT becomes essential. Our IT Consulting team brings a wealth of experience and industry insights to help you make informed decisions that align with your business goals.
-                    </p>
-                    <div>
-                        <h4>Our Approach to IT Consulting:</h4>
-                        <ul>
-                            <li><strong>Technology Assessment:</strong> We start by evaluating your current technology landscape, identifying strengths, weaknesses, opportunities, and potential areas for improvement.
-                            </li>
-                            <li><strong>Customized Solutions:</strong> Our consultants work closely with you to design solutions that are tailored to your unique business needs and challenges
-                            </li>
-                            <li><strong>Vendor Evaluation:</strong> We assist you in selecting the right technology vendors and solutions that align with your goals and budget.
-                            </li>
-                            <li><strong>Digital Transformation Strategy:</strong> Our expertise in digital transformation helps you adopt new technologies that enhance efficiency, collaboration, and customer experience.
-                            </li>
-                        </ul>
-                    </div>
-                    <h4>Empowering Your Digital Journey:</h4>
-                    <p>Our IT Consulting services go beyond providing solutions; we empower you to make confident decisions that drive your business forward. Whether you're looking to enhance operational efficiency, embark on digital transformation, or simply stay ahead in the technology curve, our consultants are your trusted partners in navigating the complexities of the digital landscape.
-                        </p><p>
-                    Ready to transform your technology strategies into business success? Contact us to discover how our IT Consulting services can elevate your organization's digital journey.
-
-                    </p>
-                </div>
+            <div class="p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm">
+                <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Support & Maintenance</h3>
+                <p class="text-gray-500 dark:text-gray-400">We offer ongoing support and maintenance services to ensure your software remains efficient and up-to-date. Our team is dedicated to resolving issues and optimizing performance.</p>
             </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="{% static 'images/others.jpg'%}" class="card-img-top object-fit-contain" height="200px" alt="Web Development">
-                <div class="card-body">
-                    <h5 class="card-title">Other services include</h5>
-                    <p class="card-text">
-                        <strong>Mobile App Development</strong><br>
-                        Unlock the power of mobile technology with our Mobile App Development service. We craft native and cross-platform mobile apps that engage users, enhance brand loyalty, and drive business growth. Whether it's iOS or Android, our expert developers create apps that seamlessly integrate with your business goals.
-
-
-                    </p>
-                    <p class="card-text">
-                        <strong>Cloud Solutions</strong><br>
-                        Experience the benefits of cloud computing with our Cloud Solutions service. From architecture design to migration and optimization, we leverage cloud platforms like AWS, Azure, and Google Cloud to deliver scalable, secure, and cost-effective solutions. Empower your business with enhanced flexibility, performance, and innovation.
-
-
-                    </p>
-                    <p>
-                        <strong>UI/UX Design:</strong><br>
-Deliver exceptional user experiences with our UI/UX Design service. Our talented designers blend creativity and usability to create intuitive interfaces that captivate users. From wireframing to interactive prototypes, we focus on making your digital interactions seamless, delightful, and conversion-driven.
-
-                        </p>
-                        <p>
-                            <strong>Quality Assurance and Testing</strong><br>
-                    Ensure your software's reliability and performance with our Quality Assurance and Testing service. Our meticulous testing processes identify and eliminate bugs, glitches, and vulnerabilities, ensuring that your software is robust, secure, and ready to deliver exceptional experiences to users.
-
-
-                    </p>
-                    <p>
-                        <strong>E-Commerce Solutions:</strong><br>
-                        Step into the world of online commerce with our E-Commerce Solutions service. We create robust, user-friendly e-commerce platforms that empower businesses to expand their reach and boost sales. From product listings to secure payment gateways, we ensure a seamless shopping experience that drives conversions.
-
-
-                    </p>
-                    <p>
-                        <strong>Digital Transformation</strong><br>
-                        Embrace the future with our Digital Transformation service. We guide businesses through the process of integrating innovative technologies and strategies that enhance efficiency, customer engagement, and competitiveness. Unlock new opportunities and position your business for sustained growth in the digital age.
-                    </p>
-                </div>
+            <!-- Additional services -->
+            <div class="p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm">
+                <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Cloud Solutions</h3>
+                <p class="text-gray-500 dark:text-gray-400">Leverage the power of the cloud for scalability, reliability, and cost-efficiency. We design, deploy, and manage cloud-based solutions tailored to your needs.</p>
             </div>
-        </div>
-        
-    </div>
-    <!-- Repeat the above structure for other services -->
+            <div class="p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm">
+                <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Mobile App Development</h3>
+                <p class="text-gray-500 dark:text-gray-400">Craft engaging mobile apps for iOS and Android platforms. Our mobile app development expertise covers design, development, and optimization.</p>
+            </div>
+            <div class="p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm">
+                <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">E-Commerce Solutions</h3>
+                <p class="text-gray-500 dark:text-gray-400">Build and enhance your online store with our e-commerce solutions. We create intuitive, secure, and feature-rich e-commerce platforms.</p>
+            </div>
+            <!-- Additional services -->
+<div class="p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm">
+    <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Web Application Development</h3>
+    <p class="text-gray-500 dark:text-gray-400">Craft dynamic and user-friendly web applications that cater to your business needs. Our expertise covers frontend and backend development for a seamless user experience.</p>
+</div>
+<div class="p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm">
+    <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Data Analytics & Visualization</h3>
+    <p class="text-gray-500 dark:text-gray-400">Turn raw data into actionable insights with our data analytics and visualization services. We help you make informed decisions by transforming complex data into easy-to-understand visuals.</p>
+</div>
+<div class="p-6 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm">
+    <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">User Experience (UX) Design</h3>
+    <p class="text-gray-500 dark:text-gray-400">Create exceptional user experiences with our UX design services. We focus on understanding user behavior and preferences to design interfaces that are intuitive and visually appealing.</p>
 </div>
 
-{% include 'utils/cta.html' %}
+        </div>
+    </div>
+</section>
 
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 class="text-xl mb-3 text-gray-900 dark:text-white">For more information or inquiries, Our support team is more than ready to see you through.</h2>
+        <a href="{% url 'contact' %}" type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Contact us</a>
+
+    </div>
+</section>
 {% endblock %}
