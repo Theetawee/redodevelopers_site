@@ -1,56 +1,101 @@
-{% extends 'base/base.html' %}
-{% block head %}
+{% extends 'base/base.html' %} {% block head %}
 <link rel="canonical" href="https://redodevelopers.site/contact/" />
-{% include 'base/seo.html' %}
-{% endblock %}
-{% block des %}Got a question or want to know more about our services? Contact us using the form below or through the provided contact information{% endblock %}
-{% block title %}Contact us - Redo io{% endblock %}
-{% block content %}
-{% load static %}
+{% include 'base/seo.html' %} {% endblock %} {% block des %}Got a question or
+want to know more about our services? Contact us using the form below or through
+the provided contact information{% endblock %} {% block title %}Contact us -
+Redo io{% endblock %} {% block content %} {% load static %}
 
-
-
-    <section class="bg-white dark:bg-gray-900 py-10">
-        <div class="container my-5 mx-auto px-4">
-            <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">Contact Us</h2>
-            <div class="max-w-2xl mx-auto">
-      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a question or want to know more about our services? Contact us using the form below or through the provided contact information</p>
-      </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="text-gray-800 dark:text-gray-400">
-                    <ul class="list-disc pl-6">
-                        <li>Email: info@redodeveloper.site</li>
-                        <li>Phone: ++256779730256</li>
-                        <li>Address: Kampala, Uganda</li>
-                    </ul>
+<section class="bg-white dark:bg-gray-900 py-10">
+	<div class="container my-5 mx-auto px-4">
+		<h2
+			class="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">
+			Contact Us
+		</h2>
+		<div class="max-w-2xl mx-auto">
+			<p
+				class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+				Got a question or want to know more about our services? Contact
+				us using the form below or through the provided contact
+				information
+			</p>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div class="text-gray-800 bg-gray-700 flex py-8 flex-col px-2 rounded-md dark:text-gray-400">
+				<ul class="list-disc pl-6 text-gray-200">
+					<li>Email: info@redodeveloper.site</li>
+					<li>Phone: +256779730256</li>
+					<li>Address: Kampala, Uganda</li>
+				</ul>
+                <div class="mt-10 px-4">
+                    <h2 class="text-3xl text-gray-200 mb-3">Report a vulnerability in our code</h2>
+                    <p class="text-center text-gray-300 mb-6">If you discover a security vulnerability in our code or infrastructure, report it to us and get awarded up to Ugx. 5000 per vulnerability, depending on its complexity and impact potential.</p>
+                    <h3 class="text-xl text-gray-200 mb-3">How do I report vulnerabilities?</h3>
+                    <p>
+                        We value reports that are well-structured and explain the issues clearly. That’s because we can reproduce and understand the problem, and you can receive higher payouts faster. When your report is ready, please send it to
+                        <a href="mailto:bugs@redodeveloper.site" class="text-blue-500 hover:underline">bugs@redodeveloper.site</a> 
+                    </p>
                 </div>
-                <div>
-                    <form action="{% url 'contact' %}" method="post" class="space-y-8">
-                        {% csrf_token %}
-          <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-              <input type="email" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@gmail.com" required>
-          </div>
-          <div>
-              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-              <input type="text" id="subject" name="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
-          </div>
-          <div class="sm:col-span-2">
-              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-              <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-          </div>
-          <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-500 sm:w-fit hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-      </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<section class="bg-white dark:bg-gray-900">
-  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      
-  </div>
+			</div>
+			<div>
+				<form
+					action="{% url 'contact' %}"
+					method="post"
+					class="space-y-8">
+					{% csrf_token %}
+					<div>
+						<label
+							for="email"
+							class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+							>Your email</label
+						>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+							placeholder="name@gmail.com"
+							required />
+					</div>
+					<div>
+						<label
+							for="subject"
+							class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+							>Subject</label
+						>
+						<input
+							type="text"
+							id="subject"
+							name="subject"
+							class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+							placeholder="Let us know how we can help you"
+							required />
+					</div>
+					<div class="sm:col-span-2">
+						<label
+							for="message"
+							class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+							>Your message</label
+						>
+						<textarea
+							id="message"
+							name="message"
+							rows="6"
+							class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+							placeholder="Leave a comment..."></textarea>
+					</div>
+					<button
+						type="submit"
+						class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-500 sm:w-fit hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+						Send message
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </section>
 
-{% endblock %} 
+<section class="bg-white dark:bg-gray-900">
+	<div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md"></div>
+</section>
+
+{% endblock %}
