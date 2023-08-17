@@ -1,5 +1,24 @@
 {% extends 'base/base.html' %}
 {% block head %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Service",
+  "name": "Software Development Services",
+  "description": "Explore the comprehensive software development services offered by Redo io. From custom software solutions to consultation and support.",
+  "serviceType": "Software Development",
+  "url": "https://redodevelopers.site/services/",
+  "provider": {
+    "@type": "Organization",
+    "name": "Redo io",
+    "sameAs": [
+      "https://twitter.com/redodevs",
+    ]
+  },
+  "areaServed": "Worldwide"
+}
+</script>
+
 <link rel="canonical" href="https://redodevelopers.site/services/" />
 {% include 'base/seo.html' %}
 {% endblock %}
