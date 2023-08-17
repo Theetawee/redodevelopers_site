@@ -1,12 +1,31 @@
 {% extends 'base/base.html' %}
+{% load static %}
 {% block head %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Redo io",
+  "url": "https://redodevelopers.site/",
+  "logo": "{% static 'images/logo.svg' %}",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+256779730256",
+    "contactType": "customer support"
+  },
+  "sameAs": [
+    "https://twitter.com/redodevs",
+  ]
+}
+</script>
+
 <link rel="canonical" href="https://redodevelopers.site/" />
 {% include 'base/seo.html' %}
 {% endblock %}
 {% block des %}Join us on a journey of technological excellence and reimagine what's possible with our user-centric and agile approach to software development.{% endblock %}
 {% block title %}Home - Redo io{% endblock %}
 {% block content %}
-{% load static %}
+
 
 <section class="relative h-[85vh] overflow-hidden bg-white dark:bg-stone-900">
     <video autoplay muted loop class="absolute inset-0 w-full h-[85vh] object-cover">
