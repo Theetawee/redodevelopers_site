@@ -1,5 +1,31 @@
 {% extends 'base/base.html' %}
 {% block head %}
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "Our Solutions - Redo io",
+            "url": "https://redodevelopers.site/solutions/",
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "url": "https://redodevelopers.site/",
+                        "name": "Home"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "url": "https://redodevelopers.site/solutions/",
+                        "name": "Our Solutions"
+                    }
+                ]
+            }
+        }
+    </script>
+        
 <link rel="canonical" href="https://redodevelopers.site/solutions/" />
 {% include 'base/seo.html' %}
 {% endblock %}
