@@ -1,264 +1,481 @@
-{% extends 'base/base.html' %}
-{% block head %}
-<link rel="canonical" href="https://redodevelopers.site/privacy-policy/" />
-{% include 'base/seo.html' %}
-{% endblock %}
-{% block des %}Read our Privacy Policy to understand how Redo io collects, uses, and protects your personal information. Your privacy is important to us.{% endblock %}
-{% block title %}Privacy Policy - Redo io{% endblock %}
-{% block content %}
+<!DOCTYPE html>
 {% load static %}
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="{% static 'css/output.css' %}">
+        <script src="{% static 'js/flowbite.js'%}"></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/output.css" />
+        <title>Privacy Policy - Redo io</title>
+        {% include 'base/seo.html' %}
+        <meta name="description" content="Read our Privacy Policy to understand how Redo io collects, uses, and protects your personal information. Your privacy is important to us.">
+        <link rel="canonical" href="https://redodevelopers.site/privacy-policy/" />
+    </head>
+    <body>
+        <header class="bg-orange-400 fixed top-0 w-full h-16 flex items-center justify-center shadow-md text-white">
+            <h1 class="text-center font-bold text-2xl">Redo io</h1>
+        </header>
+        <br />
+        <div class="mt-16 px-4">
+            <p class="mb-4 text-xl"><strong>Effective: </strong> August,17 2023</p>
+        </div>
 
-<section class="max-w-6xl mx-auto my-6 px-4 text-gray-800 dark:text-gray-300">
-    <h1 class="text-3xl">Privacy Policy</h1>
-    <p>Last updated: July 26, 2023</p>
-    <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-    <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
-    
-    <h1 class="text-3xl">Interpretation and Definitions</h1>
-    
-    <h2 class="text-xl mt-4">Interpretation</h2>
-    <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
-    
-    <h2 class="text-xl mt-4">Definitions</h2>
-    <div class="container mx-auto py-8 px-4">
-        <ul class="list-disc pl-6 space-y-2">
-            <li>
-                <p><strong class="text-lg font-semibold">Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
-            </li>
-            <li>
-                <p><strong class="text-lg font-semibold">Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
-            </li>
-            <li>
-                <p><strong class="text-lg font-semibold">Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Redo Developers, Makerere, Uganda.</p>
-            </li>
-            <li>
-                <p><strong class="text-lg font-semibold">Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</p>
-            </li>
-            <li>
-                <p><strong class="text-lg font-semibold">Country</strong> refers to: Uganda</p>
-            </li>
-            <li>
-                <p><strong class="text-lg font-semibold">Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
-            </li>
-            <li>
-                <p><strong class="text-lg font-semibold">Personal Data</strong> is any information that relates to an identified or identifiable individual.</p>
-            </li>
-            <li>
-                <p><strong class="text-lg font-semibold">Service</strong> refers to the Website.</p>
-            </li>
-            <li>
-                <p><strong class="text-lg font-semibold">Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
-            </li>
-      <li>
-        <p><strong class="text-lg font-semibold">Usage Data</strong> refers to data collected automatically, either generated
-          by the use of the Service or from the Service infrastructure itself (for example, the duration of a page
-          visit).</p>
-      </li>
-      <li>
-        <p><strong class="text-lg font-semibold">Website</strong> refers to Redo developers, accessible from <a
-            href="https://redodevelopers.site/" rel="external nofollow noopener" target="_blank">https://redodevelopers.site/</a>
-        </p>
-      </li>
-      <li>
-        <p><strong class="text-lg font-semibold">You</strong> means the individual accessing or using the Service, or the
-          company, or other legal entity on behalf of which such individual is accessing or using the Service, as
-          applicable.</p>
-      </li>
-    </ul>
-  </div>
+        <main class="my-10">
+            <section class="bg-white dark:bg-gray-900">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                    <div class="max-w-screen-md mb-8 lg:mb-16">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Privacy Policy</h2>
+                        <p class="text-gray-500 mb-8 sm:text-xl dark:text-gray-400">
+                            We get it – privacy policies can be a bit overwhelming to read through. But here's the scoop: we're required by law to provide you with all the nitty-gritty details about how we handle your data. Don't worry,
+                            though – we've done our best to make it as clear and straightforward as possible. So, if you're up for it, grab a cup of coffee and dive into our privacy policy. It's like the "terms and conditions" part of using
+                            our services, and it's there to ensure your data is safe and sound.
+                        </p>
+                        <p class="text-gray-500 sm:text-xl dark:text-gray-400">If you decide not to read every word of the Privacy Policy, please remember at least the following:</p>
+                    </div>
+                    <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                        <div>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">Privacy and Transparency</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Your privacy matters to us. Redo io is designed to give you control over your data and protect your personal information. We're committed to being transparent about how we handle your data.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">Terms and Conditions</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                By using our services, you agree to our terms and conditions. These terms outline your rights and responsibilities when using Redo io, so you know what to expect from our platform.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">Security and Compliance</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                We take security seriously. Our systems are designed to ensure the safety of your information. We also follow industry standards to ensure compliance with data protection regulations.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">User-Friendly Experience</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                We're all about making things easy for you. Our platform is designed with user-friendliness in mind. From intuitive interfaces to helpful guides, we're here to enhance your experience.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">Customization Options</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Tailor your experience with us. Our customizable features and settings allow you to personalize your interaction with Redo io, making it work just the way you want it to.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="mb-2 text-xl font-bold dark:text-white">Support and Assistance</h3>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                We're here to help. Whether you have questions, need assistance, or want to provide feedback, our support team is available to ensure you have a smooth and positive experience with Redo io.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="bg-white dark:bg-gray-900">
+                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                    <figure class="max-w-screen-md mx-auto">
+                        <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                        <blockquote>
+                            <p class="text-2xl font-medium text-gray-900 dark:text-white">
+                                Understanding how my data is collected and used is important to me. Redo io's commitment to transparency and user privacy gives me the confidence to explore its features and use its products knowing that my
+                                information is in safe hands.
+                            </p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                            <img class="w-6 h-6 rounded-full" src="https://i.ibb.co/3zZMnfQ/I80W1Q0.png" alt="profile picture" />
+                            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                <div class="pr-3 font-medium text-gray-900 dark:text-white">Jackson</div>
+                                <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Redo io User</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
 
-<h1 class="text-4xl font-bold mb-4">Collecting and Using Your Personal Data</h1>
-  <h2 class="text-2xl font-bold mb-2">Types of Data Collected</h2>
-  <h3 class="text-xl font-bold mb-2">Personal Data</h3>
-  <p class="mb-4">While using Our Service, We may ask You to provide Us with certain personally identifiable information
-    that can be used to contact or identify You. Personally identifiable information may include, but is not limited
-    to:</p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Email address</li>
-    <li>Usage Data</li>
-  </ul>
-  <h3 class="text-xl font-bold mb-2">Usage Data</h3>
-  <p class="mb-4">Usage Data is collected automatically when using the Service.</p>
-  <p class="mb-4">Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address),
-    browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time
-    spent on those pages, unique device identifiers and other diagnostic data.</p>
-  <p class="mb-4">When You access the Service by or through a mobile device, We may collect certain information
-    automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP
-    address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique
-    device identifiers and other diagnostic data.</p>
-  <p class="mb-4">We may also collect information that Your browser sends whenever You visit our Service or when You
-    access the Service by or through a mobile device.</p>
-  <h3 class="text-xl font-bold mb-2">Tracking Technologies and Cookies</h3>
-  <p class="mb-4">We use Cookies and similar tracking technologies to track the activity on Our Service and store certain
-    information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to
-    improve and analyze Our Service. The technologies We use may include:</p>
-  <ul class="list-disc pl-6 mb-4">
-    <li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your
-      browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You
-      may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will
-      refuse Cookies, our Service may use Cookies.</li>
-    <li><strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small electronic files
-      known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for
-      example, to count users who have visited those pages or opened an email and for other related website statistics (for
-      example, recording the popularity of a certain section and verifying system and server integrity).</li>
-  </ul>
+            <section class="bg-white dark:bg-gray-900">
+                <div class="px-4 mx-auto max-w-screen-xl lg:px-6">
+                    <div class="max-w-screen-md">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">What data do you collect about me?</h2>
+                        <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">You give some data, we get some data. In return we offer useful services. Not what you had in mind? Let explore this.</p>
+                    </div>
+                </div>
+            </section>
 
-    <p class="mb-4">Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on Your
-    personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web
-    browser.</p>
-  <p class="mb-4">We use both Session and Persistent Cookies for the purposes set out below:</p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>
-      <strong>Necessary / Essential Cookies</strong>
-      <p>Type: Session Cookies</p>
-      <p>Administered by: Us</p>
-      <p>Purpose: These Cookies are essential to provide You with services available through the Website and to enable You
-        to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without
-        these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You
-        with those services.</p>
-    </li>
-    <li>
-      <strong>Cookies Policy / Notice Acceptance Cookies</strong>
-      <p>Type: Persistent Cookies</p>
-      <p>Administered by: Us</p>
-      <p>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.</p>
-    </li>
-    <li>
-      <strong>Functionality Cookies</strong>
-      <p>Type: Persistent Cookies</p>
-      <p>Administered by: Us</p>
-      <p>Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your
-        login details or language preference. The purpose of these Cookies is to provide You with a more personal experience
-        and to avoid You having to re-enter your preferences every time You use the Website.</p>
-    </li>
-  </ul>
-  <p class="mb-4">For more information about the cookies we use and your choices regarding cookies, please visit our
-    Cookies Policy or the Cookies section of our Privacy Policy.</p>
-  <h2 class="text-2xl font-bold mb-2">Use of Your Personal Data</h2>
-  <p class="mb-4">The Company may use Personal Data for the following purposes:</p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>
-      <strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.
-    </li>
-    <li>
-      <strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You
-        provide can give You access to different functionalities of the Service that are available to You as a registered
-        user.
-    </li>
-    <li>
-      <strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase
-        contract for the products, items or services You have purchased or of any other contract with Us through the Service.
-    </li>
-    <li>
-      <strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic
-        communication, such as a mobile application's push notifications regarding updates or informative communications
-        related to the functionalities, products or contracted services, including the security updates, when necessary or
-        reasonable for their implementation.
-    </li>
-    <li>
-      <strong>To provide You</strong> with news, special offers and general information about other goods, services and
-        events which we offer that are similar to those that you have already purchased or enquired about unless You have
-        opted not to receive such information.
-    </li>
-    <li>
-      <strong>To manage Your requests:</strong> To attend and manage Your requests to Us.
-    </li>
-    <li>
-      <strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture,
-        restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a
-        going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about
-        our Service users is among the assets transferred.
-    </li>
-    <li>
-      <strong>For other purposes</strong>: We may use Your information for other purposes, such as data analysis, identifying
-        usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service,
-        products, services, marketing and your experience.
-    </li>
-  </ul>
-  <p class="mb-4">We may share Your personal information in the following situations:</p>
-  <ul class="list-disc pl-6 mb-4">
-    <li>
-      <strong>With Service Providers:</strong> We may share Your personal information with Service Providers to monitor and
-        analyze the use of our Service, to contact You.
-    </li>
-    <li>
-      <strong>For business transfers:</strong> We may share or transfer Your personal information in connection with, or
-        during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our
-        business to another company.
-    </li>
-    <li>
-      <strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we will require
-        those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries,
-        joint venture partners or other companies that We control or that are under common control with Us.
-    </li>
-    <li>
-      <strong>With business partners:</strong> We may share Your information with Our business partners to offer You certain
-        products, services or promotions.
-    </li>
-    <li>
-      <strong>With other users:</strong> when You share personal information or otherwise interact in the public areas with
-        other users, such information may be viewed by all users and may be publicly distributed outside.
-    </li>
-    <li>
-      <strong>With Your consent</strong>: We may disclose Your personal information for any other purpose with Your consent.
-    </li>
-  </ul>
+            <section class="bg-white dark:bg-gray-900 mb-20">
+                <div class="px-4 mx-auto lg:px-6">
+                    <div class="max-w-5xl mx-auto">
+                        <h2 class="mb-3 font-light text-gray-600 text-2xl dark:text-gray-400">Information we collect</h2>
+                        <p class="mb-8 font-light text-gray-500 text-lg dark:text-gray-400">The information we collect when you any Redo io product falls into three categories as ellaborated below.</p>
 
+                        <div id="accordion-collapse" data-accordion="collapse">
+                            <h2 id="accordion-collapse-heading-1">
+                                <button
+                                    type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-collapse-body-1"
+                                    aria-expanded="true"
+                                    aria-controls="accordion-collapse-body-1"
+                                >
+                                    <span>Information you provide us</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                        To use some of our products and services you need to have an account, and to create an account, you need to provide us certain information. Likewise, if you use our paid products and services, we
+                                        cannot provide them to you without getting payment information. Basically, certain information is necessary if you want to use many of our products and services.
+                                    </p>
+                                    <ul class="list-disc pl-5 text-gray-500 dark:text-gray-400">
+                                        <li class="mb-3">
+                                            <strong>Personal accounts; </strong> If you create an account, you must provide us with some information so that we can provide our services to you. This includes a display name (for example,
+                                            “Redo Express”); a username (for example, @RedoExpress); a password; an email address or phone number; a date of birth; your display language; and third-party single sign-in information (if you
+                                            choose this sign-in method). You can also choose to share your location for forum and social products, and to upload your address book to Redo io to help find people you may know. Your profile
+                                            information, which includes your display name and username, is always public, but you can use either your real name or a pseudonym. And remember, you can create multiple Redo io accounts, for
+                                            example, to express different parts of your identity, professional or otherwise.
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Bussiness Accounts; </strong> Business accounts are usually created for users of a certain set of products like our <strong>Hsync</strong>, you also need to provide us with a professional
+                                            category, and may provide us with other information, including street address, contact email address, and contact phone number, all of which will always be public.
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Payment Information; </strong> In order to purchase a product or other offerings provided as part of our paid products and services you will need to provide us payment information,
+                                            including your credit or debit card number, card expiration date, CVV code, and billing address.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2 id="accordion-collapse-heading-2">
+                                <button
+                                    type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-collapse-body-2"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-2"
+                                >
+                                    <span>Information we collect when you use our products.</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                        When you use our services, we collect information about how you use our products and services. We use that information to provide you with products and services, to help keep our products more secure
+                                        and respectful for everyone, and more relevant to you.
+                                    </p>
+                                    <ul class="list-disc pl-5 text-gray-500 dark:text-gray-400">
+                                        <li class="mb-3">
+                                            <strong>Usage information; </strong> We collect information about your activity on Redo io products, including content you post in regard to social and forum products (including the date,
+                                            application, and version of product) Your interactions with other users’ content, such as posts, likes, shares, replies,questions, if other users mention or tag you in content or if you mention or
+                                            tag them, and broadcasts you’ve participated in (including your viewing history, listening, commenting, speaking, and reacting). How you interact with others on the platform, such as people you
+                                            follow and people who follow you, and when you use Direct Messages, including the contents of the messages, the recipients, and date and time of messages. If you communicate with us, such as
+                                            through email, we will collect information about the communication and its content. We collect information on links you interact with across our services (including in our emails sent to you).
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Purchase and payments; </strong> To allow you to make a payment or send money using Redo io features or services, including through an intermediary, we may receive information about your
+                                            transaction such as when it was made, when a subscription is set to expire or auto-renew, and amounts paid or received.
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Device information; </strong> We collect information from and about the devices you use to access our products, including: Information about your connection, such as your IP address and
+                                            browser type. Information about your device and its settings, such as device and advertising ID, operating system, carrier, language, memory, apps installed, and battery level. Your device address
+                                            book, if you’ve chosen to share it with us.
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Location Information; </strong> When you use our products, we collect some information about your approximate location to provide the service you expect, including showing you relevant
+                                            ads.
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Inferred Identity; </strong> When you sign into any of our products on a browser or device, we will associate that browser or device with your account. Subject to your settings, we may
+                                            also associate your account with browsers or devices other than those you use to sign into Redo io (or associate your signed-out device or browser with other browsers or devices or Redo-generated
+                                            identifiers). When you provide other information to Redo io, including an email address or phone number, we associate that information with your Redo account. Subject to your settings, we may also
+                                            use this information in order to infer other information about your identity, for example by associating your account with hashes of email addresses that share common components with the email
+                                            address you have provided to Twitter. When you access Redo io and are not signed in, we may infer your identity based on the information we collect.
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Log information; </strong> We may receive information when you view content on or otherwise interact with our products and services, even if you have not created an account or are signed
+                                            out, such as: IP address; browser type and language; operating system; the referring webpage; access times; pages visited; location; your mobile carrier; device information (including device and
+                                            application IDs); search terms and IDs (including those not submitted as queries); ads shown to you on Redo io; Redo-generated identifiers; and identifiers associated with cookies. We also receive
+                                            log information when you click on, view, or interact with links on our services, including when you install another application through our products.
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Advertisements; </strong> When you view or interact with ads we serve on or off our product, we may collect information about those views or interactions (e.g., watching a video ad or
+                                            preroll, clicking on an ad, interacting with posts of or replies to an ad).
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Cookies and similar technologies; </strong> Like many websites, we use cookies and similar technologies to collect additional website usage data and to operate our services. Cookies are
+                                            not required for many parts of our products and services such as searching and looking at public profiles. You can learn more about how we use cookies and similar technologies
+                                            <a href="#" class="underline">here</a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Interactions with our content on third-party sites; </strong> When you view our content on third-party websites that integrate our produts' content such as embedded timelines , we may
+                                            receive log information that includes the web page you visited.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2 id="accordion-collapse-heading-3">
+                                <button
+                                    type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-collapse-body-3"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-3"
+                                >
+                                    <span>Information we recieve from third parties</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">When you use other online products and services, they may share information about that usage with us.</p>
+                                    <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                        <li class="mb-3">
+                                            <strong>Ad Partners, Developers, Publishers; </strong> Our ad and business partners share information with us such as browser cookie IDs, Redo-generated identifiers, mobile device IDs, hashed user
+                                            information like email addresses, demographic or interest data, and content viewed or actions taken on a website or app. Some of our ad partners, particularly our advertisers, also enable us to
+                                            collect similar information directly from their website or app by integrating our advertising technology. Information shared by ad partners and affiliates or collected by our products from the
+                                            websites and apps of ad partners and affiliates may be combined with the other information you share with our products and that Redo io receives, generates, or infers about you described elsewhere
+                                            in this Privacy Policy.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="bg-white dark:bg-gray-900">
+                <div class="px-4 mx-auto max-w-screen-xl lg:px-6">
+                    <div class="max-w-screen-md">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">How do you use my information?</h2>
+                        <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">To make Redo io the service you know and love.</p>
+                    </div>
+                </div>
+            </section>
 
-<h2 class="text-2xl font-bold mb-2">Retention of Your Personal Data</h2>
-<p class="mb-4">The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
-<p class="mb-4">The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p>
-<h2 class="text-2xl font-bold mb-2">Transfer of Your Personal Data</h2>
-<p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
-<p>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
-<p>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
-<h2 class="text-2xl font-bold mb-2">Delete Your Personal Data</h2>
-<p>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.</p>
-<p>Our Service may give You the ability to delete certain information about You from within the Service.</p>
-<p>You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us.</p>
-<p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.</p>
-<h2 class="text-2xl font-bold mb-2">Disclosure of Your Personal Data</h2>
-<h3>Business Transactions</h3>
-<p>If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
-<h3 class="text-2xl font-bold mb-2">Law enforcement</h3>
-<p>Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
-<h3 class="text-2xl font-bold mb-2">Other legal requirements</h3>
-<p>The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
-<ul class="list-disc pl-6 mb-4">
-<li>Comply with a legal obligation</li>
-<li>Protect and defend the rights or property of the Company</li>
-<li>Prevent or investigate possible wrongdoing in connection with the Service</li>
-<li>Protect the personal safety of Users of the Service or the public</li>
-<li>Protect against legal liability</li>
-</ul>
-<h2 class="text-2xl font-bold mb-2">Security of Your Personal Data</h2>
-<p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
-<h1>Children's Privacy</h1>
-<p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.</p>
-<p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
-<h1>Links to Other Websites</h1>
-<p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
-<p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
-<h1>Changes to this Privacy Policy</h1>
-<p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
-<p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
-<p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-<h1>Contact Us</h1>
-<p>If you have any questions about this Privacy Policy, You can contact us:</p>
-<ul class="list-disc pl-6 mb-4">
-<li>
-<p>By email: support@redodevelopers.site</p>
-</li>
-<li>
-<p>By visiting this page on our website: <a href="http://redodevelopers.site/contact/" rel="external nofollow noopener" target="_blank">http://redodevelopers.site/contact/</a></p>
-</li>
-<li>
-<p>By phone number: +256779730256</p>
-</li>
-</ul>
-</section>
+            <section class="bg-white dark:bg-gray-900">
+                <div class="px-4 mx-auto lg:px-6">
+                    <div class="max-w-5xl mx-auto">
+                        <h2 class="mb-3 font-light text-gray-600 text-2xl dark:text-gray-400">How We Use Information</h2>
+                        <p class="mb-8 font-light text-gray-500 text-lg dark:text-gray-400">
+                            Breaking down how we use the information we collect is not simple because of the way the systems that bring our services to you work. For example, the same piece of information may be used differently for
+                            different purposes to ultimately deliver a single service. We think it’s most useful to describe the three main ways we use information and if you have questions that are not answered, you can always
+                            <a href="https://redodevelopers.site/contact/" class="underline">contact us</a>. Here we go:
+                        </p>
 
+                        <div id="accordion-collapse" data-accordion="collapse">
+                            <h2 id="accordion-collapse-heading-11">
+                                <button
+                                    type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-collapse-body-11"
+                                    aria-expanded="true"
+                                    aria-controls="accordion-collapse-body-11"
+                                >
+                                    <span>Operate, Improve and personalize our services and products</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-11" class="hidden" aria-labelledby="accordion-collapse-heading-11">
+                                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                        We use the information we collect to provide and operate our products and services. We also use the information we collect to improve and personalize our products and services so that you have a
+                                        better experience, including by showing you more relevant content and ads, suggesting people and topics to follow, enabling and helping you discover affiliates, third-party apps, and services.
+                                    </p>
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                        We may use the information we collect from accounts of other services that you choose to connect your Redo io account to provide you features like cross-posting or cross-service authentication, and to
+                                        operate our services.
+                                    </p>
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                        We use your contact information to help others find your account if your settings permit, including through third-party services and client applications.
+                                    </p>
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                        We use your information to provide our advertising and sponsored content services subject to your settings, which helps make ads more relevant to you. We also use this information to measure the
+                                        effectiveness of ads and to help recognize your devices to serve you ads on and off. Some of our ad partners also enable us to collect similar information directly from their website or app by
+                                        integrating our advertising technology. Information shared by ad partners and affiliates or collected by Redo io from the websites and apps of ad partners and affiliates may be combined with the other
+                                        information you share with our products and that Redo io receives, generates, or infers about you, as described elsewhere in our Privacy Policy.
+                                    </p>
+                                </div>
+                            </div>
+                            <h2 id="accordion-collapse-heading-22">
+                                <button
+                                    type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-collapse-body-22"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-22"
+                                >
+                                    <span>Froster safety and security</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-22" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                        We use information we collect to provide for the safety and security of our users, our products, services, and your account. This includes verifying your identity, authenticating your account, and
+                                        defending against fraud, unauthorized use, and illegal activity. We also use the information to evaluate and affect the safety and quality of content on Twitter - this includes investigating and
+                                        enforcing our policies and and terms, as well as applicable law.
+                                    </p>
+                                </div>
+                            </div>
+                            <h2 id="accordion-collapse-heading-33">
+                                <button
+                                    type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    data-accordion-target="#accordion-collapse-body-33"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-33"
+                                >
+                                    <span>Measure, Analyse and make our services better</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-33" class="hidden" aria-labelledby="accordion-collapse-heading-33">
+                                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                        We use the information we collect to measure and analyze the effectiveness of our products and services and to better understand how you use them in order to make them better.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-{% endblock %}
+            <section class="bg-white dark:bg-gray-900">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
+                    <div class="">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">How long do you keep data?</h2>
+                        <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            Redo io will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal
+                            obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white dark:bg-gray-900">
+                <div class="pb-8 px-4 mx-auto max-w-screen-xl lg:px-6">
+                    <div class="">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">How can I control my data?</h2>
+                        <p class="mb-8 text-gray-600 font-bold sm:text-2xl dark:text-gray-400">You can access it, delete it, or change your settings. Basically, you’re the boss.</p>
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            You have the right to delete or request that we assist in deleting the personal data that We have collected about you.
+                        </p>
+
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            Our Service may give You the ability to delete certain information about You from within the Service.
+                        </p>
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            You may update, amend, or delete your information at any time by signing in to your Account, if you have one, and visiting the account settings section that allows you to manage your personal information. you may
+                            also contact Us to request access to, correct, or delete any personal information that you have provided to Us.
+                        </p>
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            Please note, however, that we may need to retain certain information when we have a legal obligation or lawful basis to do so.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white dark:bg-gray-900">
+                <div class="pb-8 px-4 mx-auto max-w-screen-xl lg:px-6">
+                    <div class="">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">How does Redo io handle my information wherever I am?</h2>
+                        <p class="mb-8 text-gray-600 font-bold sm:text-2xl dark:text-gray-400">We treat your information fairly, no matter where you live around the world.</p>
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            We provide our products to people all over the world and provide many of the same privacy tools and controls to all of our users regardless of where they live. However, your experience may be slightly different
+                            than users in other countries to ensure Twitter respects local requirements.
+                        </p>
+
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            Redo io has carefully considered the legal reasons it is permitted to collect, use, share and otherwise process your information. If you want to dig in to learn more and better understand the nuances, we’d
+                            encourage you to check out this additional information about data processing. And no, we don’t sell your personal information.
+                        </p>
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            Just as you use our products to seamlessly participate in global conversations with people in countries all over the world, Twitter must move information across borders and to different countries around the world
+                            to support the safe and reliable service you depend on. For example, if you live in Europe and are having a conversation with someone in the United States, information has to move between those countries to
+                            provide that experience – it’s what you expect from us.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white dark:bg-gray-900">
+                <div class="pb-8 px-4 mx-auto max-w-screen-xl lg:px-6">
+                    <div class="">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Are Redo products for kids?</h2>
+                        <p class="mb-8 text-gray-600 font-bold sm:text-2xl dark:text-gray-400">Nope, our products is not intended for people under 13.</p>
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            Our services are not directed to children, and you may not use our services if you are under the age of 13. You must also be old enough to consent to the processing of your personal data in your country (in some
+                            countries we may allow your parent or guardian to do so on your behalf).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white dark:bg-gray-900">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                    <div class="mx-auto max-w-screen-sm text-center">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">Redo io, Hello...</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white dark:bg-gray-900">
+                <div class="pb-8 px-4 mx-auto max-w-screen-xl lg:px-6">
+                    <div class="">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Will this policy change?</h2>
+                        <p class="mb-8 text-gray-600 font-bold sm:text-2xl dark:text-gray-400">If it does, we’ll let you know.</p>
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            The most current version of this Privacy Policy governs our processing of your personal data and we may revise this Privacy Policy from time to time as needed. If we do revise this Privacy Policy and make changes
+                            that are determined by us to be material, we will provide you notice and an opportunity to review the revised Privacy Policy before you continue to use our products.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-white dark:bg-gray-900">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                    <div class="mx-auto max-w-screen-sm text-center">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">How can I contact Redo io?</h2>
+                        <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Slide into our … very official inbox.</p>
+                    </div>
+                    <div class="">
+                        <p class="mb-8 text-gray-600 sm:text-xl dark:text-gray-400">
+                            We want to hear from you if you have thoughts or questions about this Privacy Policy. You can contact us via our
+                            <a href="https://redodevelopers.site/contact/" target="_blank" class="underline">Contact page</a> or by writing to us at the appropriate address below.
+                        </p>
+
+                        <div>
+                            <p class="mb-2 text-gray-600 sm:text-xl dark:text-gray-400">Email: support@redodevelopers.site</p>
+                            <p class="mb-3 text-gray-600 sm:text-xl dark:text-gray-400">Phone: +256779730256</p>
+                        </div>
+                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                            If you wish to raise a concern about our data processing practices, you have the right to do so with your local supervisory authority.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
