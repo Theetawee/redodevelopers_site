@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     "django_htmx",
-
+    'blog',
 ]
 
 MIDDLEWARE = [

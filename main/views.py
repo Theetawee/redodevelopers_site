@@ -81,3 +81,13 @@ def newsletter(request):
         messages.success(request, f'Added {email}')
         return redirect(referring_url)
     return redirect('home')
+
+
+def facebook(request):
+    return redirect('https://www.facebook.com/profile.php?id=61550525012526')
+
+def twitter(request):
+    return redirect('https://twitter.com/redodevs')
+
+def linkedin(request):
+    return redirect('https://www.linkedin.com/company/redo-io')
