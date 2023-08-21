@@ -5,16 +5,8 @@
     {% include 'base/theming.html' %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block des %}{% endblock %}">
-    <link rel="shortcut icon" href="{% static 'images/logo.svg' %}" type="image/svg+xml">
-    <link rel="icon" href="{% static 'images/logo.png' %}" sizes="192x192" />
-    <link rel="apple-touch-icon" href="{% static 'images/logo.png' %}" />
-    <meta name="msapplication-TileImage" content="{% static 'images/logo.png' %}" />
-    <meta name="geo.region" content="UG-102" />
-    <meta name="geo.placename" content="Kampala" />
-    <meta name="geo.position" content="0.317714;32.581354" />
-    <meta name="ICBM" content="0.317714, 32.581354" />
+    {% include 'base/seo.html' %} 
     {% block head%}{% endblock %}
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
     <title>{% block title %}{% endblock %}</title>
