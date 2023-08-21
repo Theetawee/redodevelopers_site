@@ -5,9 +5,9 @@
     backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
 }
 </style>
-<nav  class="glass-effect border-gray-200 fixed top-0 left-0 w-full z-50 dark:border-gray-600 dark:bg-gray-900">
+<nav id="thenav" class="bg-white border-b-gray-300 border border-gray-200 fixed top-0 left-0 w-full z-50 dark:border-gray-600 dark:bg-gray-900">
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <a href="https://flowbite.com" class="flex items-center">
+        <a href="{% url 'home' %}" class="flex items-center">
             <img src="{% static 'images/logo.svg' %}" class="h-8 mr-3" alt="Redo io Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-600">Redo io</span>
         </a>
@@ -39,7 +39,7 @@
             </ul>
         </div>
     </div>
-    <div id="mega-menu-full-dropdown" class="mt-0 hidden glass-effect border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600">
+    <div id="mega-menu-full-dropdown" class="mt-0 hidden bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600">
         <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:grid-cols-3 md:px-6">
             <ul aria-labelledby="mega-menu-full-dropdown-button">
                 <li>
@@ -106,4 +106,26 @@
 </nav>
 
 
-<div class="h-20"></div>
+<div class="h-16"></div>
+
+
+<script>
+window.addEventListener("scroll", function() {
+    // Get the current scroll position
+    var scrollPosition = window.scrollY;
+
+    // Get the element with the ID 'thenav'
+    var navElement = document.getElementById('thenav');
+
+    // Check if the user has scrolled to a specific position
+    if (scrollPosition >= 200) { // Change 200 to the desired scroll position
+        // User has scrolled past 200 pixels
+        navElement.classList.add('shadow-md');
+        // You can perform actions here when the user has scrolled to a certain position.
+    } else {
+        // User has scrolled back up or is at the top
+        navElement.classList.remove('shadow-md');
+        // You can perform actions here when the user scrolls back up or is at the top.
+    }
+});
+</script>

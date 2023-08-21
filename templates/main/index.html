@@ -49,204 +49,72 @@
 
 
 
-
-<section class="relative h-[85vh] overflow-hidden bg-white dark:bg-stone-900">
-    <!-- <video autoplay muted loop class="absolute inset-0 w-full h-[85vh] object-cover">
-        <source src="{% static 'images/b.mp4' %}" type="video/mp4" />
-        <!-- Add additional source elements for different video formats (e.g., WebM) --
-    </video> -->
-
-    <!-- Add overlay with a semi-transparent background -->
-    <div class="absolute h-[85vh] flex items-center justify-start inset-0 bg-black dark:opacity-50 opacity-5"></div>
-
-    <div class="flex items-center justify-start h-[85vh]">
-        <div class="max-w-screen-xl px-4 py-8 text-start lg:gap-8 xl:gap-0 lg:py-28 lg:grid-cols-12 z-10 relative text-white">
-            <h1 class="max-w-4xl mb-4 text-4xl text-teal-600 dark:text-white font-[700] tracking-tight leading-none md:text-5xl xl:text-6xl"><span class="dark:text-orange-400 text-orange-500">Redo&nbsp;io.</span> - where innovation meets software excellence</h1>
-            <p class="max-w-2xl mb-6 text-teal-600 dark:text-white font-light lg:mb-8 md:text-lg lg:text-xl">We're your partner in crafting cutting-edge solutions that drive digital transformation. Elevate your business with technology that fuels growth</p>
-            <a
-                href="{% url 'contact' %}"
-                class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-full bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-            >
-                Get in touch
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="bg-gray-100 dark:bg-gray-800 py-16">
-    <div class="max-w-screen-xl mx-auto px-4">
-        <div class="flex flex-col items-start justify-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 dark:text-white">Our Expertise</h2>
-            <p class="text-lg text-start text-gray-600 dark:text-gray-300 mb-8">Leveraging the collective experience of our expert team, we specialize in developing innovative software solutions that drive digital transformation.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Expertise Item 1 -->
-            <div class="bg-white dark:bg-gray-900 p-6 rounded-sm border border-gray-500">
-                <div class="flex items-center justify-center mb-4">
-                    <img src="{% static 'images/in.png' %}" alt="Innovative solutions" />
-                </div>
-                <h3 class="text-lg font-semibold mb-2 dark:text-white">Innovative Solutions</h3>
-                <p class="text-gray-600 dark:text-gray-300">We thrive on turning complex challenges into streamlined solutions, always pushing the boundaries of what's possible.</p>
-            </div>
-
-            <!-- Expertise Item 2 -->
-            <div class="bg-white dark:bg-gray-900 p-6 rounded-sm border border-gray-500">
-                <div class="flex items-center justify-center mb-4">
-                    <img src="{% static 'images/ux.png' %}" alt="Ux design" />
-                </div>
-                <h3 class="text-lg font-semibold mb-2 dark:text-white">User-Centric Design</h3>
-                <p class="text-gray-600 dark:text-gray-300">We prioritize the user experience, crafting intuitive interfaces and seamless interactions that captivate your audience.</p>
-            </div>
-
-            <!-- Expertise Item 3 -->
-            <div class="bg-white dark:bg-gray-900 p-6 rounded-sm border border-gray-500">
-                <div class="flex items-center justify-center mb-4">
-                    <img src="{% static 'images/s.png'%}" alt="Scalability" />
-                </div>
-                <h3 class="text-lg font-semibold mb-2 dark:text-white">Scalable Solutions</h3>
-                <p class="text-gray-600 dark:text-gray-300">Our solutions are designed to grow with your business, ensuring flexibility and scalability as your needs evolve.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="bg-white dark:bg-gray-900 py-16">
-    <div class="max-w-screen-xl mx-auto px-4">
-        <div class="flex flex-col items-center justify-center text-center mb-8">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 dark:text-white">Why Choose Redo&nbsp;io</h2>
-            <p class="max-w-xl text-lg text-gray-600 dark:text-gray-300">Discover the reasons why businesses trust us for their software needs.</p>
+<section class="bg-gradient-to-b from-blue-900 via-gray-900 to-black dark:bg-gray-900 py-16 text-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-white">Pioneering the Future of Software and IoT</h2>
+            <p class="max-w-xl text-lg md:text-xl text-gray-400 dark:text-gray-300 mx-auto mt-4">Discover how Redo IO is shaping the digital landscape with innovation.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="overflow-hidden w-72 mx-auto h-72">
-                <img src="{% static 'images/others.png' %}" alt="Why Choose Redo io" class="w-full h-full object-cover" />
+            <!-- Image -->
+            <div class="overflow-hidden w-full h-[400px] md:h-[500px] mx-auto">
+                <img src="{% static 'images/fut.png' %}" alt="Future of Software and IoT" class="w-full h-full object-cover rounded-lg shadow-lg" />
             </div>
 
+            <!-- Content -->
             <div class="md:mt-0 mt-10">
-                <div id="accordion-collapse" data-accordion="collapse">
-                    <h2 id="accordion-collapse-heading-1">
-                        <button
-                            type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-600 border border-b-0 border-gray-200 rounded-t-xl focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-                            data-accordion-target="#accordion-collapse-body-1"
-                            aria-expanded="true"
-                            aria-controls="accordion-collapse-body-1"
-                        >
-                            <span class="text-lg">Our Innovative Approach</span>
-                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
-                        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                            <p class="mb-2 text-gray-600 dark:text-gray-400">At Redo io, we take a fresh and innovative approach to software development.</p>
-                            <p class="text-gray-600 dark:text-gray-400">Our team is dedicated to finding creative solutions to complex challenges, ensuring that your software stands out and meets your goals.</p>
-                        </div>
-                    </div>
-
-                    <h2 id="accordion-collapse-heading-2">
-                        <button
-                            type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-600 border border-b-0 border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-                            data-accordion-target="#accordion-collapse-body-2"
-                            aria-expanded="false"
-                            aria-controls="accordion-collapse-body-2"
-                        >
-                            <span class="text-lg">Experienced Team</span>
-                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
-                        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-600 dark:text-gray-400">Our team consists of experienced professionals with a track record of delivering successful software solutions.</p>
-                            <p class="text-gray-600 dark:text-gray-400">We bring a wealth of knowledge and expertise to every project, ensuring that your software is developed to the highest standards.</p>
-                        </div>
-                    </div>
-
-                    <h2 id="accordion-collapse-heading-5">
-                        <button
-                            type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-                            data-accordion-target="#accordion-collapse-body-5"
-                            aria-expanded="false"
-                            aria-controls="accordion-collapse-body-5"
-                        >
-                            <span class="text-lg">More reasons why Redo io. Is prefered</span>
-                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
-                        <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                Our agile development methodology allows us to deliver iterative and incremental software solutions. This approach ensures that you're involved throughout the development process, allowing for timely feedback
-                                and adjustments.
-                            </p>
-                            <ul class="ml-5 text-gray-500 dark:text-gray-400">
-                                <li><span class="inline-block w-4 h-4 mr-2 text-green-500">&#10004;</span> Timely Delivery</li>
-                                <li><span class="inline-block w-4 h-4 mr-2 text-green-500">&#10004;</span> Quality Assurance</li>
-                                <li><span class="inline-block w-4 h-4 mr-2 text-green-500">&#10004;</span> Transparent Communication</li>
-                                <li><span class="inline-block w-4 h-4 mr-2 text-green-500">&#10004;</span> Scalability</li>
-                                <li><span class="inline-block w-4 h-4 mr-2 text-green-500">&#10004;</span> Cost-Effective Solutions</li>
-                                <li><span class="inline-block w-4 h-4 mr-2 text-green-500">&#10004;</span> Customer-Centric Approach</li>
-                                <li><span class="inline-block w-4 h-4 mr-2 text-green-500">&#10004;</span> Post-Launch Support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <p class="mb-6 text-gray-400 dark:text-gray-300 leading-relaxed">Redo IO stands at the forefront of technological innovation, driving advancements in the software and Internet of Things (IoT) domains.</p>
+                <p class="mb-6 text-gray-400 dark:text-gray-300 leading-relaxed">In an era where the future of software and IoT holds boundless potential, we are committed to unlocking this potential to empower our clients and contribute to a more connected and efficient world.</p>
+                <p class="mb-6 text-gray-400 dark:text-gray-300 leading-relaxed">With our elite team of experts and state-of-the-art technology solutions, we actively shape the landscape through:</p>
+                <ul class="ml-5 text-gray-400 dark:text-gray-300 list-disc">
+                    <li>Advancing IoT Ecosystems</li>
+                    <li>Empowering Smart and Connected Devices</li>
+                    <li>Seamless Integration of Machine Learning and AI</li>
+                    <li>Harnessing Blockchain Technology in Software</li>
+                    <li>Enhancing Data Security Solutions</li>
+                    <li>Providing Real-time Analytics and Insights</li>
+                    <li>Facilitating Seamless Cross-Platform Integration</li>
+                </ul>
+                <p class="mt-8 text-gray-400 dark:text-gray-300 leading-relaxed">Our unwavering commitment to pushing the boundaries of technology, combined with collaborative partnerships with our clients, drives digital transformation that leads to enduring success.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="bg-gray-100 dark:bg-gray-800">
-    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <div class="w-72 overflow-hidden mx-auto h-72">
-            <img src="{% static 'images/cta.png' %}" class="w-full h-full object-cover" alt="Call to action" />
+
+
+<section class="bg-gray-100 dark:bg-gray-800 py-16">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">Discover Our Story</h2>
+            <p class="max-w-xl text-lg text-gray-600 dark:text-gray-300 mx-auto mt-4">Experience the journey that defines our company and drives our vision.</p>
         </div>
-        <div class="mt-4 md:mt-0">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Ready to Elevate Your Software Solutions?</h2>
-            <p class="mb-3 font-light text-gray-500 md:text-lg dark:text-gray-400">Partner with Redo io and experience innovative software solutions that drive growth and success.</p>
-            <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                Our commitment to excellence is a promise to our clients, partners, and ourselves – a promise that we will always strive for the highest standards of craftsmanship and innovation.
-            </p>
-            <a href="{% url 'contact' %}" class="inline-flex items-center text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:ring-primary-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
-                Get started
-                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                </svg>
-            </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Text -->
+            <div>
+                <p class="mb-6 text-gray-600 dark:text-gray-400 leading-relaxed">Our story is woven with a thread of passion, innovation, and dedication. It's a journey that has brought us from inception to a global presence, shaping industries along the way.</p>
+                <p class="mb-6 text-gray-600 dark:text-gray-400 leading-relaxed">We invite you to explore the chapters of our journey, the people behind our success, and the values that guide us forward.</p>
+                <p class="mt-8 text-gray-600 dark:text-gray-400 leading-relaxed">Begin your exploration on our <a href="{% url 'about' %}" class="text-indigo-500 hover:underline">About Us</a> page and join us on a path filled with inspiration and innovation.</p>
+            </div>
+
+            <!-- Data -->
+            <div class="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Our Journey Highlights</h3>
+                <ul class="list-disc ml-5 text-gray-600 dark:text-gray-400">
+                    <li>Decades of Industry Experience</li>
+                    <li>Global Reach and Impact</li>
+                    <li>Countless Successful Projects</li>
+                    <li>Dedicated Team of Experts</li>
+                    <li>Award-Winning Achievements</li>
+                </ul>
+                
+            </div>
         </div>
     </div>
 </section>
 
-<section class="bg-teal-800 py-16">
-    <div class="max-w-screen-xl px-4 mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-extrabold mb-6 text-white">Our Impact in Numbers</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
-            <div class="flex flex-col items-center justify-center">
-                <h3 class="text-3xl md:text-4xl font-extrabold mb-2">50+</h3>
-                <p class="font-light italic text-white">Developers Engaged</p>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-                <h3 class="text-3xl md:text-4xl font-extrabold mb-2">200+</h3>
-                <p class="font-light italic text-white">Contributors Involved</p>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-                <h3 class="text-3xl md:text-4xl font-extrabold mb-2">20+</h3>
-                <p class="font-light italic text-white">Organizations Supported</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
