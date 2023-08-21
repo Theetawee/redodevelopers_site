@@ -2,13 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include 'base/theming.html' %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="{% block des %}{% endblock %}">
     {% include 'base/seo.html' %} 
     {% block head%}{% endblock %}
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <script src="{% static 'js/swiper.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'css/swipper.css' %}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body class="bg-white dark:bg-gray-800">
@@ -32,7 +33,6 @@
 
     {% include 'base/footer.html' %}
     <script src="{% static 'js/flowbite.js' %}"></script>
-    {% include 'base/themingScript.html' %}
     <script>
         window.addEventListener('load',()=>{
             document.getElementById('loader').style.display='none';

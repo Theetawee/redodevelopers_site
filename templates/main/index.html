@@ -43,11 +43,18 @@
 {% endblock %} {% block des %}Join us on a journey of technological excellence and reimagine what's possible with our user-centric and agile approach to software development.{% endblock %} {% block title %}Redo io: Empowering Innovation through Software and IoT Solutions 
 {% endblock %} {% block content %}
 
+
+
+{% include 'main/hero.html' %}
+
+
+
+
 <section class="relative h-[85vh] overflow-hidden bg-white dark:bg-stone-900">
-    <video autoplay muted loop class="absolute inset-0 w-full h-[85vh] object-cover">
+    <!-- <video autoplay muted loop class="absolute inset-0 w-full h-[85vh] object-cover">
         <source src="{% static 'images/b.mp4' %}" type="video/mp4" />
-        <!-- Add additional source elements for different video formats (e.g., WebM) -->
-    </video>
+        <!-- Add additional source elements for different video formats (e.g., WebM) --
+    </video> -->
 
     <!-- Add overlay with a semi-transparent background -->
     <div class="absolute h-[85vh] flex items-center justify-start inset-0 bg-black dark:opacity-50 opacity-5"></div>
@@ -240,5 +247,7 @@
         </div>
     </div>
 </section>
+
+
 
 {% endblock %}
