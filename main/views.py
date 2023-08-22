@@ -95,3 +95,6 @@ def linkedin(request):
 
 def webdevelopment(request):
     return render(request,'main/web.html' )
+
+def custom_software(request):
+    return render(request,'main/custom.html' )

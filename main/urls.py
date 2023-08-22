@@ -1,5 +1,5 @@
 from django.urls import path,re_path
-from .views import index,services,policy,sitemap,robots,contact,company,solutions,newsletter,twitter,facebook,linkedin,webdevelopment
+from .views import index,services,policy,sitemap,robots,contact,company,solutions,newsletter,twitter,facebook,linkedin,webdevelopment,custom_software
 
 
 urlpatterns=[
@@ -15,5 +15,6 @@ urlpatterns=[
     path('twitter/',twitter,name='twitter'),
     path('facebook/',facebook,name='facebook'),
     path('linkedIn/',linkedin,name='linkedin'),
-    path('web-services/',webdevelopment,name='web')
+    path('web-services/',webdevelopment,name='web'),
+    path('custom-software/',custom_software,name='custom')
 ]
