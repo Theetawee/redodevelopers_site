@@ -98,3 +98,6 @@ def webdevelopment(request):
 
 def custom_software(request):
     return render(request,'main/custom.html' )
+
+def iot(request):
+    return render(request,'main/iot.html' )
