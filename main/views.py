@@ -91,3 +91,7 @@ def twitter(request):
 
 def linkedin(request):
     return redirect('https://www.linkedin.com/company/redo-io')
+
+
+def webdevelopment(request):
+    return render(request,'main/web.html' )
