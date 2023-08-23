@@ -47,40 +47,89 @@
 
 {% include 'main/hero.html' %}
 
-
-
 <section class="bg-gradient-to-b from-blue-900 via-gray-900 to-black dark:bg-gray-900 py-16 text-white">
     <div class="container mx-auto px-4">
-        <a href="{% url 'iot' %}" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
-            <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Exciting Journey into <strong>IoT Technology</strong></span> 
-            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-        </a>
         <div class="text-center mb-8">
-            <h2 class="text-4xl md:text-5xl font-bold text-white">Pioneering the Future of Software and IoT</h2>
-            <p class="max-w-xl text-lg md:text-xl text-gray-400 dark:text-gray-300 mx-auto mt-4">Discover how Redo IO is shaping the digital landscape with innovation.</p>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white">Unlocking Success with Redo io</h2>
+            <p class="max-w-xl text-lg md:text-xl text-gray-200 dark:text-gray-300 mx-auto mt-4">Discover the power of innovation and excellence.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Image -->
             <div class="overflow-hidden w-full h-[400px] md:h-[500px] mx-auto">
-                <img src="{% static 'images/fut.webp' %}" alt="Future of Software and IoT" class="w-full h-full object-cover rounded-lg shadow-lg" />
+                <img src="{% static 'images/fut.webp' %}" alt="Future of Software and Excellence" class="w-full h-full object-cover rounded-lg shadow-lg" />
             </div>
 
             <!-- Content -->
             <div class="md:mt-0 mt-10">
-                <p class="mb-6 text-gray-400 dark:text-gray-300 leading-relaxed">Redo IO stands at the forefront of technological innovation, driving advancements in the software and Internet of Things (IoT) domains.</p>
-                <p class="mb-6 text-gray-400 dark:text-gray-300 leading-relaxed">In an era where the future of software and IoT holds boundless potential, we are committed to unlocking this potential to empower our clients and contribute to a more connected and efficient world.</p>
-                <p class="mb-6 text-gray-400 dark:text-gray-300 leading-relaxed">With our elite team of experts and state-of-the-art technology solutions, we actively shape the landscape through:</p>
-                <ul class="ml-5 text-gray-400 dark:text-gray-300 list-disc">
-                    <li>Advancing IoT Ecosystems</li>
-                    <li>Empowering Smart and Connected Devices</li>
-                    <li>Seamless Integration of Machine Learning and AI</li>
-                    <li>Harnessing Blockchain Technology in Software</li>
-                    <li>Enhancing Data Security Solutions</li>
-                    <li>Providing Real-time Analytics and Insights</li>
-                    <li>Facilitating Seamless Cross-Platform Integration</li>
+                <p class="my-8 font-light text-gray-300 sm:text-xl dark:text-gray-400">Redo io - where innovation meets excellence.</p>
+                <p class="mb-3 font-light text-gray-300 sm:text-xl dark:text-gray-400">We've made our mark with:</p>
+                <ul class="ml-5 text-sm md:text-xl text-gray-400 dark:text-gray-300 list-disc pl-4">
+                    <li>Transforming Businesses through Cutting-Edge Solutions</li>
+                    <li>Empowering Clients with User-Centric Design</li>
+                    <li>Accelerating Digital Transformation for Enterprises</li>
+                    <li>Enhancing Software Security and Scalability</li>
                 </ul>
-                <p class="mt-8 text-gray-400 dark:text-gray-300 leading-relaxed">Our unwavering commitment to pushing the boundaries of technology, combined with collaborative partnerships with our clients, drives digital transformation that leads to enduring success.</p>
+<p class="my-8 font-light text-gray-300 sm:text-xl dark:text-gray-400">Our commitment to excellence and client success stories sets us apart. Join us on the journey to success.</p>
+                <section>
+                    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                        <dl class="grid max-w-screen-md gap-8 mx-auto sm:grid-cols-3 text-white">
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="mb-2 text-3xl md:text-4xl font-extrabold">10M+</dt>
+                                <dd class="font-light text-gray-200 dark:text-gray-400">Lines of Code Written</dd>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="mb-2 text-3xl md:text-4xl font-extrabold">20M+</dt>
+                                <dd class="font-light text-gray-200 dark:text-gray-400">Hours Saved</dd>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="mb-2 text-3xl md:text-4xl font-extrabold">100+</dt>
+                                <dd class="font-light text-gray-200 dark:text-gray-400">Happy Clients</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">For Businesses</h2>
+        <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="{% static 'images/castsol.png' %}" alt="Custom Software Solutions" class="w-full object-cover h-[200px] rounded-lg">
+                <h3 class="text-xl font-semibold mt-4">Custom Software Solutions</h3>
+                <p class="text-gray-700 mt-2">Crafting custom software solutions tailored to meet your unique business needs and drive growth.</p>
+                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Contact us now</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="{% static 'images/web-home.jpg' %}" alt="Web and Mobile App Development" class="w-full object-cover h-[200px] rounded-lg">
+                <h3 class="text-xl font-semibold mt-4">Web and Mobile App Development</h3>
+                <p class="text-gray-700 mt-2">Creating engaging web and mobile applications to enhance user experience and accessibility.</p>
+                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Contact us now</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="{% static 'images/cloud.jpg' %}" alt="Cloud Services and Migration" class="w-full object-cover h-[200px] rounded-lg">
+                <h3 class="text-xl font-semibold mt-4">Cloud Services and Migration</h3>
+                <p class="text-gray-700 mt-2">Leveraging cloud technology for scalability, security, and cost-efficiency.</p>
+                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Contact us now</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="{% static 'images/ux.png' %}" alt="UI/UX Design" class="w-full object-cover h-[200px] rounded-lg">
+                <h3 class="text-xl font-semibold mt-4">UI/UX Design</h3>
+                <p class="text-gray-700 mt-2">Designing visually appealing and user-friendly interfaces for your software products.</p>
+                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Contact us now</a>
             </div>
         </div>
     </div>
