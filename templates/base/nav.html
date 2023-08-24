@@ -55,7 +55,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="{% url 'solutions' %}" class="navlink pt-3 md:pt-0 md:py-1" title="Our Software solutions">Our innovations</a>
+                        <a href="{% url 'solutions' %}" class="navlink {% if request.path == '/solutions/' %} active {% endif %} pt-3 md:pt-0 md:py-1" title="Our Software solutions">Our innovations</a>
                     </li>
                     
                     <li>

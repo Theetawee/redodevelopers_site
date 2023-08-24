@@ -51,20 +51,20 @@
     <div class="max-w-screen-xl mx-auto flex flex-col-reverse lg:flex-row items-center">
         <div class="w-full lg:w-1/2">
             <!-- Add an image to visualize beta testing -->
-            <img src="{% static 'images/test.webp' %}" alt="Beta Testing" class="w-full rounded-lg shadow-lg">
+            <img src="{% static 'images/testing.png' %}" alt="Beta Testing" class="w-full h-[300px] object-contain">
         </div>
         <div class="w-full lg:w-1/2 pl-8">
-            <h1 class="mb-4 text-3xl font-semibold text-gray-700">Exploring Beta Solutions</h1>
-            <p class="mb-6 text-gray-600">At Redo io, we're currently in the beta testing phase for our software solutions. We take pride in ensuring that our products meet the highest standards of quality and reliability before release.</p>
-            <p class="mb-6 text-gray-600">Beta testing serves multiple purposes, including:</p>
+            <h1 class="mb-4 text-3xl font-semibold text-gray-700">Currently reloading...</h1>
+            <p class="mb-6 text-gray-600">With more Redo io software solutions entering the market, we've raised the bar for quality assurance. At Redo io, we are deeply committed to ensuring the efficiency and reliability of every product we offer. This commitment has led us to an extensive beta testing phase.</p>
+            <p class="mb-6 text-gray-600">Our beta testing phase serves several essential purposes:</p>
             <ul class="mb-6 list-disc list-inside text-gray-600">
-                <li>Identifying and fixing bugs and glitches to ensure a smooth user experience.</li>
-                <li>Gathering valuable feedback from early users to enhance product features.</li>
-                <li>Testing software compatibility with different devices and systems.</li>
-                <li>Stress-testing software to ensure stability and performance under various conditions.</li>
-                <li>Building a community of enthusiastic users who contribute to product improvement.</li>
+                <li>Thoroughly identifying and addressing any bugs or glitches to guarantee a seamless user experience.</li>
+                <li>Collecting invaluable feedback from early users, empowering us to enhance and expand product features.</li>
+                <li>Conducting comprehensive tests to ensure compatibility across a wide range of devices and systems.</li>
+                <li>Stress-testing our software to verify stability and performance under various conditions and workloads.</li>
+                <li>Building a dedicated community of enthusiastic users who actively contribute to the continuous improvement of our products.</li>
             </ul>
-            <p class="mb-4 text-gray-600">Our commitment to excellence means that every software product we offer is subjected to rigorous testing and refinement. It's our way of ensuring that you receive top-notch, reliable solutions.</p>
+            <p class="mb-4 text-gray-600">Our unwavering commitment to excellence drives us to subject each software product to rigorous testing and refinement. It's our pledge to deliver nothing less than top-tier, dependable solutions to our users.</p>
         </div>
     </div>
 </section>
@@ -74,7 +74,7 @@
 <section class="bg-white  dark:bg-gray-900 mb-20">
   <div class=" px-4 mx-auto max-w-screen-xl  lg:px-6">
       <div class="mx-auto max-w-screen-md sm:text-center">
-          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Explore our innovative software solutions that are currently in beta. Sign up for our newsletter and be the first to know when we release new solutions.</p>
+          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Subscribe to our newsletter to be the first to know about our releases.</p>
           <form action="{% url 'news' %}" method="post">
             {% csrf_token %}
               <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
