@@ -93,11 +93,6 @@ def linkedin(request):
     return redirect('https://www.linkedin.com/company/redo-io')
 
 
-def webdevelopment(request):
-    return render(request,'main/web.html' )
-
-def custom_software(request):
-    return render(request,'main/custom.html' )
 
 def iot(request):
     return render(request,'main/iot.html' )
