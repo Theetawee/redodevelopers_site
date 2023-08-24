@@ -1,66 +1,73 @@
 {% load static %}
 <header class="fixed w-full z-40 top-0 left-0">
-    <div class=" py-1 bg-teal-500">
-    <marquee behavior="scroll" class="text-white text-sm flex items-center" direction="left">
-    🚀 Welcome to Redo io - Pioneers of Innovation! 🚀
-    Trusted by 100+ businesses worldwide to reshape the digital landscape with groundbreaking software solutions.
-    🌟 Join forces with us, and be part of a community that's transforming industries.
-    🤝 Be our partner or sponsor, and together, we're achieving technological excellence.
-    🌐 Contact us today and discover why Redo io is the trusted choice for innovation.
-</marquee>
+    <div class=" py-1 bg-teal-600">
+        <marquee behavior="scroll" class="text-white text-sm flex items-center" direction="left">
+            🚀 Welcome to Redo io - Pioneers of Innovation! 🚀
+            Trusted by 100+ businesses worldwide to reshape the digital landscape with groundbreaking software solutions.
+            🌟 Join forces with us, and be part of a community that's transforming industries.
+            🤝 Be our partner or sponsor, and together, we're achieving technological excellence.
+            🌐 Contact us today and discover why Redo io is the trusted choice for innovation.
+        </marquee>
+    </div>
+    <nav class="bg-white dark:bg-gray-900  border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="{% url 'home' %}" title="Homepage" class="flex items-center">
+            <img src="{% static 'images/logo.svg' %}" class="h-8 mr-3" alt="Redo io Logo">
+            <span class="self-center text-2xl hidden md:flex font-semibold  whitespace-nowrap text-primary-500">Redo io</span>
+            </a>
+            <div class="flex md:order-2">
+              <button class="bg-primary-500 uppercase hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+                  Request Meeting
+              </button>
 
-
-</div>
-
-<nav class="bg-white dark:bg-gray-900  border-b border-gray-200 dark:border-gray-600">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="{% url 'home' %}" title="Homepage" class="flex items-center">
-      <img src="{% static 'images/logo.svg' %}" class="h-8 mr-3" alt="Redo io Logo">
-      <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-500">Redo io</span>
-  </a>
-  <div class="flex md:order-1">
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-  </div>
-  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-      <li>
-        <a href="{% url 'about' %}" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500 font-semibold md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" title="About Redo io">Company</a>
-      </li>
-      <li>
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-semibold text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Our Services <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-  </svg></button>
-            <!-- Dropdown menu -->
-            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-md shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">  
-                    <li>
-                    <a href="{% url 'custom' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Custom Software Development</a>
-                  </li>
-                    
-                  <li>
-                    <a href="{% url 'web' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Services</a>
-                  </li>
-                  
-                </ul>
-                
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
             </div>
-        </li>
-      <li>
-        <a href="{% url 'solutions' %}" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500 font-semibold md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" title="Our Software solutions">Our innovations</a>
-      </li>
-      <li>
-        <a href="{% url 'contact' %}" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500 font-semibold md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 " title="Contact us">Contact us</a>
-      </li>
-      
-    </ul>
-  </div>
-  </div>
-</nav>
-
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4  border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="{% url 'home' %}" class="navlink pt-3 md:pt-0 active" title="Homepage">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navlink pt-3 md:pt-0" title="Who we help">Who we help</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="navlink pt-3 md:pt-0 dropdown">
+                            Our Services 
+                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-md shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="{% url 'custom' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Custom Software Development</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'web' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="{% url 'solutions' %}" class="navlink pt-3 md:pt-0" title="Our Software solutions">Our innovations</a>
+                    </li>
+                    
+                    <li>
+                        <a href="{% url 'about' %}" class="navlink pt-3 md:pt-0" title="About Redo io">Company</a>
+                    </li>
+                    
+                    <li>
+                        <a href="{% url 'contact' %}" class="navlink pt-3 md:pt-0 " title="Contact us">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
-<div class="h-16"></div>
+<div class="h-20"></div>

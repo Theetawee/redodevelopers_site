@@ -1,82 +1,74 @@
 {% load static %}
-
-
-<div class="swiper h-full md:max-h-[50vh] w-full overflow-hidden lg:max-h-[80vh]">
+<style>
+    .swiper-pagination-bullet {
+        background: #ee6435; /* Custom color for indicator dots */
+        width: 8px; /* Adjust dot width */
+        height: 8px; /* Adjust dot height */
+        margin: 4px; /* Adjust dot spacing */
+        opacity: 0.7; /* Adjust dot opacity */
+    }
+    
+    
+</style>
+<div class="swiper min-h-screen">
     <div class="swiper-wrapper">
-    <div class="swiper-slide ">
-
-
-<section  class="bg-white dark:bg-gray-900 flex items-center justify-center">
-    <div class="gap-8 md:items-end px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 py-8 md:pt-16 lg:px-6">
-        <img src="{% static 'images/tech.webp' %}" alt="Taking a lead in tech" class="rounded-lg shadow-sm w-full h-[300px] md:h-full object-cover">
-        <div class="mt-4 md:mt-0">
-            <h1 class="max-w-4xl mb-4 text-4xl text-gray-600 dark:text-white font-[700] tracking-tight leading-none">
-                <span class="dark:text-orange-400 text-orange-500">Redo&nbsp;io.</span> - Pioneering the Future of Software</h1>
-            <p class="max-w-2xl mb-6 text-teal-600 dark:text-white font-light lg:mb-8 md:text-lg lg:text-xl">At Redo io, we're not just a software company; we're architects of innovation, builders of digital dreams, and creators of transformative solutions. With an unwavering commitment to excellence, we craft software that fuels businesses, drives growth, and shapes the future.</p>
-            <div class="text-center">
-                <a href="{% url 'about' %}" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Explore Our Vision</a>
-            </div>
+        <div class="swiper-slide">
+            <section class=" bg-white dark:bg-gray-900 flex items-center justify-center">
+                <div class="gap-8 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 py-8 md:pt-16 lg:px-6">
+                    <img src="{% static 'images/home.png' %}" alt="Taking a lead in tech" class="rounded-lg w-full h-full object-contain">
+                    <div class="mt-4 md:mt-0">
+                        <h1 class="max-w-4xl mb-4 text-4xl text-gray-600 dark:text-white font-[700] tracking-tight leading-none">
+                            <span class="dark:text-orange-400 text-primary-500 leading-tight">Redo&nbsp;io.</span> Empowering Your Vision with Exceptional Software Solutions
+                        </h1>
+                        <p class="max-w-2xl mb-6 text-gray-800 dark:text-white font-light lg:mb-8 md:text-lg lg:text-xl">At Redo io, we're not just a software company; we're architects of innovation, builders of digital dreams, and creators of transformative solutions. With an unwavering commitment to excellence, we craft software that fuels businesses, drives growth, and shapes the future.</p>
+                        <div class="text-center">
+                            <a href="{% url 'about' %}" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Explore Our Vision</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="swiper-slide">
+            <section class=" bg-white dark:bg-gray-900 flex items-center justify-center">
+                <div class="gap-8 md:items-end px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 py-8 md:pt-16 lg:px-6">
+                    <img src="{% static 'images/iot.jpg' %}" alt="Taking a lead in IoT" class="rounded-lg w-full h-full object-contain">
+                    <div class="mt-4 md:mt-0">
+                        <h1 class="max-w-4xl mb-4 text-4xl text-gray-600 dark:text-white font-[700] tracking-tight leading-none">
+                            Shaping the Future of IoT with Redo io
+                        </h1>
+                        <p class="max-w-2xl mb-6 text-gray-800 dark:text-white font-light lg:mb-8 md:text-lg lg:text-xl">
+                            As Redo io embarks on an exciting journey into the Internet of Things (IoT) sector, we are driven by a vision to revolutionize industries and create a more connected world. IoT is more than just a technology; it's a transformative force that touches every aspect of our lives.
+                            <br><br>
+                            Our commitment to excellence remains unwavering as we leverage cutting-edge technology to craft innovative solutions. From smart cities to connected devices, we are dedicated to shaping the IoT landscape and redefining how businesses and individuals interact with the digital world.
+                            <br><br>
+                            Join us on this transformative journey as we lead the way into a future where the possibilities of IoT are limitless. Together, we'll harness the power of connectivity and data to drive progress, efficiency, and innovation.
+                        </p>
+                        <div class="text-center">
+                            <a href="{% url 'iot' %}" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Explore IoT with Redo io</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-</section>
-
-
-
-
-
-    </div>
-    <div class="swiper-slide">
-
-
-
-<section  class="bg-white dark:bg-gray-900 flex items-center justify-center">
-    <div class="gap-8 md:items-end px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 py-8 md:pt-16 lg:px-6">
-        <img src="{% static 'images/iot.webp' %}" alt="Taking a lead in IoT" class="rounded-lg shadow-sm w-full h-[300px] md:h-full object-cover">
-        <div class="mt-4 md:mt-0">
-            <h2 class="max-w-4xl mb-4 text-4xl text-gray-600 dark:text-white font-[700] tracking-tight leading-none">
-                Expanding into the World of IoT</h2>
-            <p class="max-w-2xl mb-6 text-teal-600 dark:text-white font-light lg:mb-8 md:text-lg lg:text-xl">
-                We are on the cusp of an exciting new venture - the Internet of Things (IoT). As we prepare for the future, our commitment to excellence remains unwavering. We're dedicated to shaping the IoT landscape with groundbreaking solutions that will redefine industries and shape a more connected world.</p>
-            <div class="text-center">
-                <a href="{% url 'iot' %}" type="button"
-                    class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
-                    Join Us on the IoT Journey</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-    </div>
-    </div>
-
+    <div class="swiper-pagination"></div>
 </div>
 
-
 <script>
-    // Function to initialize Swiper with the appropriate direction
-    function initSwiper() {
-        const isLargeScreen = window.innerWidth >= 758; // You can adjust the breakpoint as needed
-        const direction = isLargeScreen ? 'vertical' : 'horizontal';
-
-        const swiper = new Swiper('.swiper', {
-            direction: direction,
-            loop: true,
-            autoplay: {
-                delay: 10000, // Autoplay delay in milliseconds
-            },
-            navigation: {
-                nextEl: null, // Remove next button
-                prevEl: null, // Remove prev button
-            },
-            
-        });
-    }
-
-    // Initialize Swiper when the page loads
-    window.addEventListener('load', initSwiper);
-
-    // Reinitialize Swiper when the window is resized
-    window.addEventListener('resize', initSwiper);
+    // Function to initialize Swiper with horizontal direction and custom pagination color
+    const swiper = new Swiper('.swiper', {
+        direction: 'horizontal', // Set to horizontal
+        loop: true,
+        autoplay: {
+            delay: 10000, // Autoplay delay in milliseconds
+        },
+        navigation: {
+            nextEl: null, // Remove next button
+            prevEl: null, // Remove prev button
+        },
+        pagination: {
+            el: '.swiper-pagination', // Indicator dots container
+            clickable: true, // Allow clicking on dots to navigate
+        },
+    });
 </script>

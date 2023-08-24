@@ -1,104 +1,99 @@
 {% load static %}
-<footer class="bg-white border-t border-gray-200 shadow-md dark:bg-gray-800">
-  <div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
-      <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
-    <!-- Company -->
-    <div>
-        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
-        <ul class="text-gray-500 dark:text-gray-400">
-            <li class="mb-4">
-                <a href="{% url 'about' %}" class="hover:underline">About Us</a>
-            </li>
-            <li class="mb-4">
-                <a onclick="alert('Coming soon! ')" class="hover:underline">Careers</a>
-            </li>
-            <li class="mb-4">
-                <a onclick="alert('Coming soon! ')" class="hover:underline">Press</a>
-            </li>
-        </ul>
+<footer class="bg-gray-900 text-white">
+    <div class="container mx-auto py-10 md:py-16 lg:py-20 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <!-- Company -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Company</h2>
+                <ul class="text-gray-400">
+                    <li class="mb-3">
+                        <a href="{% url 'about' %}" class="hover:text-primary-500">About Us</a>
+                    </li>
+                    <li class="mb-3">
+                        <a onclick="alert('Coming soon!')" class="hover:text-primary-500">Careers</a>
+                    </li>
+                    <li class="mb-3">
+                        <a onclick="alert('Coming soon!')" class="hover:text-primary-500">Press</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Help Center -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Help Center</h2>
+                <ul class="text-gray-400">
+                    <li class="mb-3">
+                        <a href="{% url 'twitter' %}" class="hover:text-primary-500">Twitter</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="{% url 'facebook' %}" class="hover:text-primary-500">Facebook</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="{% url 'contact' %}" class="hover:text-primary-500">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Legal -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Legal</h2>
+                <ul class="text-gray-400">
+                    <li class="mb-3">
+                        <a href="{% url 'policy' %}" class="hover:text-primary-500">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Services -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Services</h2>
+                <ul class="text-gray-400">
+                    <li class="mb-3">
+                        <a href="{% url 'custom' %}" class="hover:text-primary-500">Custom Software</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="{% url 'web' %}" class="hover:text-primary-500">Web Services</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Solutions -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Solutions</h2>
+                <ul class="text-gray-400">
+                    <li class="mb-3">
+                        <a onclick="alert('Coming soon!')" class="hover:text-primary-500">Hsync</a>
+                    </li>
+                    <li class="mb-3">
+                        <a onclick="alert('Coming soon!')" class="hover:text-primary-500">Quiet Contemplations</a>
+                    </li>
+                    <!-- Add more software solutions or products here -->
+                </ul>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-600">
+        <div class="text-center">
+            <a href="{% url 'about' %}" class="flex items-center justify-center mb-5 text-xl font-semibold">
+                <img src="{% static 'images/logo.svg' %}" class="w-8 h-8 mr-2" alt="Redo io logo"> Redo io
+            </a>
+            <p class="text-sm text-gray-400">&copy; 2021-2023 Redo io. All Rights Reserved.</p>
+            <ul class="flex justify-center mt-5 space-x-5">
+                <li>
+                    <a href="{% url 'facebook' %}" aria-label="Facebook page" class="text-gray-400 hover:text-primary-500">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'twitter' %}" class="text-gray-400 hover:text-primary-500">
+                        <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'linkedin' %}" class="text-gray-400 hover:text-primary-500">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <!-- Help Center -->
-    <div>
-        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help Center</h2>
-        <ul class="text-gray-500 dark:text-gray-400">
-            <li class="mb-4">
-                <a href="{% url 'twitter' %}" class="hover:underline">Twitter</a>
-            </li>
-            <li class="mb-4">
-                <a href="{% url 'facebook' %}" class="hover:underline">Facebook</a>
-            </li>
-            <li class="mb-4">
-                <a href="{% url 'contact' %}" class="hover:underline">Contact Us</a>
-            </li>
-        </ul>
-    </div>
-    <!-- Legal -->
-    <div>
-        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-        <ul class="text-gray-500 dark:text-gray-400">
-            <li class="mb-4">
-                <a href="{% url 'policy' %}" class="hover:underline">Privacy Policy</a>
-            </li>
-            
-        </ul>
-    </div>
-    <!-- Venture -->
-    <div>
-        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Services</h2>
-        <ul class="text-gray-500 dark:text-gray-400">
-            <li class="mb-3">
-                    <a href="{% url 'custom' %}"  class="block  hover:underline px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Custom Software</a>
-                  </li>
-                    
-                  <li class="mb-3">
-                    <a href="{% url 'web' %}"   class="block hover:underline  px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Services</a>
-                  </li>
-                  
-        </ul>
-    </div>
-    <!-- Solutions -->
-    <div>
-        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Solutions</h2>
-        <ul class="text-gray-500 dark:text-gray-400">
-            <li class="mb-4">
-                <a onclick="alert('Coming soon! ')" class="hover:underline">Hsync</a>
-            </li>
-            <li class="mb-4">
-                <a onclick="alert('Coming soon! ')" class="hover:underline">Quiet Contemplations</a>
-            </li>
-            <!-- Add more software solutions or products here -->
-        </ul>
-    </div>
-</div>
-
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
-      <div class="text-center">
-          <a href="{% url 'about' %}" class="flex justify-center items-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
-            <img src="{% static 'images/logo.svg' %}" class="w-10 h-10 mr-2" alt="Redo io logo">
-              Redo io    
-          </a>
-          <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2021-2023 <a href="{% url 'about' %}" class="hover:underline">Redo io</a>. All Rights Reserved.
-          </span>
-          <ul class="flex justify-center mt-5 space-x-5">
-              <li>
-                  <a href="{% url 'facebook' %}" aria-label="Facebook page" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                  </a>
-              </li>
-              <li>
-                  <a href="{% url 'twitter' %}" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-                      <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-
-
-                  </a>
-              </li>
-              <li>
-                  <a href="{% url 'linkedin' %}" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-                      <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-                  </a>
-              </li>
-              
-          </ul>
-      </div>
-  </div>
 </footer>

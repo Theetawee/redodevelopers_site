@@ -1,9 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
 *{
     font-family: 'Open Sans', sans-serif;
+}
+
+/* Style for the links */
+.navlink {
+    display: block;
+    text-decoration: none;
+    color: #6B7280; /* Text color */
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+}
+.navlink.dropdown{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hover effect for the links */
+.navlink:hover {
+    color:#ee6435 ; /* Text color on hover */
+}
+
+/* Underline animation on hover */
+.navlink::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #ee6435; /* Underline color */
+    transition: width 0.3s ease;
+}
+
+.navlink:hover::after {
+    width: 100%;
+}
+
+.navlink.active{
+    color: #ee6435;
+}
+.navlink.active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: #ee6435; /* Underline color */
+    transition: width 0.3s ease;
 }

@@ -47,13 +47,13 @@
 
 {% include 'main/hero.html' %}
 
-<section data-aos="zoom-in" data-aos-duration="1000"
- data-aos-easing="ease-in-out"
- class="bg-gradient-to-b from-blue-900 via-gray-900 to-black dark:bg-gray-900 py-16 text-white">
+
+
+<section class="bg-gradient-to-b from-blue-900 via-gray-900 to-black dark:bg-gray-900 py-16 text-white">
     <div class="container mx-auto px-4">
         <div class="text-center mb-8">
             <h2 class="text-4xl md:text-5xl font-extrabold text-white">Unlocking Success with Redo io</h2>
-            <p class="max-w-xl text-lg md:text-xl text-gray-200 dark:text-gray-300 mx-auto mt-4">Discover the power of innovation and excellence.</p>
+            <p class="max-w-2xl text-lg md:text-xl text-gray-200 dark:text-gray-300 mx-auto mt-4">Discover the unparalleled power of innovation and excellence.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -64,15 +64,22 @@
 
             <!-- Content -->
             <div class="md:mt-0 mt-10">
-                <p class="my-8 font-light text-gray-300 sm:text-xl dark:text-gray-400">Redo io - where innovation meets excellence.</p>
-                <p class="mb-3 font-light text-gray-300 sm:text-xl dark:text-gray-400">We've made our mark with:</p>
+                <p class="my-8 font-light text-gray-300 sm:text-xl dark:text-gray-400">Redo io - Where Innovation Meets Excellence.</p>
+                <p class="mb-3 font-light text-gray-300 sm:text-xl dark:text-gray-400">Our Reputation Speaks Volumes:</p>
                 <ul class="ml-5 text-sm md:text-xl text-gray-400 dark:text-gray-300 list-disc pl-4">
                     <li>Transforming Businesses through Cutting-Edge Solutions</li>
                     <li>Empowering Clients with User-Centric Design</li>
                     <li>Accelerating Digital Transformation for Enterprises</li>
                     <li>Enhancing Software Security and Scalability</li>
                 </ul>
-<p class="my-8 font-light text-gray-300 sm:text-xl dark:text-gray-400">Our commitment to excellence and client success stories sets us apart. Join us on the journey to success.</p>
+                <p class="my-8 font-light text-gray-300 sm:text-xl dark:text-gray-400">Our Unwavering Commitment to Excellence and Proven Success Stories Set Us Apart. Join Us on the Journey to Success.</p>
+                
+                <!-- Central Button -->
+                <div class="text-center">
+                    <a href="#" type="button" class="bg-primary-500 text-white hover:bg-primary-600 focus:outline-none focus:ring-4 focus:ring-orange-300 font-medium rounded-full text-lg px-8 py-3">Start Your Journey Now</a>
+                </div>
+                
+                <!-- Achievements -->
                 <section>
                     <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
                         <dl class="grid max-w-screen-md gap-8 mx-auto sm:grid-cols-3 text-white">
@@ -86,7 +93,7 @@
                             </div>
                             <div class="flex flex-col items-center justify-center">
                                 <dt class="mb-2 text-3xl md:text-4xl font-extrabold">100+</dt>
-                                <dd class="font-light text-gray-200 dark:text-gray-400">Happy Clients</dd>
+                                <dd class="font-light text-gray-200 dark:text-gray-400">Satisfied Clients</dd>
                             </div>
                         </dl>
                     </div>
@@ -98,44 +105,43 @@
 
 
 
+
+
+
 <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">For Businesses</h2>
-        <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Empowering Your Business</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Card 1 -->
-            <div data-aos-duration="1000"
- data-aos-easing="ease-in-out" data-aos="flip-left" class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="flip-left" class="bg-white rounded-lg shadow-md p-4">
                 <img src="{% static 'images/castsol.webp' %}" alt="Custom Software Solutions" class="w-full object-cover h-[200px] rounded-lg">
                 <h3 class="text-xl font-semibold mt-4">Custom Software Solutions</h3>
-                <p class="text-gray-700 mt-2">Crafting custom software solutions tailored to meet your unique business needs and drive growth.</p>
-                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Contact us now</a>
+                <p class="text-gray-700 mt-2">Unlock the potential of your business with tailor-made software solutions designed to meet your unique needs and drive growth.</p>
+                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Get Started</a>
             </div>
 
             <!-- Card 2 -->
-            <div data-aos-delay="50" data-aos-duration="1000"
- data-aos-easing="ease-in-out" data-aos="flip-right" class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="flip-right" class="bg-white rounded-lg shadow-md p-4">
                 <img src="{% static 'images/web-home.webp' %}" alt="Web and Mobile App Development" class="w-full object-cover h-[200px] rounded-lg">
                 <h3 class="text-xl font-semibold mt-4">Web and Mobile App Development</h3>
-                <p class="text-gray-700 mt-2">Creating engaging web and mobile applications to enhance user experience and accessibility.</p>
-                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Contact us now</a>
+                <p class="text-gray-700 mt-2">Enhance user experience and accessibility with engaging web and mobile applications crafted for your business.</p>
+                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Get Started</a>
             </div>
 
             <!-- Card 3 -->
-            <div data-aos-delay="100" data-aos-duration="1000"
- data-aos-easing="ease-in-out" data-aos="flip-left" class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="flip-left" class="bg-white rounded-lg shadow-md p-4">
                 <img src="{% static 'images/cloud.webp' %}" alt="Cloud Services and Migration" class="w-full object-cover h-[200px] rounded-lg">
                 <h3 class="text-xl font-semibold mt-4">Cloud Services and Migration</h3>
-                <p class="text-gray-700 mt-2">Leveraging cloud technology for scalability, security, and cost-efficiency.</p>
-                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Contact us now</a>
+                <p class="text-gray-700 mt-2">Harness the power of the cloud for scalability, security, and cost-efficiency in your business operations.</p>
+                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Get Started</a>
             </div>
 
             <!-- Card 4 -->
-            <div data-aos-delay="150" data-aos-duration="1000"
- data-aos-easing="ease-in-out" data-aos="flip-right" class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="flip-right" class="bg-white rounded-lg shadow-md p-4">
                 <img src="{% static 'images/ux.webp' %}" alt="UI/UX Design" class="w-full object-cover h-[200px] rounded-lg">
                 <h3 class="text-xl font-semibold mt-4">UI/UX Design</h3>
-                <p class="text-gray-700 mt-2">Designing visually appealing and user-friendly interfaces for your software products.</p>
-                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Contact us now</a>
+                <p class="text-gray-700 mt-2">Create visually appealing and user-friendly interfaces for your software products that resonate with your audience.</p>
+                <a href="{% url 'contact' %}" class="text-indigo-600 hover:underline font-semibold mt-2 block">Get Started</a>
             </div>
         </div>
     </div>
@@ -143,21 +149,19 @@
 
 
 
-
-<section data-aos-delay="150" data-aos-duration="1000"
- data-aos-easing="ease-in-out" data-aos="fade-down" class="bg-white dark:bg-gray-900 py-12">
+<section data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="fade-down" class="bg-white dark:bg-gray-900 py-12">
     <div class="max-w-screen-xl mx-auto px-4 lg:px-6 flex flex-col lg:flex-row items-center justify-between">
         <div class="lg:w-1/2 mb-8 lg:mb-0">
-            <h2 class="mb-6 text-4xl font-semibold text-gray-900 dark:text-white">Solving Our Customers' Toughest Software Challenges</h2>
-            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">At Redo io, we are committed to providing innovative solutions to the most complex software challenges faced by our customers. Our team of experts works tirelessly to understand your unique needs and develop software that not only meets but exceeds your expectations.</p>
-            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">We thrive on tackling tough problems and turning them into opportunities for growth. Whether it's streamlining your business processes, enhancing user experiences, or ensuring the security of your data, we are here to help you succeed.</p>
+            <h2 class="mb-6 text-4xl font-semibold text-gray-900 dark:text-white">Unlocking Success Through Innovation</h2>
+            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">At Redo io, we don't just solve software challenges; we transform them into opportunities for success. Our team of dedicated experts is driven by a passion for innovation and a commitment to your vision.</p>
+            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">We thrive on tackling the toughest problems and delivering solutions that propel your business forward. Whether it's streamlining processes, enhancing user experiences, or ensuring data security, we're here to empower your journey towards excellence.</p>
+            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">Experience the difference with Redo io - where challenges are met with innovation and obstacles are opportunities.</p>
         </div>
         <div class="lg:w-1/2 md:ml-5">
-            <img src="{% static 'images/sol.webp' %}" alt="Solving Challenges" class="rounded-lg">
+            <img src="{% static 'images/sol.webp' %}" alt="Unlocking Success" class="rounded-lg">
         </div>
     </div>
 </section>
-
 
 
 {% endblock %}
