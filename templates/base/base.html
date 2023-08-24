@@ -7,6 +7,7 @@
     <meta name="description" content="{% block des %}{% endblock %}">
     {% include 'base/seo.html' %} 
     {% block head%}{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/aos.css'%}">
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
     <script src="{% static 'js/swiper.js'%}"></script>
     <link rel="stylesheet" href="{% static 'css/swipper.css' %}">
@@ -38,5 +39,9 @@
             document.getElementById('loader').style.display='none';
         })
     </script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script>
+    AOS.init();
+  </script>
 </body>
 </html>

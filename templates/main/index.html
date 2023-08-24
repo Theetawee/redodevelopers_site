@@ -47,7 +47,9 @@
 
 {% include 'main/hero.html' %}
 
-<section class="bg-gradient-to-b from-blue-900 via-gray-900 to-black dark:bg-gray-900 py-16 text-white">
+<section data-aos="zoom-in" data-aos-duration="1000"
+ data-aos-easing="ease-in-out"
+ class="bg-gradient-to-b from-blue-900 via-gray-900 to-black dark:bg-gray-900 py-16 text-white">
     <div class="container mx-auto px-4">
         <div class="text-center mb-8">
             <h2 class="text-4xl md:text-5xl font-extrabold text-white">Unlocking Success with Redo io</h2>
@@ -101,7 +103,8 @@
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">For Businesses</h2>
         <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Card 1 -->
-            <div class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-duration="1000"
+ data-aos-easing="ease-in-out" data-aos="flip-left" class="bg-white rounded-lg shadow-md p-4">
                 <img src="{% static 'images/castsol.webp' %}" alt="Custom Software Solutions" class="w-full object-cover h-[200px] rounded-lg">
                 <h3 class="text-xl font-semibold mt-4">Custom Software Solutions</h3>
                 <p class="text-gray-700 mt-2">Crafting custom software solutions tailored to meet your unique business needs and drive growth.</p>
@@ -109,7 +112,8 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-delay="50" data-aos-duration="1000"
+ data-aos-easing="ease-in-out" data-aos="flip-right" class="bg-white rounded-lg shadow-md p-4">
                 <img src="{% static 'images/web-home.webp' %}" alt="Web and Mobile App Development" class="w-full object-cover h-[200px] rounded-lg">
                 <h3 class="text-xl font-semibold mt-4">Web and Mobile App Development</h3>
                 <p class="text-gray-700 mt-2">Creating engaging web and mobile applications to enhance user experience and accessibility.</p>
@@ -117,7 +121,8 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-delay="100" data-aos-duration="1000"
+ data-aos-easing="ease-in-out" data-aos="flip-left" class="bg-white rounded-lg shadow-md p-4">
                 <img src="{% static 'images/cloud.webp' %}" alt="Cloud Services and Migration" class="w-full object-cover h-[200px] rounded-lg">
                 <h3 class="text-xl font-semibold mt-4">Cloud Services and Migration</h3>
                 <p class="text-gray-700 mt-2">Leveraging cloud technology for scalability, security, and cost-efficiency.</p>
@@ -125,7 +130,8 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-delay="150" data-aos-duration="1000"
+ data-aos-easing="ease-in-out" data-aos="flip-right" class="bg-white rounded-lg shadow-md p-4">
                 <img src="{% static 'images/ux.webp' %}" alt="UI/UX Design" class="w-full object-cover h-[200px] rounded-lg">
                 <h3 class="text-xl font-semibold mt-4">UI/UX Design</h3>
                 <p class="text-gray-700 mt-2">Designing visually appealing and user-friendly interfaces for your software products.</p>
@@ -137,38 +143,9 @@
 
 
 
-<section class="bg-gray-50 dark:bg-gray-800 py-16">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">Discover Our Story</h2>
-            <p class="max-w-xl text-lg text-gray-600 dark:text-gray-300 mx-auto mt-4">Experience the journey that defines our company and drives our vision.</p>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Text -->
-            <div>
-                <p class="mb-6 text-gray-600 dark:text-gray-400 leading-relaxed">Our story is woven with a thread of passion, innovation, and dedication. It's a journey that has brought us from inception to a global presence, shaping industries along the way.</p>
-                <p class="mb-6 text-gray-600 dark:text-gray-400 leading-relaxed">We invite you to explore the chapters of our journey, the people behind our success, and the values that guide us forward.</p>
-                <p class="mt-8 text-gray-600 dark:text-gray-400 leading-relaxed">Begin your exploration on our <a href="{% url 'about' %}" class="text-indigo-500 hover:underline">Company </a> page and join us on a path filled with inspiration and innovation.</p>
-            </div>
-
-            <!-- Data -->
-            <div class="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-sm">
-                <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Our Journey Highlights</h3>
-                <ul class="list-disc ml-5 text-gray-600 dark:text-gray-400">
-                    <li>Decades of Industry Experience</li>
-                    <li>Global Reach and Impact</li>
-                    <li>Countless Successful Projects</li>
-                    <li>Dedicated Team of Experts</li>
-                    <li>Award-Winning Achievements</li>
-                </ul>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="bg-white dark:bg-gray-900 py-12">
+<section data-aos-delay="150" data-aos-duration="1000"
+ data-aos-easing="ease-in-out" data-aos="fade-down" class="bg-white dark:bg-gray-900 py-12">
     <div class="max-w-screen-xl mx-auto px-4 lg:px-6 flex flex-col lg:flex-row items-center justify-between">
         <div class="lg:w-1/2 mb-8 lg:mb-0">
             <h2 class="mb-6 text-4xl font-semibold text-gray-900 dark:text-white">Solving Our Customers' Toughest Software Challenges</h2>
