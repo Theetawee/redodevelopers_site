@@ -98,4 +98,26 @@ def iot(request):
     return render(request,'main/iot.html' )
 
 def get_meeting(request):
+    if request.POST:
+        name=request.POST['name']
+        email=request.POST['email']
+        role=request.POST['role']
+        phone=request.POST['phone']
+        company=request.POST['company']
+        needs=request.POST['needs']
+        if Newsletter.objects.filter(email=email).exists():
+            pass
+        else:
+            new=Newsletter.objects.create(email=email)
+            new.save()
+        send_mail(
+                'Meeting Request',
+                f'New meeting request:\nName: {name}\nEmail: {email}\nRole: {role}\nPhone: {phone}\nCompany: {company}\nNeeds: {needs}',
+                'redodevs@gmail.com',
+                ['redodevs@gmail.com'],
+                fail_silently=True
+            )
+        messages.success(request, f'Thank you for contacting us. We have sent you an email containing more information about your demo')
+        return redirect('meeting')
+        
     return render(request,'main/meeting.html' )
