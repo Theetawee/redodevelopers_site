@@ -96,3 +96,6 @@ def linkedin(request):
 
 def iot(request):
     return render(request,'main/iot.html' )
+
+def get_meeting(request):
+    return render(request,'main/meeting.html' )

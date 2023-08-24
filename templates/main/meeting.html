@@ -1,0 +1,35 @@
+{% extends 'base/base.html' %}
+{% block head %}
+<!-- Twitter Card for Request a Meeting Page -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@redodevs" />
+<meta name="twitter:title" content="Request a Meeting - Redo io" />
+<meta name="twitter:description" content="Request a meeting with us to discuss your needs and requirements." />
+<meta name="twitter:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png" />
+<meta name="twitter:image:alt" content="Request a Meeting Image" />
+
+<!-- Open Graph (Facebook, WhatsApp, etc.) for Request a Meeting Page -->
+<meta property="og:title" content="Request a Meeting - Redo io">
+<meta property="og:site_name" content="Redo io">
+<meta property="og:url" content="https://redodevelopers.site/request/meeting/">
+<meta property="og:description" content="Request a meeting with us to discuss your needs and requirements.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png">
+<meta property="og:locale" content="en_US" />
+
+<!-- Other metadata specific to the Request a Meeting page -->
+
+<link rel="canonical" href="https://redodevelopers.site/request/meeting/" />
+{% endblock %}
+{% block des %}Request a meeting with us to discuss your needs and requirements.{% endblock %}
+{% block title %}Request a Meeting - Redo io{% endblock %}
+{% block content %}
+{% load static %}
+<!-- Your Request a Meeting content goes here -->
+<div class="container">
+    <h1>Request a Meeting</h1>
+    <form action="#" method="post">
+        <!-- Your form fields go here -->
+    </form>
+</div>
+{% endblock %}
