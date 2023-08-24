@@ -44,7 +44,7 @@
                     </li>
                     
                     <li>
-                        <a href="{% url 'contact' %}" class="navlink pt-3 md:pt-0 md:py-1 " title="Contact us">Contact us</a>
+                        <a href="{% url 'contact' %}" class="navlink {% if request.path == '/contact/' %} active {% endif %} pt-3 md:pt-0 md:py-1 " title="Contact us">Contact us</a>
                     </li>
                 </ul>
             </div>
