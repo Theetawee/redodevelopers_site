@@ -30,29 +30,10 @@
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul class="flex flex-col p-4 md:p-0 mt-4  border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="{% url 'home' %}" class="navlink pt-3 md:pt-0 md:py-1 {% if request.path == '/' %} active {% endif %}" title="Homepage">Home {{request.path}}</a>
+                        <a href="{% url 'home' %}" class="navlink pt-3 md:pt-0 md:py-1 {% if request.path == '/' %} active {% endif %}" title="Homepage">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="navlink pt-3 md:pt-0 md:py-1" title="Who we help">Who we help</a>
-                    </li>
-                    <li>
-                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="navlink pt-3 md:pt-0 md:py-1 dropdown">
-                            Our Services 
-                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                            </svg>
-                        </button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-md shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="{% url 'custom' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Custom Software Development</a>
-                                </li>
-                                <li>
-                                    <a href="{% url 'web' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Services</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <a href="{% url 'services' %}" class="navlink pt-3 md:pt-0 md:py-1 {% if request.path == '/services/' %} active {% endif %}" title="Our services">Our Services</a>
                     </li>
                     <li>
                         <a href="{% url 'solutions' %}" class="navlink {% if request.path == '/solutions/' %} active {% endif %} pt-3 md:pt-0 md:py-1" title="Our Software solutions">Our innovations</a>
