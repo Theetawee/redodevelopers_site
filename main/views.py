@@ -121,3 +121,28 @@ def get_meeting(request):
         return redirect('meeting')
         
     return render(request,'main/meeting.html' )
+
+
+
+
+def newsletter_page(request):
+    emails = Newsletter.objects.all()
+    
+    if request.method == 'POST':
+        msg = request.POST['msg']
+        
+        for email_obj in emails:
+            email = email_obj.email  # Assuming you have an 'email' field in your Newsletter model
+            subject = 'Your Subject Here'
+            message = f'Hello, \n\n{msg}'
+            from_email = 'info@redodevelopers.site'  # Replace with your email
+            recipient_list = [email]
+
+            # Send the email
+            send_mail(subject, message, from_email, recipient_list, fail_silently=False)
+
+    context = {
+        'emails': emails
+    }
+    
+    return render(request, 'main/news.html', context)

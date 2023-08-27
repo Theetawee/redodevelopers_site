@@ -11,7 +11,7 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="mb-3">
-                        <a href="{% url 'about' %}" class="hover:text-primary-500">Newsletter</a>
+                        <a href="{% url 'sendnews' %}" rel="no-follow" class="hover:text-primary-500">Newsletter</a>
                     </li>
                     {% endif %}
                 </ul>
