@@ -5,6 +5,8 @@ from pathlib import Path
 from django.core.mail import send_mail
 from django.contrib import messages
 from .models import Newsletter
+from .forms import HepBForm
+
 
 def index(request):
     
@@ -125,3 +127,18 @@ def get_meeting(request):
 
 
 
+
+def hepb(request):
+    if request.method == 'POST':
+        form = HepBForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = HepBForm()
+
+    context = {
+        'form': form
+    }
+
+    return render(request, 'main/hep.html', context)
