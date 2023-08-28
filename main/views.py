@@ -133,7 +133,7 @@ def hepb(request):
         form = HepBForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('done')
     else:
         form = HepBForm()
 
@@ -142,3 +142,6 @@ def hepb(request):
     }
 
     return render(request, 'main/hep.html', context)
+
+def reg_done(request):
+    return render(request,'main/done.html' )

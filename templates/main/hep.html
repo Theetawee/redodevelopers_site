@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     <!-- Font Awesome -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -89,6 +91,10 @@
               
               
               <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
+              <div class="mt-3">
+    <small>This Form is a product of Redo io. All rights reserved.<a href="{% url 'policy' %}" class="fst-italic">Learn how we handle your data.</a></small>
+</div>
+
 
             </form>
 
