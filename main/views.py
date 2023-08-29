@@ -132,7 +132,12 @@ def hepb(request):
     if request.method == 'POST':
         form = HepBForm(request.POST)
         if form.is_valid():
-            form.save()
+            reg=form.save()
+            subject = 'Registration Confirmation'
+            message = f'Name: {reg.name} \nPhone: {reg.phone}\nGender: {reg.gender}\nSchool: {reg.school}\nState: {reg.state}'
+            from_email = 'redodevs@gmail.com'
+            recipient_list = ['redodevs@gmail.com']
+            send_mail(subject, message, from_email, recipient_list,fail_silently=True)            
             return redirect('done')
     else:
         form = HepBForm()
@@ -145,3 +150,7 @@ def hepb(request):
 
 def reg_done(request):
     return render(request,'main/done.html' )
+
+
+
+    
