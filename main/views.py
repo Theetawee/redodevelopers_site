@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse,FileResponse
 from django.shortcuts import redirect, render
 import os
 from pathlib import Path
@@ -6,6 +6,7 @@ from django.core.mail import send_mail
 from django.contrib import messages
 from .models import Newsletter
 from .forms import HepBForm
+from django.conf import settings
 
 
 def index(request):
@@ -153,4 +154,33 @@ def reg_done(request):
 
 
 
-    
+
+from django.http import StreamingHttpResponse
+
+def download_apk(request):
+    # Define the path to your APK file
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    apk_file_path = os.path.join(BASE_DIR, 'templates', 'main', 'Space.apk')
+
+    # Check if the file exists
+    if os.path.exists(apk_file_path):
+        # Function to stream the file in chunks
+        def file_iterator(file_path, chunk_size=8192):
+            with open(file_path, 'rb') as file:
+                while True:
+                    chunk = file.read(chunk_size)
+                    if not chunk:
+                        break
+                    yield chunk
+
+        # Set the content type as 'application/vnd.android.package-archive'
+        response = StreamingHttpResponse(
+            file_iterator(apk_file_path),
+            content_type='application/vnd.android.package-archive'
+        )
+        # Set the content disposition to force download
+        response['Content-Disposition'] = f'attachment; filename="{os.path.basename(apk_file_path)}"'
+        return response
+    else:
+        # Handle the case where the file doesn't exist
+        return HttpResponse('APK file not found', status=404)
