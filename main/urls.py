@@ -1,5 +1,5 @@
 from django.urls import path,re_path
-from .views import index,services,policy,sitemap,robots,contact,company,solutions,newsletter,twitter,facebook,linkedin,iot,get_meeting,hepb,reg_done,download_apk
+from .views import index,services,policy,sitemap,robots,contact,company,solutions,newsletter,twitter,facebook,linkedin,iot,get_meeting,hepb,reg_done,download_apk,space_app,space_website
 
 
 urlpatterns=[
@@ -19,5 +19,7 @@ urlpatterns=[
     path('request/meeting/',get_meeting,name='meeting'),
     path('iihas-HepB-Campaign/',hepb,name='hep'),
     path('done/',reg_done,name='done'),
-    path('apps/space/',download_apk,name='space')
+    path('apps/space/',space_app,name='space'),
+    path('space-website/',space_website,name='space-website'),
+    path('downloads/space/',download_apk,name='space-apk')
 ]

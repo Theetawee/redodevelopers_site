@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <link rel="shortcut icon" href="https://theetawee.github.io/poetry_cdn/images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narrator's Space Android App</title>
+</head>
+<body>
+    
+<header>
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="{% url 'home' %}" class="flex items-center">
+      <img src="{% static 'images/logo.svg' %}" class="h-8 mr-3" alt="Flowbite Logo">
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Redo io</span>
+  </a>
+  <div class="flex md:order-2">
+      <a href="{% url 'space-apk' %}"  class="text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">Download app</a>
+      
+  </div>
+  </div>
+</nav>
+</header>   
+
+<div class="h-16"></div>
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 max-w-5xl mx-auto sm:py-16 lg:px-6">
+        <div class="max-w-5xl ">
+            <!-- App Name and Icon -->
+            <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">Narrator's Space: Connect and Explore!</h2>
+            <div class="mb-8 flex flex-col mt-5 items-center">
+                <img src="{% static 'images/space.png' %}" class="w-32 h-32 object-cover rounded-xl" alt="Narrator's Space">
+            </div>
+            
+            <!-- App Description -->
+            <p class="mb-8 text-start text-gray-600 sm:text-lg dark:text-gray-400">Space is your go-to platform for connecting with friends, family, and like-minded communities. Dive into a world of possibilities with features like Articles, Social Networking, and more.</p>
+            
+            <!-- Key Features -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                <div class="flex items-center space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <p class="text-lg font-semibold text-gray-800">Connect with Your Literary Community</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <p class="text-lg font-semibold text-gray-800">Explore a World of Engaging Articles</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <p class="text-lg font-semibold text-gray-800">Engage, Discuss, and Share Your Stories</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15a2 2 0 0 1-2 2h-4.586a1 1 0 0 0-.707.293l-1.414 1.414a1 1 0 0 1-1.414 0l-1.414-1.414a1 1 0 0 0-.707-.293H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v10zM15 13V3m0 10h6m-6 0H9"></path></svg>
+                    <p class="text-lg font-semibold text-gray-800">Read, Share, and Connect Anywhere</p>
+                </div>
+            </div>
+
+            <!-- App Details -->
+            <div class="text-left mb-8">
+                <p class="text-lg text-gray-700">
+                    <span class="font-semibold">App Size:</span> 1.08 MB (Lite)
+                </p>
+                <p class="text-lg text-gray-700">
+                    <span class="font-semibold">System Requirements:</span> Android 6.0 and up
+                </p>
+                <p class="text-lg text-gray-700">
+                    <span class="font-semibold">Version:</span> 1.0.0.0
+                </p>
+                <p class="text-lg text-gray-700">
+                    <span class="font-semibold">Contact Developers:</span> products@redodevelopers.site
+                </p>
+                <p class="text-lg text-gray-700">
+                    <span class="font-semibold">Privacy Policy:</span> <a href="{% url 'policy' %}" class="text-teal-500 hover:underline">Read Now</a>
+                </p>
+            </div>
+
+            <!-- Download CTA -->
+            <div>
+                <a href="{% url 'space-website' %}" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-900 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                    Visit Website
+                </a>
+                <a href="{% url 'space-apk' %}" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-gray-800" fill="currentColor" viewBox="0 0 576 512"><path d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"/></svg>
+                    Download Android app
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray-100 py-8">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-gray-800">Available Only for Android</h2>
+
+        <p class="mt-4 text-gray-600">We apologize, but our mobile app is currently available exclusively for Android devices. However, iPhone users and those on other devices can still enjoy our platform in the following ways:</p>
+        
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition duration-300 ease-in-out">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Access Our Website</h3>
+                <p class="text-gray-600">iPhone users and users of other devices can access our platform's full features by visiting our website.</p>
+                <a href="{% url 'space-website' %}" class="inline-block mt-4 bg-teal-500 text-white py-2 px-6 rounded-lg font-medium hover:bg-teal-600 transition duration-300 ease-in-out">Visit Website</a>
+            </div>
+            <div class="bg-white rounded-lg p-6 text-center hover:shadow-lg transition duration-300 ease-in-out">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Install as PWA</h3>
+                <p class="text-gray-600">For iPhone users, you can install our platform as a Progressive Web App (PWA) to enjoy a seamless experience.</p>
+                <button type="button" data-modal-target="staticModal" data-modal-toggle="staticModal" class="inline-block mt-4 bg-blue-500 text-white py-2 px-6 rounded-lg font-medium hover:bg-blue-600 transition duration-300 ease-in-out">Install as PWA</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="bg-gray-100 py-8">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">App Screenshots</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Screenshot 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="{% static 'images/screenshot1.jpg' %}" alt="Screenshot 1" class="w-full h-auto">
+            </div>
+            <!-- Screenshot 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="{% static 'images/screenshot2.jpg' %}" alt="Screenshot 2" class="w-full h-auto">
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="{% static 'images/screenshot3.jpg' %}" alt="Screenshot 1" class="w-full h-auto">
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal toggle -->
+
+<!-- Main modal -->
+<div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    Install Progressive Web App (PWA)
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="staticModal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 space-y-6">
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Progressive Web Apps (PWAs) offer a convenient way to access our platform on your device. Here's how to install it on different devices:
+                </p>
+
+                <!-- Install PWA instructions -->
+                <div class="bg-gray-100 p-4 rounded-lg dark:bg-gray-700">
+                    <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Install PWA on iPhone:</h4>
+                    <ol class="list-decimal list-inside text-gray-600 dark:text-gray-400 pl-4 mt-2">
+                        <li>Open Safari on your iPhone.</li>
+                        <li>Visit  <a href="{% url 'space-website'%}" class="underline text-teal-500">Space website</a>.</li>
+                        <li>Tap the "Share" button at the bottom center of the screen.</li>
+                        <li>Scroll down and select "Add to Home Screen."</li>
+                        <li>Customize the app name if desired and tap "Add."</li>
+                    </ol>
+                </div>
+
+                <div class="bg-gray-100 p-4 rounded-lg dark:bg-gray-700">
+                    <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Install PWA on Other Devices:</h4>
+                    <ol class="list-decimal list-inside text-gray-600 dark:text-gray-400 pl-4 mt-2">
+                        <li>Open your preferred browser on your device.</li>
+                        <li>Visit  <a href="{% url 'space-website'%}" class="underline text-teal-500">Space website</a>.</li>
+                        <li>Look for the browser's menu or settings.</li>
+                        <li>Choose the "Add to Home Screen" or "Install App" option.</li>
+                        <li>Follow the prompts to add it to your home screen.</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="staticModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% include 'base/footer.html' %}
+
+
+<script src="{% static 'js/flowbite.js' %}"></script>
+</body>
+</html>

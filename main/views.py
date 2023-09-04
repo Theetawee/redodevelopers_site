@@ -184,3 +184,9 @@ def download_apk(request):
     else:
         # Handle the case where the file doesn't exist
         return HttpResponse('APK file not found', status=404)
+
+def space_app(request):
+    return render(request,'main/app.html' )
+
+def space_website(request):
+    return redirect("https://elate.ink/")
