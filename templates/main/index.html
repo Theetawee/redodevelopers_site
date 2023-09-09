@@ -1,126 +1,85 @@
-{% extends 'base/base.html' %} {% load static %} {% block head %}
+{% extends 'base/base.html' %} {% load static %}
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@redodevs" />
-<meta name="twitter:title" content="Revolutionize Your Business with Custom Software Solutions | Redo IO" />
-<meta name="twitter:description" content="Unlock the power of custom software solutions with Redo IO. Your trusted tech partner for innovation in Uganda and beyond. " />
-<meta name="twitter:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png" />
-<meta name="twitter:image:alt" content="Redo io Logo" />
+{% block head %}
 
-<!-- Open Graph (Facebook, WhatsApp, etc.) -->
-<meta property="og:title" content="Redo IO: Empowering Businesses with Innovative Software Solutions in Uganda and Beyond">
-<meta property="og:site_name" content="Redo io">
-<meta property="og:url" content="https://redodevelopers.site/">
-<meta property="og:description" content="Redo IO: Empowering businesses with innovative software solutions in Uganda. Discover how our custom tech services can transform your digital journey.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png">
-<meta property="og:locale" content="en_US" />
 
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "name": "Redo io",
-  "description": "Provider of Tech and software services for Individuals and Enterprises in Uganda.",
-  "url": "https://redodevelopers.site/",
-  "logo": "https://theetawee.github.io/company_staticfiles/images/apple-icon-180.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+256779730256",
-    "contactType": "customer support"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Kampala",
-    "addressRegion": "Uganda"
-  },
-  "sameAs": [
-    "https://twitter.com/redodevs",
-    "https://www.facebook.com/profile.php?id=61550525012526",
-    "https://www.linkedin.com/company/redo-io"
-  ],
-  "keywords": "Redo, Redo io, Redo developers, Redo devs, software, digital transformation, innovative solutions, technology, business success, competitive edge, Redo Developers, software development, web development, app development, IT consulting, tech solutions, software engineering, custom software, Software company in Uganda, software outsourcing",
-  "serviceArea": {
-    "@type": "AdministrativeArea",
-    "name": "Uganda"
-  },
-  "makesOffer": [
     {
-      "@type": "Offer",
-      "name": "Custom Software Development",
-      "description": "Tailored software solutions to meet your unique business needs."
-    },
-    {
-      "@type": "Offer",
-      "name": "Web Development",
-      "description": "Creating responsive and user-friendly websites."
-    },
-    {
-      "@type": "Offer",
-      "name": "App Development",
-      "description": "Building mobile and web applications for various platforms."
-    },
-    {
-      "@type": "Offer",
-      "name": "IT Consulting",
-      "description": "Expert guidance for your IT strategy and solutions."
-    }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "reviewCount": "10"
-  }
-}
-</script>
-
-<script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "Hsync Hospital Management Software (HMS)",
-        "description": "Efficiently manage healthcare facilities with our comprehensive hospital management software.",
-        "brand": {
-          "@type": "Brand",
-          "name": "HSYNC"
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "image": [
+        "{{image_512}}",
+        "{{image_1240}}",
+       ],
+      "name": "Redo Developers Inc.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Makerere",
+        "addressLocality": "Kampala",
+        "addressRegion": "Makerere",
+        "addressCountry": "UG"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5"
         },
-        "review": {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": 4,
-            "bestRating": 5
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Fred Benson"
-          }
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": 4.4,
-          "reviewCount": 10
-        },
-        "offers": {
-          "@type": "AggregateOffer",
-          "offerCount": 5,
-          "lowPrice": 135.99,
-          "highPrice": 155.99,
-          "priceCurrency": "USD",
-        "availability": "https://schema.org/PreOrder"
-
+        "author": {
+          "@type": "Person",
+          "name": "Theron Alliance"
         }
-      }
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 0.328347383312466,
+        "longitude": 32.570499237382656
+      },
+      "url": "{{request.build_absolute_uri}}",
+      "telephone": "+256779730256",
+      "priceRange": "150",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday"
+          ],
+          "opens": "11:30",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "11:30",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "16:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "16:00",
+          "closes": "22:00"
+        }
+      ]
+    }
     </script>
 
 
-<link rel="canonical" href="https://redodevelopers.site/" />
-{% endblock %} {% block des %}Leading the way with innovative and tailored technology software solutions in Uganda and beyond, transforming businesses for sustainable success| Redo IO{% endblock %} {% block title %}Redo IO: Premier Software Company in Uganda and Beyond  
+
+
+
 {% endblock %} {% block content %}
-
-
-
 
 
 

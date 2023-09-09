@@ -4,11 +4,35 @@
 <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png" sizes="192x192" />
 <link rel="apple-touch-icon" href="{% static 'images/apple-icon-180.png' %}" sizes="180x180" />
 
-<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-
-<meta name="keywords" content="redo, software solutions, innovation, excellence, success, business,digital, future, journey">
+<meta name='robots' content='index, follow, max-snippet:-1, max-video-preview:-1' />
 
 <meta name="language" content="en" />
+
+<link rel="canonical" href="{{request.build_absolute_uri}}" />
+
+<title>{{title}}</title>
+
+<meta name="description" content="{{description}}">
+
+
+<!-- OG Tags -->
+<meta property="og:title" content="{{og_title}}" />
+<meta property="og:url" content="{{request.build_absolute_uri}}" />
+<meta property="og:image" content="{{image}}" />
+<meta property="og:type" content="{{og_type}}" />
+<meta property="og:description" content="{{description}}" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:site_name" content="Redo Developers Inc.">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@redodevs" />
+<meta name="twitter:title" content="{{og_title}}" />
+<meta name="twitter:description" content="{{description}}" />
+<meta name="twitter:image" content="{{image}}" />
+<meta name="twitter:image:alt" content="Redo io Logo" />
+<!--  -->
+
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQML7D7LLB"></script>
@@ -22,4 +46,11 @@
 
 
 
-
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://redodevelopers.site/",
+      "logo": "https://theetawee.github.io/company_staticfiles/images/512.png"
+    }
+    </script>

@@ -10,8 +10,23 @@ from django.conf import settings
 
 
 def index(request):
-    
-    return render(request, 'main/index.html')
+    title="Redo Developers Inc. | Leading Software Company in Uganda and Beyond"
+    description="Redo Developers Inc. | Leading the Way in Innovative Software and Technology Solutions for Individuals and Businesses in Uganda and Worldwide, Driving Sustainable Success."
+    og_title="Innovative Software and Technology solutions for Individuals and Bussinesses"
+    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
+    image_512="https://theetawee.github.io/company_staticfiles/images/512.png"
+    image_1240="https://theetawee.github.io/company_staticfiles/images/1240.png"
+    og_type="website"
+    context={
+        'title':title,
+        'description':description,
+        'og_title':og_title,
+        'image':image_url,
+        'og_type':og_type,
+        'image_512':image_512,
+        'image_1240':image_1240
+    }
+    return render(request, 'main/index.html',context)
 
 def company(request):
     return render(request,'main/about.html')
