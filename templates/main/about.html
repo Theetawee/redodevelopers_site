@@ -1,55 +1,32 @@
 {% extends 'base/base.html' %}
-{% block head %}
-<!-- Twitter Card for About Page -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@redodevs" />
-<meta name="twitter:title" content="About Redo io - Innovators in Software Solutions" />
-<meta name="twitter:description" content="Learn about Redo io, a leading software company dedicated to reshaping the digital landscape through innovative solutions." />
-<meta name="twitter:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png" />
-<meta name="twitter:image:alt" content="Redo io About Page Image" />
-
-<!-- Open Graph (Facebook, WhatsApp, etc.) for About Page -->
-<meta property="og:title" content="About Redo io - Innovators in Software Solutions">
-<meta property="og:site_name" content="Redo io">
-<meta property="og:url" content="https://redodevelopers.site/company/">
-<meta property="og:description" content="Learn about Redo io, a leading software company dedicated to reshaping the digital landscape through innovative solutions.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png">
-<meta property="og:locale" content="en_US" />
-
-
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "AboutPage",
-  "name": "About Redo io",
-  "description": "Learn about Redo io, a leading software company dedicated to reshaping the digital landscape through innovative solutions.",
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://redodevelopers.site/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "About",
-        "item": "https://redodevelopers.site/about/"
-      }
-    ]
-  }
-}
-</script>
-
-<link rel="canonical" href="https://redodevelopers.site/company/" />
-{% endblock %}
-{% block des %}Learn about Redo io, a leading software company dedicated to reshaping the digital landscape through innovative solutions. Our commitment to excellence is a promise to our clients, partners, and ourselves.{% endblock %}
-{% block title %}About Redo io - Innovators in Software Solutions{% endblock %}
-{% block content %}
 {% load static %}
+{% block head %}
+{% load tz %}
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{title}}",
+      "image": [
+        "{% static 'images/about.webp' %}",
+        "{% static 'images/user.webp' %}",
+        "{% static 'images/comit.webp' %}",
+        "{% static 'images/vision.webp' %}"
+       ],
+      "datePublished": "{% now 'Y-m-dTH:i:sO' %}",
+      "dateModified": "{% now 'Y-m-dTH:i:sO' %}",
+      "author": [{
+          "@type": "Person",
+          "name": "Khaotungkulmethee Pattawee",
+          "url": "{{request.build_absolute_uri}}"
+        }]
+    }
+    </script>
+  
+
+{% endblock %}
+{% block content %}
 
 
 <section class="bg-white dark:bg-gray-900">

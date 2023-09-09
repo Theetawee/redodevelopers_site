@@ -1,39 +1,29 @@
-
-<div id="cookieConsent" class="fixed fixed-bottom z-40 bottom-0 left-0 w-full right-0 p-4 dark:bg-gray-800 bg-white text-gray-900 shadow dark:text-white border">
-    <div class="flex gap-x-10 gap-y-3 flex-col md:flex-row items-center justify-between">
-        <div>
-            <p class="text-sm">We use cookies on our website to provide you with a more personalized digital experience. To learn more about how we use cookies and how you can change your cookie settings.</p>
-        </div>
-        <div class="ml-4 flex justify-center gap-x-4 items-center w-auto">
-            <button id="acceptButton" class="px-3 py-1 bg-blue-500 rounded text-sm hover:bg-blue-600 text-white focus:outline-none">Accept</button>
-            <a href="{% url 'policy' %}" class="px-3 py-1 ml-2 rounded text-sm border  hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none">Learn&nbsp;More</a>
-        </div>
-    </div>
-</div>
-<script>
-    const acceptButton = document.getElementById('acceptButton');
-    const cookieConsent = document.getElementById('cookieConsent');
-    const cookieName = "RedoCookie"; // Change the cookie name as desired
-    const cookieExpirationDays = 30; // Change the expiration time in days as desired
-
-    acceptButton.addEventListener('click', () => {
-        // Set a cookie with a customizable expiration date
-        const expirationDate = new Date();
-        expirationDate.setDate(expirationDate.getDate() + cookieExpirationDays);
-
-        document.cookie = `${cookieName}=true; expires=${expirationDate.toUTCString()}; path=/`;
-
-        // Hide the cookie consent popup
-        cookieConsent.style.display = 'none';
-    });
-
-    // Check if the user has previously accepted the cookie
-    const cookies = document.cookie.split('; ');
-    cookies.forEach(cookie => {
-        const [name, value] = cookie.split('=');
-        if (name === cookieName && value === 'true') {
-            cookieConsent.style.display = 'none';
-        }
-    });
+{% load static %}
+<script type="text/javascript" src="{% static 'js/consent.js' %}" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"implied","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Redo Developers Inc.","website_privacy_policy_url":"https://redodevelopers.site/privacy-policy/"});
+});
 </script>
 
+<!-- GoogleAnalytics -->
+<script type="text/plain" data-cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-WQML7D7LLB"></script>
+<script type="text/plain" data-cookie-consent="tracking">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WQML7D7LLB');
+</script>
+
+
+
+<!-- end of GoogleAnalytics-->
+
+
+
+
+
+
+
+<!-- <a href="#" id="open_preferences_center">Update cookies preferences</a> -->

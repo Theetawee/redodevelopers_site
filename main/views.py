@@ -29,7 +29,20 @@ def index(request):
     return render(request, 'main/index.html',context)
 
 def company(request):
-    return render(request,'main/about.html')
+    title="About Redo Developers Inc. | Leading Software Company in Uganda and Beyond"
+    description="Discover Our Journey, Mission, and Commitment to Innovation"
+    og_title="About Redo Developers Inc."
+    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
+    og_type="article"
+    context={
+        'title':title,
+        'description':description,
+        'og_title':og_title,
+        'image':image_url,
+        'og_type':og_type
+    }
+    
+    return render(request,'main/about.html',context)
 
 def solutions(request):
     return render(request,'main/solutions.html')
