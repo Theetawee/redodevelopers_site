@@ -81,9 +81,16 @@
 
 {% endblock %} {% block content %}
 
+<style>
+    .indexsect{
+        background-image:linear-gradient(rgba(255, 255, 255, 0.795),rgba(255, 255, 255, 0.747)), url("{% static 'images/512.png' %}");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+</style>
 
-
-<section class="py-16 px-4 md:px-8">
+<section class="py-16 px-4 md:px-8 indexsect">
   <div class="container mx-auto">
     <h1 class="text-4xl font-bold text-gray-700 leading-tight">Welcome to Redo Developers Inc.</h1>
     <p class="mt-4 text-lg">Empowering Innovation through Cutting-Edge Software Solutions</p>
