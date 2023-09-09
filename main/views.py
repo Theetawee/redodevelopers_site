@@ -45,7 +45,20 @@ def company(request):
     return render(request,'main/about.html',context)
 
 def solutions(request):
-    return render(request,'main/solutions.html')
+    title = "Software Products | Redo Developers Inc."
+    description = "Explore the best tailored Software products for Your Business Needs. These include Hospital Management System (HMS) and others"
+    og_title = "Leading Software Products by Redo Developers Inc."
+    image_url = "https://theetawee.github.io/company_staticfiles/images/logo.png"
+    og_type = "website"
+    context = {
+        'title': title,
+        'description': description,
+        'og_title': og_title,
+        'image': image_url,
+        'og_type': og_type
+    }
+    
+    return render(request, 'main/solutions.html', context)
 
 def services(request):
     return render(request,'main/services.html')
