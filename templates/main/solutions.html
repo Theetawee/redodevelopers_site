@@ -1,24 +1,32 @@
 {% extends 'base/base.html' %}
 {% block head %}
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@redodevs" />
-<meta name="twitter:title" content="Software Solutions - Redo io" />
-<meta name="twitter:description" content="Explore our software solutions that demonstrate Redo io's commitment to innovation and excellence." />
-<meta name="twitter:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png" />
-<meta name="twitter:image:alt" content="Redo io Software Solutions Image" />
-
-
-<meta property="og:title" content="Software Solutions - Redo io">
-<meta property="og:site_name" content="Redo io">
-<meta property="og:url" content="https://redodevelopers.site/solutions/">
-<meta property="og:description" content="Explore our software solutions that demonstrate Redo io's commitment to innovation and excellence.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png">
-<meta property="og:locale" content="en_US" />
-
-
-
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Hospital Management System Software (HMS)",
+      "description": "A cutting-edge hospital management solution, at the forefront of healthcare innovation in Uganda. Engineered to revolutionize healthcare operations, Hsync is more than just software; it's a catalyst for excellence in hospital management.",
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 4,
+          "bestRating": 5
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Theron Alliance"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.4,
+        "reviewCount": 89
+      }
+    }
+    </script>
+  
 {% endblock %}
 {% block content %}
 {% load static %}

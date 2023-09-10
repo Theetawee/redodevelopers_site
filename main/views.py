@@ -61,7 +61,20 @@ def solutions(request):
     return render(request, 'main/solutions.html', context)
 
 def services(request):
-    return render(request,'main/services.html')
+    title="Our Services | Redo Developers Inc. - Tailored Technology and Software Solutions"
+    description="Explore a Range of Innovative Technology Services Tailored to Your Needs. Redo Developers Inc. offers a comprehensive suite of technology solutions designed to transform businesses and drive success."
+    og_title="Our Services"
+    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
+    og_type="website"
+    context={
+        'title':title,
+        'description':description,
+        'og_title':og_title,
+        'image':image_url,
+        'og_type':og_type
+    }
+    
+    return render(request,'main/services.html',context)
 
 def policy(request):
     return render(request,'main/privacy.html')
