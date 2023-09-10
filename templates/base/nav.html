@@ -3,8 +3,7 @@
     <nav class="bg-white fixed w-full z-40 top-0 left-0 dark:bg-gray-900  border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="{% url 'home' %}" title="Homepage" class="flex items-center">
-            <img src="{% static 'images/logo.svg' %}" class="h-8 mr-3" alt="Redo io Logo">
-            <span class="self-center text-2xl hidden md:flex font-semibold  whitespace-nowrap text-primary-500">Redo io</span>
+            <img src="{% static 'images/logo.svg' %}" class="h-8 mr-3" alt="Redo Developers Inc. Logo">
             </a>
             <div class="flex md:order-2">
               <a href="{% url 'meeting' %}" class="bg-primary-500 mr-2 md:mr-0 uppercase hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
@@ -31,7 +30,7 @@
                     </li>
                     
                     <li>
-                        <a href="{% url 'about' %}" class="navlink pt-3 md:pt-0 md:py-1 {% if request.path == '/company/' %} active {% endif %}" title="About Redo io">About us</a>
+                        <a href="{% url 'about' %}" class="navlink pt-3 md:pt-0 md:py-1 {% if request.path == '/company/' %} active {% endif %}" title="About Redo Developers Inc.">About us</a>
                     </li>
                     
                     <li>
