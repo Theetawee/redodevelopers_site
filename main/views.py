@@ -168,6 +168,19 @@ def iot(request):
     return render(request,'main/iot.html' )
 
 def get_meeting(request):
+    title="Request a Meeting"
+    description="Request a meeting with us to discuss your needs with Redo Developers Inc."
+    og_title="Request a Meeting"
+    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
+    og_type="website"
+    context={
+        'title':title,
+        'description':description,
+        'og_title':og_title,
+        'image':image_url,
+        'og_type':og_type
+    }
+    
     if request.POST:
         name=request.POST['name']
         email=request.POST['email']
@@ -190,7 +203,7 @@ def get_meeting(request):
         messages.success(request, f'Thank you for contacting us. We have sent you an email containing more information about your demo')
         return redirect('meeting')
         
-    return render(request,'main/meeting.html' )
+    return render(request,'main/meeting.html',context )
 
 
 
