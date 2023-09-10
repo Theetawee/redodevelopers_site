@@ -90,6 +90,19 @@ def sitemap(request):
     return render(request,'main/sitemap.xml')
 
 def contact(request):
+    title="Contact Redo Developers Inc. - Get in Touch with Us"
+    description="Contact Redo Developers Inc. for any inquiries or assistance. We're here to help."
+    og_title="Get in Touch with Redo Developers Inc."
+    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
+    og_type="website"
+    context={
+        'title':title,
+        'description':description,
+        'og_title':og_title,
+        'image':image_url,
+        'og_type':og_type
+    }
+    
     if request.method=='POST':
         email=request.POST['email']
         name=request.POST['name']
@@ -110,7 +123,7 @@ def contact(request):
             messages.error(request,'We ran into an issue please try again')
             return redirect('contact')   
         
-    return render(request,'main/contact.html')
+    return render(request,'main/contact.html',context)
 
 
 def custom_404_view(request,exception):

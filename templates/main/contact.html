@@ -1,29 +1,12 @@
 {% extends 'base/base.html' %}
 {% block head %}
-<!-- Twitter Card for Contact Page -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@redodevs" />
-<meta name="twitter:title" content="Contact Redo io - Get in Touch with Us" />
-<meta name="twitter:description" content="Contact Redo io for any inquiries or assistance. We're here to help." />
-<meta name="twitter:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png" />
-<meta name="twitter:image:alt" content="Redo io Contact Page Image" />
-
-<!-- Open Graph (Facebook, WhatsApp, etc.) for Contact Page -->
-<meta property="og:title" content="Contact Redo io - Get in Touch with Us">
-<meta property="og:site_name" content="Redo io">
-<meta property="og:url" content="https://redodevelopers.site/contact/">
-<meta property="og:description" content="Contact Redo io for any inquiries or assistance. We're here to help.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png">
-<meta property="og:locale" content="en_US" />
-
 
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "ContactPage",
   "name": "Contact Redo io",
-  "description": "Contact Redo io for any inquiries or assistance. We're here to help.",
+  "description": "Contact Redo Developers Inc. for any inquiries or assistance. We're here to help.",
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -37,17 +20,14 @@
         "@type": "ListItem",
         "position": 2,
         "name": "Contact",
-        "item": "https://redodevelopers.site/contact/"
+        "item": "{{request.build_absolute_uri}}"
       }
     ]
   }
 }
 </script>
 
-<link rel="canonical" href="https://redodevelopers.site/contact/" />
 {% endblock %}
-{% block des %}Contact Redo io for any inquiries or assistance. We're here to help.{% endblock %}
-{% block title %}Contact Redo io - Get in Touch with Us{% endblock %}
 {% block content %}
 {% load static %}
 
