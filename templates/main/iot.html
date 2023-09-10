@@ -1,61 +1,29 @@
 {% extends 'base/base.html' %}
 {% block head %}
 {% load static %}
-    <!-- Add your page-specific meta tags here -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@redodevs" />
-    <meta name="twitter:title" content="IoT Solutions | Redo io - Innovating the Future" />
-    <meta name="twitter:description" content="Explore our IoT solutions at Redo io. We leverage the power of the Internet of Things to create innovative and efficient systems. Contact us to unlock the potential of IoT for your business!" />
-    <meta name="twitter:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png" />
-    <meta name="twitter:image:alt" content="Redo io IoT Solutions Image" />
-
-    <meta property="og:title" content="IoT Solutions | Redo io - Innovating the Future">
-    <meta property="og:site_name" content="Redo io">
-    <meta property="og:url" content="https://redodevelopers.site/iot-solutions/">
-    <meta property="og:description" content="Explore our IoT solutions at Redo io. We leverage the power of the Internet of Things to create innovative and efficient systems. Contact us to unlock the potential of IoT for your business!">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://theetawee.github.io/company_staticfiles/images/logo.png">
-    <meta property="og:locale" content="en_US" />
+    
 
     <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "WebPage",
-            "name": "IoT Solutions | Redo io",
-            "description": "Explore our IoT solutions at Redo io. We leverage the power of the Internet of Things to create innovative and efficient systems. Contact us to unlock the potential of IoT for your business!",
-            "url": "https://redodevelopers.site/iot-solutions/",
-            "publisher": {
-                "@type": "Organization",
-                "name": "Redo io",
-                "url": "https://redodevelopers.site/"
-            },
-            "breadcrumb": {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://redodevelopers.site/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "IoT Solutions",
-                        "item": "https://redodevelopers.site/iot-solutions/"
-                    }
-                ]
-            }
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{title}}",
+      "image": [
+        "{% static 'images/iotsol.webp' %}",
+        "{% static 'images/sup.webp' %}"
+       ],
+      "datePublished": "{% now 'Y-m-dTH:i:sO' %}",
+      "dateModified": "{% now 'Y-m-dTH:i:sO' %}",
+      "author": [{
+          "@type": "Person",
+          "name": "Khaotungkulmethee Pattawee",
+          "url": "{{request.build_absolute_uri}}"
+        }]
+    }
     </script>
-    <link rel="canonical" href="https://redodevelopers.site/iot-solutions/" />
 
-{% endblock %}
-{% block des %}
-    Explore our IoT solutions at Redo io. We leverage the power of the Internet of Things to create innovative and efficient systems. Contact us to unlock the potential of IoT for your business!
-{% endblock %}
-{% block title %}
-    IoT Solutions | Redo io - Innovating the Future
+
+
 {% endblock %}
 {% block content %}
     
