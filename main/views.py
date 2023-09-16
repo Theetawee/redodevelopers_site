@@ -238,9 +238,20 @@ def hepb(request):
 
     return render(request, 'main/hep.html', context)
 
-def reg_done(request):
-    return render(request,'main/done.html' )
-
-
+def contact_sales(request):
+    title="Contact Sales | Redo Developers Inc."
+    description="Call us, chat with us, or book a meeting with our sales team to learn how you can use Redo Developers Inc. to grow better."
+    og_title="Contact Sales"
+    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
+    og_type="website"
+    context={
+        'title':title,
+        'description':description,
+        'og_title':og_title,
+        'image':image_url,
+        'og_type':og_type
+    }
+    
+    return render(request,'main/sales.html',context )
 
 

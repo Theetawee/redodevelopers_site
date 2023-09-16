@@ -1,5 +1,5 @@
 from django.urls import path,re_path
-from .views import index,services,policy,sitemap,robots,contact,company,solutions,newsletter,twitter,facebook,linkedin,iot,get_meeting,hepb,reg_done
+from .views import index,services,policy,sitemap,robots,contact,company,solutions,newsletter,twitter,facebook,linkedin,iot,get_meeting,contact_sales
 
 
 urlpatterns=[
@@ -17,7 +17,5 @@ urlpatterns=[
     path('linkedIn/',linkedin,name='linkedin'),
     path('iot-solutions/',iot,name='iot'),
     path('request/meeting/',get_meeting,name='meeting'),
-    path('iihas-HepB-Campaign/',hepb,name='hep'),
-    path('done/',reg_done,name='done'),
-    
+    path('support/sales/',contact_sales,name='sales')
 ]
