@@ -4,7 +4,7 @@ from .views import index,policy,sitemap,robots,contact,company,solutions,newslet
 
 urlpatterns=[
     path('',index,name='home'),
-    path('privacy-policy/',policy,name='policy'),
+    path('legal/privacy-policy/',policy,name='policy'),
     path('sitemap/',sitemap,name='sitemap'),
     re_path(r'^robots\.txt$', robots, name='robots'),
     path('contact/',contact,name='contact'),
