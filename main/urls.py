@@ -18,5 +18,5 @@ urlpatterns=[
     path('iot-solutions/',iot,name='iot'),
     path('request/meeting/',get_meeting,name='meeting'),
     path('support/sales/',contact_sales,name='sales'),
-    path('ceo/',the_ceo,name='ceo')
+    path('board/founder/',the_ceo,name='ceo')
 ]

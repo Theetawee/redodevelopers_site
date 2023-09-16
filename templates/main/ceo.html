@@ -1,0 +1,41 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block nav %}
+
+<header class="z-40">
+    <nav class="flex items-center justify-between  gap-6 p-4 max-w-4xl mx-auto">
+        <div class="w-full">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'images/logo.svg' %}" class="w-10 h-10" alt="">
+            </a>
+        </div>
+        
+    </nav>
+</header>
+
+        
+{% endblock %}
+
+{% block content %}
+
+<section class="bg-white dark:bg-dark-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+        <h1 class="mb-4 text-4xl font-medium leading-10 text-stone-800 dark:text-white">Khaotungkulmethee Pattawee Drake: Visionary Founder, Owner, Chairman, and CEO</h1>
+        <div class="py-10 bg-[#f3eeea] rounded-md shadow-md">
+            <img src="{% static 'images/thoe.png'%}" class="w-full h-96 object-contain" alt="Khaotungkulmethee Pattawee Drake, Owner of Redo Developers Inc.">
+        </div>
+        <div class="py-8">
+        <p class="mb-6  text-gray-600 dark:text-gray-400">Meet Khaotungkulmethee Pattawee Drake, the driving force and visionary behind Redo Developers Inc., where he serves as the Founder, Owner, Chairman, and Chief Executive Officer. With a passion for innovation and a relentless pursuit of excellence, Pattawee has been instrumental in shaping the company's overarching vision and product strategy.</p>
+        <p class="mb-6  text-gray-600 dark:text-gray-400">Originally established as Redo IO in 2021, under Pattawee's leadership, the company underwent a transformative journey and reemerged as Redo Developers Inc. in June 2023. This rebranding signifies a broader spectrum of offerings, expanding into an entire family of services that pioneer immersive social experiences and cutting-edge technology solutions.</p>
+        <p class="mb-8  text-gray-600 dark:text-gray-400">Pattawee's journey in the world of technology began in the picturesque city of Chiang Mai, Thailand. Armed with a strong foundation in computer science, he embarked on a global adventure, eventually relocating to Makerere, Uganda, in 2021. There, he continued to expand his horizons by pursuing studies in Medical Laboratory Technology, a testament to his dedication to knowledge and innovation.</p>
+        <p class="mb-6  text-gray-600 dark:text-gray-400">Experience the dynamic fusion of technology, innovation, and immersive social experiences crafted by Pattawee and the Redo Developers Inc. team. Join us in exploring the future of innovation and discover how Pattawee's leadership is reshaping the world of technology and software solutions.</p>
+        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            </div>
+            <!-- Add any additional content or links here if needed -->
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

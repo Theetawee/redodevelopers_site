@@ -219,7 +219,20 @@ def get_meeting(request):
 
 
 def the_ceo(request):
-    return redirect('home')
+    title="Khaotungkulmethee Pattawee Drake, Owner of Redo Developers Inc. "
+    description="Khaotungkulmethee Pattawee Drake is the owner of Redo Developers Inc.. As of 2023, Pattawee is the CEO and Chairman of Redo Developers Inc."
+    og_title="Contact Sales"
+    image_url="https://theetawee.github.io/company_staticfiles/images/thoe.png"
+    og_type="website"
+    context={
+        'title':title,
+        'description':description,
+        'og_title':og_title,
+        'image':image_url,
+        'og_type':og_type
+    }
+    
+    return render(request,'main/ceo.html',context )
 
 
 
