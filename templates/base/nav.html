@@ -23,7 +23,7 @@
         <a href="{% url 'about' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About us</a>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Carrers</a>
+        <a href="{% url 'carrer' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Carrers</a>
       </li>
       <li>
         <a href="{% url 'contact' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact us</a>
@@ -243,6 +243,9 @@
             <ul id="dropdown-example2" class="hidden py-2 space-y-2">
                   <li>
                      <a href="{% url 'about' %}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">About us</a>
+                  </li>
+                  <li>
+                     <a href="{% url 'carrer' %}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Carrers</a>
                   </li>
             </ul>
          </li>

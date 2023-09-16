@@ -253,3 +253,18 @@ def contact_sales(request):
     return render(request,'main/sales.html',context )
 
 
+def carrer(request):
+    title="Carrers | Redo Developers Inc."
+    description="Exciting opportunities await you at Redo Developers Inc. Check back for our latest job postings and be a part of our innovative journey."
+    og_title="Carrers"
+    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
+    og_type="website"
+    context={
+        'title':title,
+        'description':description,
+        'og_title':og_title,
+        'image':image_url,
+        'og_type':og_type
+    }
+    
+    return render(request,'main/carrer.html',context )
