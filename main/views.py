@@ -1,12 +1,10 @@
-from django.http import HttpResponse,FileResponse
+from django.http import HttpResponse
 from django.shortcuts import redirect, render
 import os
 from pathlib import Path
 from django.core.mail import send_mail
 from django.contrib import messages
 from .models import Newsletter
-from .forms import HepBForm
-from django.conf import settings
 
 
 def index(request):
@@ -219,7 +217,7 @@ def get_meeting(request):
 def the_ceo(request):
     title="Khaotungkulmethee Pattawee Drake, Owner of Redo Developers Inc. "
     description="Khaotungkulmethee Pattawee Drake is the owner of Redo Developers Inc.. As of 2023, Pattawee is the CEO and Chairman of Redo Developers Inc."
-    og_title="Contact Sales"
+    og_title="Khaotungkulmethee Pattawee Drake, Owner of Redo Developers Inc. "
     image_url="https://theetawee.github.io/company_staticfiles/images/thoe.png"
     og_type="website"
     context={
