@@ -1,6 +1,29 @@
 {% extends 'base/base.html' %}
 {% load static %}
 
+
+{% block head %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is the Owner of Redo Developers Inc.?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Redo Developers Inc. was founded by Khaotungkulmethee Pattawee Drake in 2021 under the name Redo IO. In 2023, it underwent a rebranding and emerged as Redo Developers Inc. Pattawee Drake is the visionary founder and owner of the company."
+      }
+    }
+  ]
+}
+</script>
+
+  
+{% endblock %}
+
 {% block nav %}
 
 <header class="z-40">
