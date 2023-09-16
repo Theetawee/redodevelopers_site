@@ -58,7 +58,20 @@ def solutions(request):
 
 
 def policy(request):
-    return render(request,'main/privacy.html')
+    title="Our Privacy Policy. | Redo Developers Inc."
+    description="Curious on how Redo Developers Inc. handles your data? Explore how we handle and protect your data and information to make sure its safe 24/7."
+    og_title="Privacy Policy."
+    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
+    og_type="website"
+    context={
+        'title':title,
+        'description':description,
+        'og_title':og_title,
+        'image':image_url,
+        'og_type':og_type
+    }
+    
+    return render(request,'main/privacy.html',context)
 
 
 def robots(request):

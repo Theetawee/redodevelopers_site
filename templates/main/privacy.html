@@ -1,90 +1,88 @@
-<!DOCTYPE html>
+{% extends 'base/base.html' %}
 {% load static %}
-<html lang="en">
-    <head>
-      <link rel="stylesheet" href="{% static 'css/output.css' %}">
-        <script src="{% static 'js/flowbite.js'%}"></script>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="src/output.css" />
-        <link rel="shortcut icon" href="{% static 'images/logo.svg' %}" type="image/svg+xml">
-    <link rel="icon" href="{% static 'images/logo.png' %}" sizes="192x192" />
-    <link rel="apple-touch-icon" href="{% static 'images/logo.png' %}" />
-    <meta name="msapplication-TileImage" content="{% static 'images/logo.png' %}" />
-    <meta name="geo.region" content="UG-102" />
-    <meta name="geo.placename" content="Kampala" />
-    <meta name="geo.position" content="0.317714;32.581354" />
-    <meta name="ICBM" content="0.317714, 32.581354" />
-    
-        <title>Privacy Policy - Redo io</title>
-        {% include 'base/seo.html' %}
-        <meta name="description" content="Read our Privacy Policy to understand how Redo io collects, uses, and protects your personal information. Your privacy is important to us.">
-        <link rel="canonical" href="https://redodevelopers.site/privacy-policy/" />
-    </head>
-    <body>
-        <header class="bg-orange-400 fixed top-0 w-full h-16 flex items-center justify-center shadow-md text-white">
-            <h1 class="text-center font-bold text-2xl"><a href="{% url 'home' %}">Redo io</a></h1>
-        </header>
-        <br />
-        <div class="mt-16 px-4">
-            <p class="mb-4 text-xl"><strong>Effective: </strong> August,17 2023</p>
-        </div>
 
-        <main class="my-10">
-            <section class="bg-white dark:bg-gray-900">
-                <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                    <div class="max-w-screen-md mb-8 lg:mb-16">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Privacy Policy</h2>
-                        <p class="text-gray-500 mb-8 sm:text-xl dark:text-gray-400">
+
+{% block nav %}
+
+<header class="z-40 bg-white fixed top-0 left-0 w-full shadow">
+    <nav class="flex items-center justify-between gap-6 p-4 max-w-4xl mx-auto">
+        <div class="w-full">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'images/logo.svg' %}" class="w-10 h-10" alt="">
+            </a>
+        </div>
+        <div class="text-center text-sm">
+            <span><span class="font-medium italic">Effective:</span> {% now "F Y" %}</span>
+        </div>
+    </nav>
+</header>
+        
+{% endblock %}
+
+{% block content %}
+
+<section class="bg-white dark:bg-gray-900 py-16">
+                <div class="pt-16 px-4 mx-auto max-w-screen-xl  lg:px-6">
+                    <div>
+                        <h1 class="mb-4 text-4xl tracking-tight font-medium text-stone-700 dark:text-white">Redo Developers Inc. Privacy Policy</h1>
+                        <p class="text-stone-800 mb-8 ">
                             We get it – privacy policies can be a bit overwhelming to read through. But here's the scoop: we're required by law to provide you with all the nitty-gritty details about how we handle your data. Don't worry,
                             though – we've done our best to make it as clear and straightforward as possible. So, if you're up for it, grab a cup of coffee and dive into our privacy policy. It's like the "terms and conditions" part of using
                             our services, and it's there to ensure your data is safe and sound.
                         </p>
-                        <p class="text-gray-500 sm:text-xl dark:text-gray-400">If you decide not to read every word of the Privacy Policy, please remember at least the following:</p>
+                        
                     </div>
-                    <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-                        <div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Privacy and Transparency</h3>
-                            <p class="text-gray-500 dark:text-gray-400">
-                                Your privacy matters to us. Redo io is designed to give you control over your data and protect your personal information. We're committed to being transparent about how we handle your data.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Terms and Conditions</h3>
-                            <p class="text-gray-500 dark:text-gray-400">
-                                By using our services, you agree to our terms and conditions. These terms outline your rights and responsibilities when using Redo io, so you know what to expect from our platform.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Security and Compliance</h3>
-                            <p class="text-gray-500 dark:text-gray-400">
-                                We take security seriously. Our systems are designed to ensure the safety of your information. We also follow industry standards to ensure compliance with data protection regulations.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">User-Friendly Experience</h3>
-                            <p class="text-gray-500 dark:text-gray-400">
-                                We're all about making things easy for you. Our platform is designed with user-friendliness in mind. From intuitive interfaces to helpful guides, we're here to enhance your experience.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Customization Options</h3>
-                            <p class="text-gray-500 dark:text-gray-400">
-                                Tailor your experience with us. Our customizable features and settings allow you to personalize your interaction with Redo io, making it work just the way you want it to.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="mb-2 text-xl font-bold dark:text-white">Support and Assistance</h3>
-                            <p class="text-gray-500 dark:text-gray-400">
-                                We're here to help. Whether you have questions, need assistance, or want to provide feedback, our support team is available to ensure you have a smooth and positive experience with Redo io.
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
             </section>
 
-            <section class="bg-white dark:bg-gray-900">
+
+<section class="bg-gray-100 dark:bg-gray-900 py-16">
+    <div class=" px-4 mx-auto max-w-screen-xl  lg:px-6">
+        <p class="text-stone-800 text-lg mb-8">If you decide not to read every word of the Privacy Policy, please remember at least the following:</p>
+<div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                        <div class=" p-4 shadow rounded-lg border border-stone-300 bg-white">
+                            <h3 class="mb-2 text-xl font-medium text-stone-800">Privacy and Transparency</h3>
+                            <p class="text-stone-800 dark:text-gray-400">
+                                Your privacy matters to us. Redo Developers Inc. is designed to give you control over your data and protect your personal information. We're committed to being transparent about how we handle your data.
+                            </p>
+                        </div>
+                        <div class=" p-4 shadow rounded-lg border border-stone-300 bg-white">
+                            <h3 class="mb-2 text-xl font-medium text-stone-800">Terms and Conditions</h3>
+                            <p class="text-stone-800 dark:text-gray-400">
+                                By using our services, you agree to our terms and conditions. These terms outline your rights and responsibilities when using Redo Developers Inc., so you know what to expect from our platform.
+                            </p>
+                        </div>
+                        <div class=" p-4 shadow rounded-lg border border-stone-300 bg-white">
+                            <h3 class="mb-2 text-xl font-medium text-stone-800">Security and Compliance</h3>
+                            <p class="text-stone-800 dark:text-gray-400">
+                                We take security seriously. Our systems are designed to ensure the safety of your information. We also follow industry standards to ensure compliance with data protection regulations.
+                            </p>
+                        </div>
+                        <div class=" p-4 shadow rounded-lg border border-stone-300 bg-white">
+                            <h3 class="mb-2 text-xl font-medium text-stone-800">User-Friendly Experience</h3>
+                            <p class="text-stone-800 dark:text-gray-400">
+                                We're all about making things easy for you. Our platform is designed with user-friendliness in mind. From intuitive interfaces to helpful guides, we're here to enhance your experience.
+                            </p>
+                        </div>
+                        <div class=" p-4 shadow rounded-lg border border-stone-300 bg-white">
+                            <h3 class="mb-2 text-xl font-medium text-stone-800">Customization Options</h3>
+                            <p class="text-stone-800 dark:text-gray-400">
+                                Tailor your experience with us. Our customizable features and settings allow you to personalize your interaction with Redo Developers Inc., making it work just the way you want it to.
+                            </p>
+                        </div>
+                        <div class=" p-4 shadow rounded-lg border border-stone-300 bg-white">
+                            <h3 class="mb-2 text-xl font-medium text-stone-800">Support and Assistance</h3>
+                            <p class="text-stone-800 dark:text-gray-400">
+                                We're here to help. Whether you have questions, need assistance, or want to provide feedback, our support team is available to ensure you have a smooth and positive experience with Redo Developers Inc..
+                            </p>
+                        </div>
+                    </div>
+
+</div></section>
+
+
+<section class="bg-primary-500  dark:bg-gray-900">
                 <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
                     <figure class="max-w-screen-md mx-auto">
                         <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,42 +92,43 @@
                             />
                         </svg>
                         <blockquote>
-                            <p class="text-2xl font-medium text-gray-900 dark:text-white">
-                                Understanding how my data is collected and used is important to me. Redo io's commitment to transparency and user privacy gives me the confidence to explore its features and use its products knowing that my
+                            <p class="text-2xl font-medium text-stone-50 dark:text-white">
+                                Understanding how my data is collected and used is important to me. Redo Developers Inc.'s commitment to transparency and user privacy gives me the confidence to explore its features and use its products knowing that my
                                 information is in safe hands.
                             </p>
                         </blockquote>
                         <figcaption class="flex items-center justify-center mt-6 space-x-3">
                             <img class="w-6 h-6 rounded-full" src="https://i.ibb.co/3zZMnfQ/I80W1Q0.png" alt="profile picture" />
                             <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                <div class="pr-3 font-medium text-gray-900 dark:text-white">Jackson</div>
-                                <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Redo io User</div>
+                                <div class="pr-3 font-medium text-stone-100 dark:text-white">Jackson</div>
+                                <div class="pl-3 text-sm font-light text-stone-300 dark:text-gray-400">Redo Developers Inc. User</div>
                             </div>
                         </figcaption>
                     </figure>
                 </div>
             </section>
 
-            <section class="bg-white dark:bg-gray-900">
+<section class="bg-white dark:bg-gray-900 py-16">
                 <div class="px-4 mx-auto max-w-screen-xl lg:px-6">
                     <div class="max-w-screen-md">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">What data do you collect about me?</h2>
-                        <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">You give some data, we get some data. In return we offer useful services. Not what you had in mind? Let explore this.</p>
+                        <h2 class="mb-4 text-4xl tracking-tight font-medium text-stone-700 dark:text-white">What data do you collect about me?</h2>
+                        <p class="mb-8 font-light text-stone-800 ">You give some data, we get some data. In return we offer useful services. Not what you had in mind? Let explore this.</p>
                     </div>
                 </div>
             </section>
 
-            <section class="bg-white dark:bg-gray-900 mb-20">
+
+<section class="bg-white dark:bg-gray-900 mb-20">
                 <div class="px-4 mx-auto lg:px-6">
                     <div class="max-w-5xl mx-auto">
                         <h2 class="mb-3 font-light text-gray-600 text-2xl dark:text-gray-400">Information we collect</h2>
-                        <p class="mb-8 font-light text-gray-500 text-lg dark:text-gray-400">The information we collect when you any Redo io product falls into three categories as ellaborated below.</p>
+                        <p class="mb-8 font-light text-stone-800 text-lg dark:text-gray-400">The information we collect when you any Redo Developers Inc. product falls into three categories as ellaborated below.</p>
 
                         <div id="accordion-collapse" data-accordion="collapse">
                             <h2 id="accordion-collapse-heading-1">
                                 <button
                                     type="button"
-                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-stone-800 border border-b-0 border-gray-200 rounded-t-xl focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                                     data-accordion-target="#accordion-collapse-body-1"
                                     aria-expanded="true"
                                     aria-controls="accordion-collapse-body-1"
@@ -142,16 +141,16 @@
                             </h2>
                             <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
                                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    <p class="mb-2 text-stone-800 dark:text-gray-400">
                                         To use some of our products and services you need to have an account, and to create an account, you need to provide us certain information. Likewise, if you use our paid products and services, we
                                         cannot provide them to you without getting payment information. Basically, certain information is necessary if you want to use many of our products and services.
                                     </p>
-                                    <ul class="list-disc pl-5 text-gray-500 dark:text-gray-400">
+                                    <ul class="list-disc pl-5 text-stone-800 dark:text-gray-400">
                                         <li class="mb-3">
                                             <strong>Personal accounts; </strong> If you create an account, you must provide us with some information so that we can provide our services to you. This includes a display name (for example,
                                             “Redo Express”); a username (for example, @RedoExpress); a password; an email address or phone number; a date of birth; your display language; and third-party single sign-in information (if you
-                                            choose this sign-in method). You can also choose to share your location for forum and social products, and to upload your address book to Redo io to help find people you may know. Your profile
-                                            information, which includes your display name and username, is always public, but you can use either your real name or a pseudonym. And remember, you can create multiple Redo io accounts, for
+                                            choose this sign-in method). You can also choose to share your location for forum and social products, and to upload your address book to Redo Developers Inc. to help find people you may know. Your profile
+                                            information, which includes your display name and username, is always public, but you can use either your real name or a pseudonym. And remember, you can create multiple Redo Developers Inc. accounts, for
                                             example, to express different parts of your identity, professional or otherwise.
                                         </li>
                                         <li class="mb-3">
@@ -168,7 +167,7 @@
                             <h2 id="accordion-collapse-heading-2">
                                 <button
                                     type="button"
-                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-stone-800 border border-b-0 border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                                     data-accordion-target="#accordion-collapse-body-2"
                                     aria-expanded="false"
                                     aria-controls="accordion-collapse-body-2"
@@ -181,20 +180,20 @@
                             </h2>
                             <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    <p class="mb-2 text-stone-800 dark:text-gray-400">
                                         When you use our services, we collect information about how you use our products and services. We use that information to provide you with products and services, to help keep our products more secure
                                         and respectful for everyone, and more relevant to you.
                                     </p>
-                                    <ul class="list-disc pl-5 text-gray-500 dark:text-gray-400">
+                                    <ul class="list-disc pl-5 text-stone-800 dark:text-gray-400">
                                         <li class="mb-3">
-                                            <strong>Usage information; </strong> We collect information about your activity on Redo io products, including content you post in regard to social and forum products (including the date,
+                                            <strong>Usage information; </strong> We collect information about your activity on Redo Developers Inc. products, including content you post in regard to social and forum products (including the date,
                                             application, and version of product) Your interactions with other users’ content, such as posts, likes, shares, replies,questions, if other users mention or tag you in content or if you mention or
                                             tag them, and broadcasts you’ve participated in (including your viewing history, listening, commenting, speaking, and reacting). How you interact with others on the platform, such as people you
                                             follow and people who follow you, and when you use Direct Messages, including the contents of the messages, the recipients, and date and time of messages. If you communicate with us, such as
                                             through email, we will collect information about the communication and its content. We collect information on links you interact with across our services (including in our emails sent to you).
                                         </li>
                                         <li class="mb-3">
-                                            <strong>Purchase and payments; </strong> To allow you to make a payment or send money using Redo io features or services, including through an intermediary, we may receive information about your
+                                            <strong>Purchase and payments; </strong> To allow you to make a payment or send money using Redo Developers Inc. features or services, including through an intermediary, we may receive information about your
                                             transaction such as when it was made, when a subscription is set to expire or auto-renew, and amounts paid or received.
                                         </li>
                                         <li class="mb-3">
@@ -208,15 +207,15 @@
                                         </li>
                                         <li class="mb-3">
                                             <strong>Inferred Identity; </strong> When you sign into any of our products on a browser or device, we will associate that browser or device with your account. Subject to your settings, we may
-                                            also associate your account with browsers or devices other than those you use to sign into Redo io (or associate your signed-out device or browser with other browsers or devices or Redo-generated
-                                            identifiers). When you provide other information to Redo io, including an email address or phone number, we associate that information with your Redo account. Subject to your settings, we may also
+                                            also associate your account with browsers or devices other than those you use to sign into Redo Developers Inc. (or associate your signed-out device or browser with other browsers or devices or Redo-generated
+                                            identifiers). When you provide other information to Redo Developers Inc., including an email address or phone number, we associate that information with your Redo account. Subject to your settings, we may also
                                             use this information in order to infer other information about your identity, for example by associating your account with hashes of email addresses that share common components with the email
-                                            address you have provided to Twitter. When you access Redo io and are not signed in, we may infer your identity based on the information we collect.
+                                            address you have provided to Twitter. When you access Redo Developers Inc. and are not signed in, we may infer your identity based on the information we collect.
                                         </li>
                                         <li class="mb-3">
                                             <strong>Log information; </strong> We may receive information when you view content on or otherwise interact with our products and services, even if you have not created an account or are signed
                                             out, such as: IP address; browser type and language; operating system; the referring webpage; access times; pages visited; location; your mobile carrier; device information (including device and
-                                            application IDs); search terms and IDs (including those not submitted as queries); ads shown to you on Redo io; Redo-generated identifiers; and identifiers associated with cookies. We also receive
+                                            application IDs); search terms and IDs (including those not submitted as queries); ads shown to you on Redo Developers Inc.; Redo-generated identifiers; and identifiers associated with cookies. We also receive
                                             log information when you click on, view, or interact with links on our services, including when you install another application through our products.
                                         </li>
                                         <li class="mb-3">
@@ -238,7 +237,7 @@
                             <h2 id="accordion-collapse-heading-3">
                                 <button
                                     type="button"
-                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-stone-800 border border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                                     data-accordion-target="#accordion-collapse-body-3"
                                     aria-expanded="false"
                                     aria-controls="accordion-collapse-body-3"
@@ -251,13 +250,13 @@
                             </h2>
                             <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
                                 <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">When you use other online products and services, they may share information about that usage with us.</p>
-                                    <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                    <p class="mb-2 text-stone-800 dark:text-gray-400">When you use other online products and services, they may share information about that usage with us.</p>
+                                    <ul class="pl-5 text-stone-800 list-disc dark:text-gray-400">
                                         <li class="mb-3">
                                             <strong>Ad Partners, Developers, Publishers; </strong> Our ad and business partners share information with us such as browser cookie IDs, Redo-generated identifiers, mobile device IDs, hashed user
                                             information like email addresses, demographic or interest data, and content viewed or actions taken on a website or app. Some of our ad partners, particularly our advertisers, also enable us to
                                             collect similar information directly from their website or app by integrating our advertising technology. Information shared by ad partners and affiliates or collected by our products from the
-                                            websites and apps of ad partners and affiliates may be combined with the other information you share with our products and that Redo io receives, generates, or infers about you described elsewhere
+                                            websites and apps of ad partners and affiliates may be combined with the other information you share with our products and that Redo Developers Inc. receives, generates, or infers about you described elsewhere
                                             in this Privacy Policy.
                                         </li>
                                     </ul>
@@ -271,8 +270,8 @@
             <section class="bg-white dark:bg-gray-900">
                 <div class="px-4 mx-auto max-w-screen-xl lg:px-6">
                     <div class="max-w-screen-md">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">How do you use my information?</h2>
-                        <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">To make Redo io the service you know and love.</p>
+                        <h2 class="mb-4 text-4xl tracking-tight font-medium text-stone-700 dark:text-white">How do you use my information?</h2>
+                        <p class="mb-8 font-light text-stone-800 ">To make Redo Developers Inc. the service you know and love.</p>
                     </div>
                 </div>
             </section>
@@ -281,7 +280,7 @@
                 <div class="px-4 mx-auto lg:px-6">
                     <div class="max-w-5xl mx-auto">
                         <h2 class="mb-3 font-light text-gray-600 text-2xl dark:text-gray-400">How We Use Information</h2>
-                        <p class="mb-8 font-light text-gray-500 text-lg dark:text-gray-400">
+                        <p class="mb-8 font-light text-stone-800 text-lg dark:text-gray-400">
                             Breaking down how we use the information we collect is not simple because of the way the systems that bring our services to you work. For example, the same piece of information may be used differently for
                             different purposes to ultimately deliver a single service. We think it’s most useful to describe the three main ways we use information and if you have questions that are not answered, you can always
                             <a href="https://redodevelopers.site/contact/" class="underline">contact us</a>. Here we go:
@@ -291,7 +290,7 @@
                             <h2 id="accordion-collapse-heading-11">
                                 <button
                                     type="button"
-                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-stone-800 border border-b-0 border-gray-200 rounded-t-xl focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                                     data-accordion-target="#accordion-collapse-body-11"
                                     aria-expanded="true"
                                     aria-controls="accordion-collapse-body-11"
@@ -304,29 +303,29 @@
                             </h2>
                             <div id="accordion-collapse-body-11" class="hidden" aria-labelledby="accordion-collapse-heading-11">
                                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    <p class="mb-2 text-stone-800 dark:text-gray-400">
                                         We use the information we collect to provide and operate our products and services. We also use the information we collect to improve and personalize our products and services so that you have a
                                         better experience, including by showing you more relevant content and ads, suggesting people and topics to follow, enabling and helping you discover affiliates, third-party apps, and services.
                                     </p>
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                        We may use the information we collect from accounts of other services that you choose to connect your Redo io account to provide you features like cross-posting or cross-service authentication, and to
+                                    <p class="mb-2 text-stone-800 dark:text-gray-400">
+                                        We may use the information we collect from accounts of other services that you choose to connect your Redo Developers Inc. account to provide you features like cross-posting or cross-service authentication, and to
                                         operate our services.
                                     </p>
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    <p class="mb-2 text-stone-800 dark:text-gray-400">
                                         We use your contact information to help others find your account if your settings permit, including through third-party services and client applications.
                                     </p>
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    <p class="mb-2 text-stone-800 dark:text-gray-400">
                                         We use your information to provide our advertising and sponsored content services subject to your settings, which helps make ads more relevant to you. We also use this information to measure the
                                         effectiveness of ads and to help recognize your devices to serve you ads on and off. Some of our ad partners also enable us to collect similar information directly from their website or app by
-                                        integrating our advertising technology. Information shared by ad partners and affiliates or collected by Redo io from the websites and apps of ad partners and affiliates may be combined with the other
-                                        information you share with our products and that Redo io receives, generates, or infers about you, as described elsewhere in our Privacy Policy.
+                                        integrating our advertising technology. Information shared by ad partners and affiliates or collected by Redo Developers Inc. from the websites and apps of ad partners and affiliates may be combined with the other
+                                        information you share with our products and that Redo Developers Inc. receives, generates, or infers about you, as described elsewhere in our Privacy Policy.
                                     </p>
                                 </div>
                             </div>
                             <h2 id="accordion-collapse-heading-22">
                                 <button
                                     type="button"
-                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-stone-800 border border-b-0 border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                                     data-accordion-target="#accordion-collapse-body-22"
                                     aria-expanded="false"
                                     aria-controls="accordion-collapse-body-22"
@@ -339,7 +338,7 @@
                             </h2>
                             <div id="accordion-collapse-body-22" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                                 <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    <p class="mb-2 text-stone-800 dark:text-gray-400">
                                         We use information we collect to provide for the safety and security of our users, our products, services, and your account. This includes verifying your identity, authenticating your account, and
                                         defending against fraud, unauthorized use, and illegal activity. We also use the information to evaluate and affect the safety and quality of content on Twitter - this includes investigating and
                                         enforcing our policies and and terms, as well as applicable law.
@@ -349,7 +348,7 @@
                             <h2 id="accordion-collapse-heading-33">
                                 <button
                                     type="button"
-                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-stone-800 border border-gray-200 focus:ring-1 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                                     data-accordion-target="#accordion-collapse-body-33"
                                     aria-expanded="false"
                                     aria-controls="accordion-collapse-body-33"
@@ -362,7 +361,7 @@
                             </h2>
                             <div id="accordion-collapse-body-33" class="hidden" aria-labelledby="accordion-collapse-heading-33">
                                 <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    <p class="mb-2 text-stone-800 dark:text-gray-400">
                                         We use the information we collect to measure and analyze the effectiveness of our products and services and to better understand how you use them in order to make them better.
                                     </p>
                                 </div>
@@ -375,9 +374,9 @@
             <section class="bg-white dark:bg-gray-900">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
                     <div class="">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">How long do you keep data?</h2>
-                        <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                            Redo io will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal
+                        <h2 class="mb-4 text-4xl tracking-tight font-medium text-stone-700 dark:text-white">How long do you keep data?</h2>
+                        <p class="mb-8 font-light text-stone-800 ">
+                            Redo Developers Inc. will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal
                             obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
                         </p>
                     </div>
@@ -387,20 +386,20 @@
             <section class="bg-white dark:bg-gray-900">
                 <div class="pb-8 px-4 mx-auto max-w-screen-xl lg:px-6">
                     <div class="">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">How can I control my data?</h2>
+                        <h2 class="mb-4 text-4xl tracking-tight font-medium text-stone-700 dark:text-white">How can I control my data?</h2>
                         <p class="mb-8 text-gray-600 font-bold sm:text-2xl dark:text-gray-400">You can access it, delete it, or change your settings. Basically, you’re the boss.</p>
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        <p class="mb-3 font-light text-stone-800 ">
                             You have the right to delete or request that we assist in deleting the personal data that We have collected about you.
                         </p>
 
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        <p class="mb-3 font-light text-stone-800 ">
                             Our Service may give You the ability to delete certain information about You from within the Service.
                         </p>
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        <p class="mb-3 font-light text-stone-800 ">
                             You may update, amend, or delete your information at any time by signing in to your Account, if you have one, and visiting the account settings section that allows you to manage your personal information. you may
                             also contact Us to request access to, correct, or delete any personal information that you have provided to Us.
                         </p>
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        <p class="mb-3 font-light text-stone-800 ">
                             Please note, however, that we may need to retain certain information when we have a legal obligation or lawful basis to do so.
                         </p>
                     </div>
@@ -410,18 +409,18 @@
             <section class="bg-white dark:bg-gray-900">
                 <div class="pb-8 px-4 mx-auto max-w-screen-xl lg:px-6">
                     <div class="">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">How does Redo io handle my information wherever I am?</h2>
+                        <h2 class="mb-4 text-4xl tracking-tight font-medium text-stone-700 dark:text-white">How does Redo Developers Inc. handle my information wherever I am?</h2>
                         <p class="mb-8 text-gray-600 font-bold sm:text-2xl dark:text-gray-400">We treat your information fairly, no matter where you live around the world.</p>
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        <p class="mb-3 font-light text-stone-800 ">
                             We provide our products to people all over the world and provide many of the same privacy tools and controls to all of our users regardless of where they live. However, your experience may be slightly different
                             than users in other countries to ensure Twitter respects local requirements.
                         </p>
 
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                            Redo io has carefully considered the legal reasons it is permitted to collect, use, share and otherwise process your information. If you want to dig in to learn more and better understand the nuances, we’d
+                        <p class="mb-3 font-light text-stone-800 ">
+                            Redo Developers Inc. has carefully considered the legal reasons it is permitted to collect, use, share and otherwise process your information. If you want to dig in to learn more and better understand the nuances, we’d
                             encourage you to check out this additional information about data processing. And no, we don’t sell your personal information.
                         </p>
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        <p class="mb-3 font-light text-stone-800 ">
                             Just as you use our products to seamlessly participate in global conversations with people in countries all over the world, Twitter must move information across borders and to different countries around the world
                             to support the safe and reliable service you depend on. For example, if you live in Europe and are having a conversation with someone in the United States, information has to move between those countries to
                             provide that experience – it’s what you expect from us.
@@ -433,9 +432,9 @@
             <section class="bg-white dark:bg-gray-900">
                 <div class="pb-8 px-4 mx-auto max-w-screen-xl lg:px-6">
                     <div class="">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Are Redo products for kids?</h2>
+                        <h2 class="mb-4 text-4xl tracking-tight font-medium text-stone-700 dark:text-white">Are Redo products for kids?</h2>
                         <p class="mb-8 text-gray-600 font-bold sm:text-2xl dark:text-gray-400">Nope, our products is not intended for people under 13.</p>
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        <p class="mb-3 font-light text-stone-800 ">
                             Our services are not directed to children, and you may not use our services if you are under the age of 13. You must also be old enough to consent to the processing of your personal data in your country (in some
                             countries we may allow your parent or guardian to do so on your behalf).
                         </p>
@@ -446,7 +445,7 @@
             <section class="bg-white dark:bg-gray-900">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                     <div class="mx-auto max-w-screen-sm text-center">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">Redo io, Hello...</h2>
+                        <h2 class="mb-4 text-4xl tracking-tight font-medium leading-tight text-stone-700 dark:text-white">Redo Developers Inc., Hello...</h2>
                     </div>
                 </div>
             </section>
@@ -454,9 +453,9 @@
             <section class="bg-white dark:bg-gray-900">
                 <div class="pb-8 px-4 mx-auto max-w-screen-xl lg:px-6">
                     <div class="">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Will this policy change?</h2>
+                        <h2 class="mb-4 text-4xl tracking-tight font-medium text-stone-700 dark:text-white">Will this policy change?</h2>
                         <p class="mb-8 text-gray-600 font-bold sm:text-2xl dark:text-gray-400">If it does, we’ll let you know.</p>
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        <p class="mb-3 font-light text-stone-800 ">
                             The most current version of this Privacy Policy governs our processing of your personal data and we may revise this Privacy Policy from time to time as needed. If we do revise this Privacy Policy and make changes
                             that are determined by us to be material, we will provide you notice and an opportunity to review the revised Privacy Policy before you continue to use our products.
                         </p>
@@ -466,26 +465,40 @@
             <section class="bg-white dark:bg-gray-900">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                     <div class="mx-auto max-w-screen-sm text-center">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">How can I contact Redo io?</h2>
-                        <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Slide into our … very official inbox.</p>
+                        <h2 class="mb-4 text-4xl tracking-tight font-medium leading-tight text-stone-700 dark:text-white">How can I contact Redo Developers Inc.?</h2>
+                        <p class="mb-6 font-light text-stone-800 dark:text-gray-400 md:text-lg">Slide into our … very official inbox.</p>
                     </div>
                     <div class="">
-                        <p class="mb-8 text-gray-600 sm:text-xl dark:text-gray-400">
+                        <p class="mb-8 text-gray-600 ">
                             We want to hear from you if you have thoughts or questions about this Privacy Policy. You can contact us via our
                             <a href="https://redodevelopers.site/contact/" target="_blank" class="underline">Contact page</a> or by writing to us at the appropriate address below.
                         </p>
 
                         <div>
-                            <p class="mb-2 text-gray-600 sm:text-xl dark:text-gray-400">Email: support@redodevelopers.site</p>
-                            <p class="mb-3 text-gray-600 sm:text-xl dark:text-gray-400">Phone: +256779730256</p>
+                            <p class="mb-2 text-gray-600 ">Email: support@redodevelopers.site</p>
+                            <p class="mb-3 text-gray-600 ">Phone: +256779730256</p>
                         </div>
-                        <p class="mb-3 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                        <p class="mb-3 font-light text-stone-800 ">
                             If you wish to raise a concern about our data processing practices, you have the right to do so with your local supervisory authority.
                         </p>
                     </div>
                 </div>
             </section>
-        </main>
+
+
+
+
+{% endblock %}
+
+
+
+
+<body>
+        <main class="my-10">
+            
+            
+            
+                    </main>
 
 
         {% include 'base/footer.html' %}
