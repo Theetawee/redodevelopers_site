@@ -2161,6 +2161,11 @@ input:checked + .toggle-bg {
   padding-bottom: 1.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
