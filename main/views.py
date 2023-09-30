@@ -215,15 +215,13 @@ def get_meeting(request):
 
 
 def the_ceo(request):
-    title="Khaotungkulmethee Pattawee Drake, Owner of Redo Developers Inc. "
-    description="Khaotungkulmethee Pattawee Drake is the owner of Redo Developers Inc.. As of 2023, Pattawee is the CEO and Chairman of Redo Developers Inc."
-    og_title="Khaotungkulmethee Pattawee Drake, Owner of Redo Developers Inc. "
+    title="Khaotungkulmethee Pattawee - Co-Founder and Chairman | Redo Developers Inc."
+    description="Learn about Khaotungkulmethee Pattawee, the Co-Founder and Chairman of Redo Developers Inc. Explore his background, vision, and contributions to the world of technology and software solutions."
     image_url="https://theetawee.github.io/company_staticfiles/images/thoe.png"
     og_type="website"
     context={
         'title':title,
         'description':description,
-        'og_title':og_title,
         'image':image_url,
         'og_type':og_type
     }
