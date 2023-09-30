@@ -2293,6 +2293,10 @@ input:checked + .toggle-bg {
   line-height: 1.25;
 }
 
+.leading-8 {
+  line-height: 2rem;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }

@@ -1,7 +1,5 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
-import os
-from pathlib import Path
 from django.core.mail import send_mail
 from django.contrib import messages
 from django.views.generic import View
@@ -38,22 +36,6 @@ def company(request):
     }
     
     return render(request,'main/about.html',context)
-
-def solutions(request):
-    title = "Software Products | Redo Developers Inc."
-    description = "Explore the best tailored Software products for Your Business Needs. These include Hospital Management System (HMS) and others"
-    og_title = "Leading Software Products by Redo Developers Inc."
-    image_url = "https://theetawee.github.io/company_staticfiles/images/logo.png"
-    og_type = "website"
-    context = {
-        'title': title,
-        'description': description,
-        'og_title': og_title,
-        'image': image_url,
-        'og_type': og_type
-    }
-    
-    return render(request, 'main/solutions.html', context)
 
 
 def policy(request):
@@ -264,3 +246,7 @@ def carrer(request):
     }
     
     return render(request,'main/carrer.html',context )
+
+
+def investors(request):
+    return render(request,'main/investors.html' )
