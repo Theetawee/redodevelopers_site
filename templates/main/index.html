@@ -9,22 +9,27 @@
 
 {% endblock %} {% block content %}
 
-
-
-<section class="bg-[#e2e2ea] dark:bg-gray-900 pt-24">
-    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <div class="mt-4 md:mt-0">
-            <span class="uppercase font-medium text-stone-600 mb-4">Introducing REDO Developers Inc. formerly <del class="text-primary-500">REDO IO</del></span>
-            <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"><span class="text-primary-600">Redo Developers Inc.</span> Innovating Solutions for a Connected World</h1>
-            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">At REDO Developers Inc., we're dedicated to crafting cutting-edge software and technology solutions that foster connectivity and innovation. Our mission is to bring people together, whether it's connecting with your loved ones or discovering new communities of shared interests.</p>
-            <a href="{% url 'meeting' %}" class="inline-flex md:mb-0 mb-6 items-center text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
-                Schedule a Meeting
-                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+<section class="bg-[#e2e2ea] dark:bg-gray-900 pt-24" data-aos="fade-up">
+    <div class="gap-x-8 gap-y-10 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div class="mt-4 mb-10 md:mb-0 md:mt-0" data-aos="fade-right">
+            <span class="uppercase font-semibold text-stone-600 text-lg mb-4">Welcome to Redo Developers Inc.</span>
+            <h1 class="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">
+                <span class="text-primary-600">Redo Developers Inc.</span> - Building Innovative Software for a Connected World
+            </h1>
+            <p class="mb-8 text-lg text-gray-600 dark:text-gray-400">
+                At Redo Developers Inc., we are driven by innovation and dedicated to simplifying your daily life through cutting-edge software and technology solutions. Our team is passionate about fostering connectivity and bringing people together in a rapidly changing world.
+            </p>
+            <div class="text-lg font-semibold text-gray-800 dark:text-gray-300 mb-4">
+                <blockquote data-aos="fade-left">"Experience the future, today."</blockquote>
+            </div>
+            <a href="{% url 'meeting' %}" class="inline-flex items-center justify-center text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:ring-primary-300 rounded-sm px-3 py-2 text-center dark:focus:ring-primary-900" data-aos="fade-up">
+                Explore Our Vision
             </a>
         </div>
-        <img class="w-full" src="{% static 'images/bg.jpg'%}" alt="Dashboard Image">
+        <img class="w-full rounded-lg" src="{% static 'images/bg.jpg' %}" alt="Innovation by Redo Developers Inc." data-aos="fade-left">
     </div>
 </section>
+
 
 
 <section class="bg-white dark:bg-gray-900">
@@ -37,11 +42,11 @@
           </div>
           <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">20+</dt>
-              <dd class="font-light text-gray-500 dark:text-gray-400">Successful Projects</dd>
+              <dd class="font-light text-gray-500 dark:text-gray-400">Innovative Projects</dd>
           </div>
           <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">95%</dt>
-              <dd class="font-light text-gray-500 dark:text-gray-400">Client Satisfaction Rate</dd>
+              <dd class="font-light text-gray-500 dark:text-gray-400">Positive Feedback</dd>
           </div>
       </dl>
   </div>
@@ -51,16 +56,16 @@
 
 
 
-
 <section class="bg-primary-100 dark:bg-gray-800 py-12">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-8">Solutions for every business</h2>
-        <p class="text-gray-600 dark:text-gray-300 text-center mb-6">Growing a business is a challenging journey, but at Redo Developers Inc., we're here to support you every step of the way. Explore some of the most common business challenges our customers face and see how our integrated software and solutions can help you overcome these obstacles and propel your business forward.</p>
+        <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white text-center mb-8">Empowering Businesses and Individuals</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 text-center mb-6">Whether you're a business owner or an individual, Redo Developers Inc. is here to support you every step of the way. Explore some of the most common challenges our customers face and see how our integrated software and solutions can help you overcome these obstacles and propel your goals forward.</p>
+        
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Card 1 -->
             <div class="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Limited Digital Presence</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Enhance Your Digital Presence</h3>
                     <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Struggling to stand out online? Explore how our digital marketing solutions can boost your online presence and reach a wider audience.</p>
                 </div>
                 
@@ -69,7 +74,7 @@
             <!-- Card 2 -->
             <div class="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Inefficient Workflow</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Optimize Workflow Efficiency</h3>
                     <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Streamlining processes is key to efficiency. Discover how our custom software solutions can automate and optimize your workflow.</p>
                 </div>
                 
@@ -78,7 +83,7 @@
             <!-- Card 3 -->
             <div class="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Data Security Concerns</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Ensure Data Security</h3>
                     <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Protecting sensitive data is vital. Learn how our cybersecurity expertise can safeguard your business from threats and breaches.</p>
                 </div>
                 
@@ -87,7 +92,7 @@
             <!-- Card 4 -->
             <div class="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Scaling Challenges</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Scale Seamlessly</h3>
                     <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">As your business grows, so do your technology needs. Explore how our scalable solutions can adapt to your growth.</p>
                 </div>
                 
@@ -96,7 +101,7 @@
             <!-- Card 5 -->
             <div class="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Customer Engagement</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Enhance Customer Engagement</h3>
                     <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Engaging with customers is essential. Discover how our CRM solutions can help you nurture leads and enhance customer communication.</p>
                 </div>
                 
@@ -105,7 +110,7 @@
             <!-- Card 6 -->
             <div class="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
                 <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">IT Resource Constraints</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Overcome IT Resource Constraints</h3>
                     <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Small to medium-sized businesses often face IT resource constraints. Learn how our IT support and managed services can provide top-notch technical expertise without the overhead.</p>
                 </div>
                 
@@ -113,7 +118,6 @@
         </div>
     </div>
 </section>
-
 
 
 
@@ -191,62 +195,55 @@
 
 <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <h3 class="mb-4 text-4xl tracking-tight font-medium text-gray-900 dark:text-white">Empowering Startups</h3>
+        <h2 class="mb-6 text-4xl font-extrabold text-gray-900 dark:text-white text-center">Empowering Startups</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Card 1 -->
-            <div data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="flip-left" class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="fade-up" class="bg-white rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
                 <img src="{% static 'images/castsol.webp' %}" alt="Custom Software Solutions" class="w-full object-cover h-[200px] rounded-lg">
-                <h4 class="text-xl font-semibold mt-4">Custom Software Solutions</h4>
+                <h3 class="text-xl font-semibold mt-4">Custom Software Solutions</h3>
                 <p class="text-gray-700 mt-2">Unlock the potential of your business with tailor-made software solutions designed to meet your unique needs and drive growth.</p>
-                
             </div>
 
             <!-- Card 2 -->
-            <div data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="flip-right" class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="fade-up" data-aos-delay="50" class="bg-white rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
                 <img src="{% static 'images/web-home.webp' %}" alt="Web and Mobile App Development" class="w-full object-cover h-[200px] rounded-lg">
-                <h4 class="text-xl font-semibold mt-4">Web and Mobile App Development</h4>
+                <h3 class="text-xl font-semibold mt-4">Web and Mobile App Development</h3>
                 <p class="text-gray-700 mt-2">Enhance user experience and accessibility with engaging web and mobile applications crafted for your business.</p>
-                
             </div>
 
             <!-- Card 3 -->
-            <div data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="flip-left" class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="fade-up" data-aos-delay="100" class="bg-white rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
                 <img src="{% static 'images/cloud.webp' %}" alt="Cloud Services and Migration" class="w-full object-cover h-[200px] rounded-lg">
-                <h4 class="text-xl font-semibold mt-4">Cloud Services and Migration</h4>
+                <h3 class="text-xl font-semibold mt-4">Cloud Services and Migration</h3>
                 <p class="text-gray-700 mt-2">Harness the power of the cloud for scalability, security, and cost-efficiency in your business operations.</p>
-                
             </div>
 
             <!-- Card 4 -->
-            <div data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="flip-right" class="bg-white rounded-lg shadow-md p-4">
+            <div data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="fade-up" data-aos-delay="150" class="bg-white rounded-lg shadow-md p-6 transition-transform transform hover:scale-105">
                 <img src="{% static 'images/ux.webp' %}" alt="UI/UX Design" class="w-full object-cover h-[200px] rounded-lg">
-                <h4 class="text-xl font-semibold mt-4">UI/UX Design</h4>
+                <h3 class="text-xl font-semibold mt-4">UI/UX Design</h3>
                 <p class="text-gray-700 mt-2">Create visually appealing and user-friendly interfaces for your software products that resonate with your audience.</p>
-                
             </div>
         </div>
         <div class="text-center py-10">
-            <button type="button" class="text-white bg-primary-500 border border-primary-300 focus:outline-none hover:bg-primary-600 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Explore our services</button>
-
+            <a href="#" class="text-white bg-primary-500 border border-primary-300 focus:outline-none hover:bg-primary-600 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-3 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700 hover:shadow-md">Explore our services</a>
         </div>
     </div>
 </section>
-
 
 
 <section data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos="fade-down" class="bg-white dark:bg-gray-900 pb-12">
     <div class="max-w-screen-xl mx-auto px-4 lg:px-6 flex flex-col lg:flex-row items-center justify-between">
         <div class="lg:w-1/2 mb-8 lg:mb-0">
-            <h3 class="mb-6 text-4xl font-semibold text-gray-900 dark:text-white">Unlocking Success Through Innovation</h3>
-            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">At Redo Developers Inc., we don't just solve software challenges; we transform them into opportunities for success. Our team of dedicated experts is driven by a passion for innovation and a commitment to your vision.</p>
-            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">We thrive on tackling the toughest problems and delivering solutions that propel your business forward. Whether it's streamlining processes, enhancing user experiences, or ensuring data security, we're here to empower your journey towards excellence.</p>
-            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">Experience the difference with Redo Developers Inc. - where challenges are met with innovation and obstacles are opportunities.</p>
+            <h2 class="mb-6 text-4xl font-extrabold text-gray-900 dark:text-white">Unlocking Success Through Innovation</h2>
+            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">At Redo Developers Inc., we are more than just a software solution provider; we are your partners in success. Our dedicated team of experts is driven by a relentless pursuit of innovation and a unwavering commitment to bringing your vision to life.</p>
+            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">We thrive on tackling the most challenging problems and turning them into opportunities that propel your business forward. Whether it's streamlining processes, enhancing user experiences, or ensuring the security of your data, we are here to empower your journey towards excellence.</p>
+            <p class="mb-4 text-lg text-gray-700 dark:text-gray-400 leading-relaxed">Experience the difference with Redo Developers Inc. – where challenges are met with creativity, and obstacles are seen as stepping stones to success.</p>
         </div>
         <div class="lg:w-1/2 md:ml-5">
-            <img src="{% static 'images/sol.webp' %}" alt="Unlocking Success" class="rounded-lg">
+            <img src="{% static 'images/sol.webp' %}" alt="Unlocking Success" class="rounded-lg ">
         </div>
     </div>
 </section>
-
 
 {% endblock %}
