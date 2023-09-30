@@ -4,8 +4,9 @@ import os
 from pathlib import Path
 from django.core.mail import send_mail
 from django.contrib import messages
+from django.views.generic import View
 from .models import Newsletter
-
+from django.template import loader
 
 def index(request):
     title="Redo Developers Inc. | Innovating Solutions for a Connected World"
@@ -72,11 +73,12 @@ def policy(request):
     return render(request,'main/privacy.html',context)
 
 
-def robots(request):
-    BASE_DIR = Path(__file__).resolve().parent.parent
-    path=os.path.join(BASE_DIR,'templates','main','robots.txt')
-    response=HttpResponse(open(path).read(),content_type='application/text')
-    return response
+class RobotsTxtView(View):
+    def get(self, request):
+        # Assuming you have placed the robots.txt file in your templates/base/ directory
+        template = loader.get_template("main/robots.txt")
+        content = template.render()
+        return HttpResponse(content, content_type="text/plain; charset=utf-8")
 
 def sitemap(request):
     return render(request,'main/sitemap.xml')
