@@ -2321,6 +2321,10 @@ input:checked + .toggle-bg {
   line-height: 1.25;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -3082,6 +3086,10 @@ input:checked + .toggle-bg {
 
   .md\:order-2 {
     order: 2;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .md\:mb-0 {
