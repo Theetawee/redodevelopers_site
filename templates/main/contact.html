@@ -34,15 +34,17 @@
 
 <section class="relative bg-cover bg-center py-16 md:py-32" style="background-image: url('https://theetawee.github.io/company_staticfiles/images/cont.webp');">
     <div class="absolute inset-0 bg-black opacity-60"></div>
-    <div class="relative max-w-screen-xl mx-auto py-24 px-4 sm:px-6 lg:px-8 flex justify-center flex-col">
-        <h2 class="text-4xl font-medium tracking-tight text-white sm:text-5xl md:text-6xl">
+    <div class="relative max-w-screen-xl mx-auto py-24 px-4 sm:px-6 lg:px-8 flex justify-center flex-col text-center">
+        <h2 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl mb-4">
             Contact Us
         </h2>
-        <p class="mt-4 text-sm text-white sm:mt-6">
-Contact our 24/7 customer care helpline for any inquires you may have regarding our products and services.
+        <p class="text-lg text-white sm:text-xl md:text-2xl leading-relaxed mb-8">
+            Have questions or need assistance with our products and services? Our 24/7 customer care helpline is here to help.
         </p>
+        
     </div>
 </section>
+
 
 
 
@@ -51,77 +53,77 @@ Contact our 24/7 customer care helpline for any inquires you may have regarding 
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <!-- Contact Information -->
             <section class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6">
-    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Contact Information</h2>
-
-    <!-- Telephone Numbers -->
-    <div class="mb-6 border-b-2 border-primary-500 pb-4">
-        <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-400 mb-2">Telephone Numbers</h3>
-        <p class="text-gray-700 dark:text-gray-400">
-            <strong>WhatsApp Support:</strong><br />
-            +256 765846845
-        </p>
-        <p class="text-gray-700 dark:text-gray-400">
-            <strong>Support:</strong><br />
-            +256 779730256
-        </p>
-    </div>
-
-    <!-- Email Addresses -->
-    <div class="mb-6 border-b-2 border-primary-500 pb-4">
-        <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-400 mb-2">Email Addresses</h3>
-        <p class="text-gray-700 dark:text-gray-400">
-            <strong>General:</strong><br />
-            info@redodevelopers.site
-        </p>
-        <p class="text-gray-700 dark:text-gray-400">
-            <strong>Support:</strong><br />
-            support@redodevelopers.site
-        </p>
-    </div>
-
-    
-    
-</section>
+                <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Contact Information</h2>
+                <!-- Telephone Numbers -->
+                <div class="mb-6 border-b-2 border-primary-500 pb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-400 mb-2">Telephone Numbers</h3>
+                    <p class="text-gray-700 dark:text-gray-400">
+                        <strong>WhatsApp Support:</strong><br />
+                        +256 765846845
+                    </p>
+                    <p class="text-gray-700 dark:text-gray-400">
+                        <strong>Support:</strong><br />
+                        +256 779730256
+                    </p>
+                </div>
+                <!-- Email Addresses -->
+                <div class="mb-6 border-b-2 border-primary-500 pb-4">
+                    <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-400 mb-2">Email Addresses</h3>
+                    <p class="text-gray-700 dark:text-gray-400">
+                        <strong>General:</strong><br />
+                        info@redodevelopers.site
+                    </p>
+                    <p class="text-gray-700 dark:text-gray-400">
+                        <strong>Support:</strong><br />
+                        support@redodevelopers.site
+                    </p>
+                </div>
+            </section>
 
             <!-- Contact Form -->
             <div class="bg-white dark:bg-gray-900 rounded-lg p-6">
-                <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Send us a message</h2>
+                <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Send Us a Message</h2>
                 <form action="{% url 'contact' %}" method="post" class="space-y-4" id="form">
                     {% csrf_token %}
                     <div>
-                        <label for="name" class="block text-sm font-medium text-gray-900 dark:text-gray-300">Full Name</label>
-                        <input type="text" name="name" id="name" class="shadow-sm dark:text-white dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 rounded-lg p-2 text-sm w-full border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Your Full Name" required>
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name</label>
+                        <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your Full Name" required>
                     </div>
                     <div>
-                        <label for="email" class="block text-sm font-medium text-gray-900 dark:text-gray-300">Email Address</label>
-                        <input type="email" name="email" id="email" class="shadow-sm dark:text-white dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 rounded-lg p-2 text-sm w-full border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="you@example.com" required>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
+                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="you@example.com" required>
                     </div>
-					<div>
-                <label for="services" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Select a Service</label>
-                <select id="services" name="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required>
-                    <option value="" disabled selected>Select a service</option>
-					<option value="Patnership">Patnership</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="Custom Software">Custom Software</option>
-                    <option value="IoT Solutions">IoT Solutions</option>
-					<option value="Beta Application">Beta Developer Application</option>
-					<option value="Other inquiries">Other Inquiries</option>
-                </select>
-            </div>
-
                     <div>
-                        <label for="message" class="block text-sm font-medium text-gray-900 dark:text-gray-300">Message</label>
-                        <textarea id="message" name="message" rows="4" class="shadow-sm dark:text-white dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 rounded-lg p-2 text-sm w-full border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Your Message" required></textarea>
+                        <label for="services" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Select a Service</label>
+                        <select id="services" name="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Partnership">Partnership</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Custom Software">Custom Software</option>
+                            <option value="IoT Solutions">IoT Solutions</option>
+                            <option value="Beta Developer Application">Beta Developer Application</option>
+                            <option value="Other Inquiries">Other Inquiries</option>
+                        </select>
                     </div>
-                    <button type="submit" class="py-3 px-5 text-sm font-medium text-white rounded-lg bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"><span id="text">Send message</span></button>
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                        <textarea id="message" name="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:ring-primary-300 font-medium rounded-sm text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Send Message</button>
                     <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
-                    By submitting, you agree to Redo io's <a href="{% url 'policy' %}" class="text-primary-500 hover:underline">Privacy Policy</a>.
-                </p>
+                        By submitting, you agree to Redo Developers Inc.'s <a href="{% url 'policy' %}" class="text-primary-500 hover:underline">Privacy Policy</a>.
+                    </p>
                 </form>
             </div>
         </div>
     </div>
 </section>
+
+
+
+
+
+
 
 <script>
 	document.getElementById('form').addEventListener('submit',()=>{
