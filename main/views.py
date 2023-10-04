@@ -62,8 +62,6 @@ class RobotsTxtView(View):
         content = template.render()
         return HttpResponse(content, content_type="text/plain; charset=utf-8")
 
-def sitemap(request):
-    return render(request,'main/sitemap.xml')
 
 def contact(request):
     title="Contact Redo Developers Inc. - Get in Touch with Us"
