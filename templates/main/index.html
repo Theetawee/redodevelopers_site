@@ -2,6 +2,14 @@
 
 {% block head %}
 
+<style>
+    .index-s{
+        background-image:linear-gradient(rgba(255, 255, 255, 0.795),rgba(255, 255, 255, 0.712)), url("{% static 'images/bg.png' %}");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+</style>
 
     <script type="application/ld+json">
     {
@@ -17,10 +25,10 @@
 
 {% endblock %} {% block content %}
 
-<section class="bg-[#e2e2ea] dark:bg-gray-900 pt-24">
-    <div class="gap-x-8 gap-y-10 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+<section class="index-s dark:bg-gray-900 flex items-center mx-auto justify-center h-screen">
+    <div class="mx-auto max-w-screen-lg">
         <div class="mt-4 mb-10 md:mb-0 md:mt-0">
-            <span class="uppercase font-semibold text-stone-600 text-lg mb-4">Welcome to Redo Developers Inc.</span>
+            <span class="uppercase font-semibold text-stone-600 mb-4">Technology Company</span>
             <h1 class="mb-4 text-5xl tracking-tight font-semibold text-gray-900 dark:text-white">
                 <span class="text-primary-600">Redo Developers Inc.</span> - Building Innovative Software for a Connected World
             </h1>
@@ -34,7 +42,7 @@
                 Explore Our Vision
             </a>
         </div>
-        <img class="w-full rounded-lg" src="{% static 'images/bg.jpg' %}" alt="Innovation by Redo Developers Inc.">
+        
     </div>
 </section>
 
