@@ -4,27 +4,42 @@
 
 {% block head %}
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Redo Developers Inc.",
-        "item": "https://redodevelopers.site/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Company",
-        "item": "https://redodevelopers.site/company/"
-      },{
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Chairman"
-      }]
-    }
-    </script>
-  
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Khaotungkulmethee Pattawee Drake",
+  "image": "{% static 'images/thoe.png' %}",
+  "url": "{{request.build_absolute_uri}}",
+  "description": "Co-Founder and Chairman of Redo Developers Inc.",
+  "birthDate": "2004-03-05",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Chiang Mai, Thailand"
+  },
+  "nationality": "Thai/Ugandan",
+  "jobTitle": "Co-Founder and Chairman",
+  "alumniOf": "Makerere University, Uganda",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Redo Developers Inc.",
+    "url": "https://www.redodevelopers.site"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Board of Directors at Redo Developers Inc.",
+    "url": "https://redodevelopers.site{% url 'about' %}"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/theetawee/",
+    "https://twitter.com/theetawee"
+    ],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Makerere University",
+    "url": "https://www.mak.ac.ug/"
+  }
+}
+</script>
 
   
 {% endblock %}

@@ -1,17 +1,7 @@
 {% load static %}
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
-<link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/16.png' %}">
-<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/32.png' %}">
-<link rel="icon" type="image/png" sizes="48x48" href="{% static 'images/48.png' %}">
-<meta name="msapplication-TileImage" content="{% static 'images/144.png' %}">
-<meta name="msapplication-TileColor" content="#ffffff">
 
-<meta name='robots' content='index, follow, max-snippet:-1, max-video-preview:-1' />
 
-<meta name="language" content="en" />
 
-<link rel="canonical" href="{{request.build_absolute_uri}}" />
 
 <title>{{title}}</title>
 
@@ -21,30 +11,16 @@
 <!-- OG Tags -->
 <meta property="og:title" content="{{title}}" />
 <meta property="og:url" content="{{request.build_absolute_uri}}" />
-<meta property="og:image" content="{{image}}" />
-<meta property="og:type" content="{{og_type}}" />
+<meta property="og:image" content="{% static 'images/180.png' %}" />
+<meta property="og:type" content="website" />
 <meta property="og:description" content="{{description}}" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="Redo Developers">
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@redodevs" />
 <meta name="twitter:title" content="{{title}}" />
 <meta name="twitter:description" content="{{description}}" />
-<meta name="twitter:image" content="{{image}}" />
+<meta name="twitter:image" content="{% static 'images/512.png' %}" />
 <meta name="twitter:image:alt" content="Redo Developers Inc. Logo" />
-<!--  -->
+<meta property="fb:pages" content="redodevelopersinc" />
 
-
-
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://www.redodevelopers.site/",
-      "logo": "https://theetawee.github.io/company_staticfiles/images/512.png"
-    }
-  </script>
-
-  

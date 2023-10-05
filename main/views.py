@@ -8,16 +8,12 @@ from django.template import loader
 
 def index(request):
     title="Redo Developers Inc. | Innovating Solutions for a Connected World"
-    description="Redo Developers Inc. is software and Technology Company commited to providing the best software services in Uganda, Africa and World at large."
+    description="Redo Developers Inc. is a multinational technology company specializing in innovative software solutions."
     og_title="Innovative Software and Technology solutions for Individuals and Bussinesses"
-    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
-    og_type="website"
     context={
         'title':title,
         'description':description,
         'og_title':og_title,
-        'image':image_url,
-        'og_type':og_type,
     }
     return render(request, 'main/index.html',context)
 

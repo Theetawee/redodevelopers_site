@@ -2,6 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/16.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/32.png' %}">
+<link rel="icon" type="image/png" sizes="48x48" href="{% static 'images/48.png' %}">
+<meta name="msapplication-TileImage" content="{% static 'images/144.png' %}">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta meta="application-name" content="Redo Developers" />
+<meta name='robots' content='index, follow, max-snippet:-1, max-video-preview:-1' />
+<meta name="language" content="en" />
+<link rel="canonical" href="{{request.build_absolute_uri}}" />
+
     <meta name="msvalidate.01" content="D64275AB9F483B39F5D6DB438621E8EA" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +43,6 @@
         {% endblock %}
     </main>
 
-{% include 'base/cookie.html' %}
 
 {% include 'base/whatsapp.html' %}
 
