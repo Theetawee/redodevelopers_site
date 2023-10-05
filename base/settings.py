@@ -151,7 +151,7 @@ else:
             'PORT': '5432',
         }
     }
-    STATIC_URL='https://theetawee.github.io/company_staticfiles/'
+    STATIC_URL='https://files.redodevelopers.site/'
     
     
     
