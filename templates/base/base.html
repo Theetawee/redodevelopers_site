@@ -14,15 +14,12 @@
 <meta name='robots' content='index, follow, max-snippet:-1, max-video-preview:-1' />
 <meta name="language" content="en" />
 <link rel="canonical" href="{{request.build_absolute_uri}}" />
-
+<link rel="stylesheet" href="{% static 'css/font.css' %}">
     <meta name="msvalidate.01" content="D64275AB9F483B39F5D6DB438621E8EA" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% include 'base/seo.html' %} 
     {% block head%}{% endblock %}
-    <!-- Fonts -->
-    {% include 'fonts.html' %}
-    <!--  -->
     <link rel="stylesheet" href="{% static 'css/aos.css'%}">
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
     <script src="{% static 'js/swiper.js'%}"></script>
