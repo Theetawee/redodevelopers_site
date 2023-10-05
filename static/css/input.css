@@ -1,8 +1,58 @@
+/* titillium-web-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Redo Font';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://files.redodevelopers.site/css/fonts/titillium-web-v17-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* titillium-web-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Redo Font';
+  font-style: italic;
+  font-weight: 300;
+  src: url('https://files.redodevelopers.site/css/fonts/titillium-web-v17-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* titillium-web-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Redo Font';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://files.redodevelopers.site/css/fonts/titillium-web-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* titillium-web-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Redo Font';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://files.redodevelopers.site/css/fonts/titillium-web-v17-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* titillium-web-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Redo Font';
+  font-style: italic;
+  font-weight: 600;
+  src: url('https://files.redodevelopers.site/css/fonts/titillium-web-v17-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* titillium-web-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Redo Font';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://files.redodevelopers.site/css/fonts/titillium-web-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 *{
-font-family: 'Titillium Web', sans-serif;}
+font-family: 'Redo Font', sans-serif;}
 
