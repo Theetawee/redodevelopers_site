@@ -1,77 +1,15 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block head %}
-{% load tz %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "name": "Frequently Asked Questions",
-  "description": "Common questions about Redo Developers Inc., our journey, vision, impact, and founders.",
-  "faqQuestion": [
-    {
-      "@type": "Question",
-      "name": "What is Redo Developers Inc.?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Redo Developers Inc. is an innovative software company founded in 2021 by Khaotungkulmethee Pattawee Drake. We specialize in creating transformative software solutions with a focus on IoT and AI technologies."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the vision of Redo Developers Inc.?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our vision is to reshape the digital landscape by pioneering innovative software solutions. We aim to leverage technology to empower businesses and individuals, transcending boundaries and redefining what's possible."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Tell me about Redo Developers Inc.'s journey.",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our journey began in 2021 with a shared vision and a mission to address challenges in various industries. We've evolved by embracing opportunities to transform businesses through IoT and AI technologies."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the purpose of Redo Developers Inc.?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our purpose is to develop groundbreaking solutions that address real-world problems. We design collaborative tools, streamline workflows, and enhance user experiences, driven by the power of IoT and AI technologies."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the impact of Redo Developers Inc.?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In 2023, Redo Developers Inc. stands as a testament to our capacity to transform challenges into stepping stones for progress. Our solutions resonate across industries, bringing efficiency, security, and innovation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who are the founders of Redo Developers Inc.?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Redo Developers Inc. was co-founded by Khaotungkulmethee Pattawee Drake."
-      }
-    }
-  ]
-}
-</script>
-
-
 
 {% endblock %}
 {% block content %}
 
 
-<section class="bg-white dark:bg-gray-900 py-20">
+<section class="bg-white dark:bg-gray-900">
         
     <div class="grid gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-    <img src="{% static 'images/about.webp' %}" class="rounded" alt="Welcome to Redo Developers Inc.">
+    <img src="{% static 'images/banner.png' %}" class="rounded" alt="Welcome to Redo Developers Inc.">
         <div class="mt-4 px-4 pt-4 md:mt-0">    
             <ul class="relative text-gray-500 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">
                 <li class="mb-10 ml-6">
@@ -80,8 +18,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
                         </svg>
                     </span>
-                    <h3 class="font-medium leading-tight">Our Vision</h3>
-                    <p class="text-sm">Our journey commenced with a shared vision and a spark of inspiration. Established in 2021 by <a class="text-primary-500 hover:underline" href="{% url 'ceo' %}">Khaotungkulmethee Pattawee Drake</a>, we embarked on a mission to reshape the digital landscape through innovative software solutions, with a strong focus on IoT (Internet of Things) and AI (Artificial Intelligence) technologies.</p>
+                    <h3 class="text-xl font-semibold">Our Vision</h3>
+                    <p class="text-base">Our journey commenced with a shared vision and a spark of inspiration. Established in 2021. We embarked on a mission to reshape the digital landscape through innovative software solutions, with a strong focus on AI (Artificial Intelligence) technologies.</p>
                 </li>
                 <li class="mb-10 ml-6">
                     <span class="absolute flex items-center justify-center w-8 h-8 bg-yellow-400 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-yellow-400">
@@ -90,8 +28,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
                         </svg>
                     </span>
-                    <h3 class="font-medium leading-tight">Our Journey</h3>
-                    <p class="text-sm">As we progressed, we encountered prevailing challenges across various industries. Our dedicated team of experts embraced these challenges as opportunities to transform businesses, harnessing the potential of IoT and AI to create innovative solutions.</p>
+                    <h3 class="text-xl font-semibold">Our Journey</h3>
+                    <p class="text-base">As we progressed, we encountered prevailing challenges across various industries. Our dedicated team of experts embraced these challenges as opportunities to transform businesses, harnessing the potential of AI to create innovative solutions.</p>
                 </li>
                 <li class="mb-10 ml-6">
                     <span class="absolute flex items-center justify-center w-8 h-8 bg-rose-400 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-rose-600">
@@ -99,8 +37,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                         </svg>
                     </span>
-                    <h3 class="font-medium leading-tight">Our Purpose</h3>
-                    <p class="text-sm">Our journey led us to develop groundbreaking solutions that address real-world problems. We designed collaborative tools, streamlined workflows, and enhanced user experiences to push the boundaries of innovation, driven by the power of IoT and AI technologies.</p>
+                    <h3 class="text-xl font-semibold">Our Purpose</h3>
+                    <p class="text-base">Our journey led us to develop groundbreaking solutions that address real-world problems. We designed collaborative tools, streamlined workflows, and enhanced user experiences to push the boundaries of innovation, driven by the power of AI technologies.</p>
                 </li>
                 <li class="ml-6">
                     <span class="absolute flex items-center justify-center w-8 h-8 bg-orange-400 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-orange-300">
@@ -108,8 +46,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.040.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
                         </svg>
                     </span>
-                    <h3 class="font-medium leading-tight">Our Impact</h3>
-                    <p class="text-sm">In 2023, Redo Developers Inc. stands as a testament to our capacity to transform challenges into stepping stones for progress. Our solutions resonate across industries, and our impact is felt through the efficiency, security, and innovation we infuse into every project, fueled by the possibilities of IoT and AI.</p>
+                    <h3 class="text-xl font-semibold">Our Impact</h3>
+                    <p class="text-base">In 2023, Redo Developers Inc. stands as a testament to our capacity to transform challenges into stepping stones for progress. Our solutions resonate across industries, and our impact is felt through the efficiency, security, and innovation we infuse into every project, fueled by the possibilities of AI.</p>
                 </li>
             </ul>
 
@@ -118,7 +56,7 @@
 </section>
 
 
-<section class="bg-white dark:bg-gray-800 py-12 px-4 mx-auto max-w-screen-xl lg:px-6">
+<section class="bg-gray-100 dark:bg-gray-800 py-12 px-4 mx-auto max-w-screen-xl lg:px-6">
     <div >
         <h1 class="mb-8 text-4xl tracking-tight font-medium text-stone-700 dark:text-red-500">
             Embark on a Journey with Redo Developers Inc.
@@ -157,45 +95,45 @@
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
                 <!-- Value 1 -->
-                <div class="bg-primary-300 dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow flex flex-col items-center">
                     <img src="{% static 'images/innovation.webp' %}" alt="Innovation Icon" class="w-12 h-12 mb-2">
-                    <h3 class="text-xl font-semibold text-white dark:text-white mb-2">
+                    <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-2">
                         Innovation
                     </h3>
-                    <p class="text-stone-700 dark:text-gray-400">
+                    <p class="text-stone-500 dark:text-gray-400">
                         We thrive on innovation, pushing the boundaries of what's possible in the digital world. Creativity fuels our solutions, ensuring they're not just cutting-edge but visionary.
                     </p>
                 </div>
                 
                 <!-- Value 2 -->
-                <div class="bg-primary-300 dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow flex flex-col items-center">
                     <img src="{% static 'images/excellence.webp' %}" alt="Excellence Icon" class="w-12 h-12 mb-2">
-                    <h3 class="text-xl font-semibold text-white dark:text-white mb-2">
+                    <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-2">
                         Excellence
                     </h3>
-                    <p class="text-stone-700 dark:text-gray-400">
+                    <p class="text-stone-500 dark:text-gray-400">
                         Excellence is our benchmark. We craft software that's not only functional but sets new standards for quality. Our pursuit of excellence defines everything we do.
                     </p>
                 </div>
                 
                 <!-- Value 3 -->
-                <div class="bg-primary-300 dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow flex flex-col items-center">
                     <img src="{% static 'images/collaboration.webp' %}" alt="Collaboration Icon" class="w-12 h-12 mb-2">
-                    <h3 class="text-xl font-semibold text-white dark:text-white mb-2">
+                    <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-2">
                         Collaboration
                     </h3>
-                    <p class="text-stone-700 dark:text-gray-400">
+                    <p class="text-stone-500 dark:text-gray-400">
                         Collaboration is the heart of our culture. We work together, with our clients and partners, to ensure success. Together, we achieve more.
                     </p>
                 </div>
                 
                 <!-- Value 4 -->
-                <div class="bg-primary-300 dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow flex flex-col items-center">
                     <img src="{% static 'images/growth.webp' %}" alt="Growth Icon" class="w-12 h-12 mb-2">
-                    <h3 class="text-xl font-semibold text-white dark:text-white mb-2">
+                    <h3 class="text-xl font-semibold text-gray-700 dark:text-white mb-2">
                         Growth
                     </h3>
-                    <p class="text-stone-700 dark:text-gray-400">
+                    <p class="text-stone-500 dark:text-gray-400">
                         Growth isn't just a goal; it's our path. We're committed to the growth of our clients, our team, and ourselves. Together, we reach new heights.
                     </p>
                 </div>
@@ -211,7 +149,7 @@
 
 
 
-<section class="bg-gray-50 text-gray-800 py-12">
+<section class="bg-gray-100 text-gray-800 py-12">
     <div class="px-4 py-8 max-w-screen-xl mx-auto lg:px-6">
         <h2 class="mb-6 text-4xl font-medium">Our Journey Through Time - A Brief Company History</h2>
                 
@@ -336,7 +274,7 @@
 
 <section class="bg-[#031a27] dark:bg-gray-800 py-12">
     <div class="max-w-screen-xl mx-auto px-4 lg:px-6">
-      <h2 class="text-4xl font-semibold text-white dark:text-white mb-4">Customer-Centric Approach, Innovation, and Social Responsibility</h2>
+      <h2 class="text-4xl font-semibold text-gray-700 dark:text-white mb-4">Customer-Centric Approach, Innovation, and Social Responsibility</h2>
                 
         <div class="flex flex-col lg:flex-row items-center justify-between">
             <div class="lg:w-2/5 mr-5">

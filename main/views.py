@@ -7,28 +7,22 @@ from .models import Newsletter
 from django.template import loader
 
 def index(request):
-    title="Redo Developers Inc. | Innovating Solutions for a Connected World"
-    description="Redo Developers Inc. is a multinational technology company specializing in innovative software solutions."
-    og_title="Innovative Software and Technology solutions for Individuals and Bussinesses"
+    title="Redo Developers: Innovative Tech & Software Solutions"
+    description="Redo Developers Inc. - A leading technology and software company specializing in innovative solutions for businesses."
     context={
         'title':title,
         'description':description,
-        'og_title':og_title,
     }
     return render(request, 'main/index.html',context)
 
+
+
 def company(request):
-    title="About Redo Developers Inc. | Leading Software Company in Uganda and Beyond"
-    description="Discover Our Journey, Mission, and Commitment to Innovation"
-    og_title="About Redo Developers Inc."
-    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
-    og_type="article"
+    title="About Redo Developers Inc: Innovating Software & Technology Solutions"
+    description="Discover the story behind Redo Developers Inc, a leading software and technology company. Learn about our mission, values, and team."
     context={
         'title':title,
-        'description':description,
-        'og_title':og_title,
-        'image':image_url,
-        'og_type':og_type
+        'description':description
     }
     
     return render(request,'main/about.html',context)

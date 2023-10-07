@@ -1,28 +1,24 @@
 {% load static %}
-
-
-
-
 <title>{{title}}</title>
+<link rel="shortcut icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
+<link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/png">
+<meta name="description" content="">
+<meta http-equiv="content-language" content="en-us">
 
-<meta name="description" content="{{description}}">
-
-
-<!-- OG Tags -->
-<meta property="og:title" content="{{title}}" />
-<meta property="og:url" content="{{request.build_absolute_uri}}" />
-<meta property="og:image" content="{% static 'images/180.png' %}" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="{{description}}" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="Redo Developers">
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@redodevs" />
-<meta name="twitter:title" content="{{title}}" />
-<meta name="twitter:description" content="{{description}}" />
-<meta name="twitter:image" content="{% static 'images/512.png' %}" />
-<meta name="twitter:image:alt" content="Redo Developers Inc. Logo" />
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{request.build_absolute_uri}}">
+<meta property="og:image" content="{% static 'images/512.png' %}">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@redodevelopers">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{description}}">
+<meta name="twitter:image" content="{% static 'images/512.png' %}">
+<meta name="theme-color" content="#ee6435">
+<meta name="twitter:domain" content="https://www.redodevelopers.site">
 <meta property="fb:pages" content="redodevelopersinc" />
-
-
+<meta name='robots' content='index, follow, max-snippet:-1, max-video-preview:-1' />
 
