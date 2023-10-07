@@ -128,21 +128,6 @@ def linkedin(request):
 
 
 
-def iot(request):
-    title="Venture Into Internet of Things (IoT) | Redo Developers Inc. - Innovating the Future"
-    description="Discover how Redo Developers Inc. pioneers the Internet of Things (IoT) revolution. Explore our innovative IoT solutions and how they are reshaping industries and businesses for a smarter and connected future."
-    og_title="IoT | Redo Developers Inc."
-    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
-    og_type="article"
-    context={
-        'title':title,
-        'description':description,
-        'og_title':og_title,
-        'image':image_url,
-        'og_type':og_type
-    }
-    
-    return render(request,'main/iot.html',context )
 
 def get_meeting(request):
     title="Request a Meeting"

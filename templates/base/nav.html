@@ -18,6 +18,31 @@
                     <li>
                         <a href="{% url 'about' %}" class="{% if request.path == '/company/' %} active {% else %} link {% endif %}" aria-current="page">About us</a>
                     </li>
+                    <li>
+                        <a href="{% url 'carrer' %}" class="{% if request.path == '/company/' %} active {% else %} link {% endif %}" aria-current="page">Carrers</a>
+                    </li>
+                    <li>
+                        
+<button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class=" my-2 md:my-0 w-full link" type="button">Resources
+</button>
+
+<!-- Dropdown menu -->
+<div id="dropdownHover" class="z-10 hidden bg-white border-gray-300 w-[90%] border divide-y divide-gray-100 rounded-lg shadow md:w-60 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+      <li>
+        <a href="{% url 'sales' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sales</a>
+      </li>
+      <li>
+        <a href="{% url 'meeting' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Request a meeting</a>
+      </li>
+      
+      <li>
+        <a href="{% url 'ceo' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Word from the Chairman</a>
+      </li>
+    </ul>
+</div>
+
+                    </li>
                 </ul>
             </div>
         </div>
