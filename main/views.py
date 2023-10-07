@@ -130,17 +130,11 @@ def linkedin(request):
 
 
 def get_meeting(request):
-    title="Request a Meeting"
-    description="Request a meeting with us to discuss your needs with Redo Developers Inc."
-    og_title="Request a Meeting"
-    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
-    og_type="website"
+    title="Redo Developers Inc: Request Meeting "
+    description="Discover Redo Developers Inc. for software and technology solutions. Schedule a meeting today!"
     context={
         'title':title,
         'description':description,
-        'og_title':og_title,
-        'image':image_url,
-        'og_type':og_type
     }
     
     if request.POST:
@@ -172,15 +166,11 @@ def get_meeting(request):
 
 
 def the_ceo(request):
-    title="Khaotungkulmethee Pattawee - Co-Founder and Chairman | Redo Developers Inc."
-    description="Learn about Khaotungkulmethee Pattawee, the Co-Founder and Chairman of Redo Developers Inc. Explore his background, vision, and contributions to the world of technology and software solutions."
-    image_url="https://theetawee.github.io/company_staticfiles/images/thoe.png"
-    og_type="website"
+    title="Meet Khaotungkulmethee Pattawee, Current chairman of Redo Developers Inc."
+    description="Meet Khaotungkulmethee Pattawee, the Chairman of Redo Developers Inc., a leading software and technology company. Discover his background, vision and prospects."
     context={
         'title':title,
         'description':description,
-        'image':image_url,
-        'og_type':og_type
     }
     
     return render(request,'main/ceo.html',context )
@@ -188,35 +178,23 @@ def the_ceo(request):
 
 
 def contact_sales(request):
-    title="Contact Sales | Redo Developers Inc."
-    description="Call us, chat with us, or book a meeting with our sales team to learn how you can use Redo Developers Inc. to grow better."
-    og_title="Contact Sales"
-    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
-    og_type="website"
+    title="Revamp Your Tech with Redo Developers Inc: Sales Page"
+    description="Discover the cutting-edge solutions offered by Redo Developers Inc, a leading software and technology company. Boost your business with our innovative products."
     context={
         'title':title,
         'description':description,
-        'og_title':og_title,
-        'image':image_url,
-        'og_type':og_type
     }
     
     return render(request,'main/sales.html',context )
 
 
 def carrer(request):
-    title="Carrers | Redo Developers Inc."
-    description="Exciting opportunities await you at Redo Developers Inc. Check back for our latest job postings and be a part of our innovative journey."
-    og_title="Carrers"
-    image_url="https://theetawee.github.io/company_staticfiles/images/logo.png"
-    og_type="website"
+    title="Redo Developers Inc: Careers in Software & Technology"
+    description="Discover exciting career opportunities at Redo Developers Inc, a leading software and technology company. Join us today!"
     context={
         'title':title,
         'description':description,
-        'og_title':og_title,
-        'image':image_url,
-        'og_type':og_type
-    }
+        }
     
     return render(request,'main/carrer.html',context )
 
