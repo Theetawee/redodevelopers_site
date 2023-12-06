@@ -144,11 +144,11 @@ def get_meeting(request):
         phone=request.POST['phone']
         company=request.POST['company']
         needs=request.POST['needs']
-        if Newsletter.objects.filter(email=email).exists():
-            pass
-        else:
-            new=Newsletter.objects.create(email=email)
-            new.save()
+        # if Newsletter.objects.filter(email=email).exists():
+        #     pass
+        # else:
+        #     new=Newsletter.objects.create(email=email)
+        #     new.save()
         send_mail(
                 'Meeting Request',
                 f'New meeting request:\nName: {name}\nEmail: {email}\nRole: {role}\nPhone: {phone}\nCompany: {company}\nNeeds: {needs}',
