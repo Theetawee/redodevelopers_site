@@ -1,13 +1,13 @@
 {% load static %}
-<footer class="bg-gray-900 text-white">
+<footer class="bg-gray-100 border-t border-gray-300 text-gray-700">
     <div class="container mx-auto py-10 md:py-16 lg:py-20 px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Company -->
             <div>
-                <h5 class="text-xl font-semibold mb-4">Company</h5>
-                <ul class="text-gray-400">
+                <h5 class="text-lg font-medium mb-2">Company</h5>
+                <ul class="text-gray-700">
                     <li class="mb-3">
-                        <a href="{% url 'about' %}" class="hover:text-primary-500">About Us</a>
+                        <a href="{% url 'about' %}" class="hover:text-primary-500 text-sm">About Us</a>
                     </li>
                     <li>
                         <a title="Ratings and reviews of websites" href="https://www.webwiki.com/"><img src="https://www.webwiki.com/images/webwikibutton.gif" alt="Webwiki Button" /></a>
@@ -16,46 +16,46 @@
             </div>
             <!-- Help Center -->
             <div>
-                <h5 class="text-xl font-semibold mb-4">Help Center</h5>
-                <ul class="text-gray-400">
+                <h5 class="text-lg font-medium mb-2">Help Center</h5>
+                <ul class="text-gray-700">
                     <!-- <li class="mb-3">
-                        <a href="{% url 'twitter' %}" rel="no-follow" class="hover:text-primary-500">Twitter</a>
+                        <a href="{% url 'twitter' %}" rel="no-follow" class="hover:text-primary-500 text-sm">Twitter</a>
                     </li>
                     <li class="mb-3">
-                        <a href="{% url 'facebook' %}" rel="no-follow" class="hover:text-primary-500">Facebook</a>
+                        <a href="{% url 'facebook' %}" rel="no-follow" class="hover:text-primary-500 text-sm">Facebook</a>
                     </li>-->
                     <li class="mb-3">
-                        <a href="{% url 'contact' %}" class="hover:text-primary-500">Contact Us</a>
+                        <a href="{% url 'contact' %}" class="hover:text-primary-500 text-sm">Contact Us</a>
                     </li>
                 </ul>
             </div>
             <!-- Legal -->
             <div>
-                <h5 class="text-xl font-semibold mb-4">Legal</h5>
-                <ul class="text-gray-400">
+                <h5 class="text-lg font-medium mb-2">Legal</h5>
+                <ul class="text-gray-700">
                     <li class="mb-3">
-                        <a href="{% url 'policy' %}" class="hover:text-primary-500">Privacy Policy</a>
+                        <a href="{% url 'policy' %}" class="hover:text-primary-500 text-sm">Privacy Policy</a>
                     </li>
                 </ul>
             </div>
             <!-- Services -->
             <!-- Solutions -->
             <div>
-                <h5 class="text-xl font-semibold mb-4">Relations</h5>
-                <ul class="text-gray-400">
+                <h5 class="text-lg font-medium mb-2">Relations</h5>
+                <ul class="text-gray-700">
                     <li class="mb-3">
-                        <a href="{% url 'meeting' %}" target="_blank" class="hover:text-primary-500">Demo</a>
+                        <a href="{% url 'meeting' %}" class="hover:text-primary-500 text-sm">Demo</a>
                     </li>
                     <!-- Add more software solutions or products here -->
                 </ul>
             </div>
         </div>
-        <hr class="my-8 border-gray-600">
+        <hr class="my-8 border-gray-400">
         <div class="text-center">
-            <a href="{% url 'about' %}" class="flex items-center justify-center mb-5 text-xl font-semibold">
+            <a href="{% url 'about' %}" class="flex items-center justify-center mb-5 text-xl font-medium">
                 <img src="{% static 'images/logo.svg' %}" class="w-8 h-8 mr-2" alt="Redo Developers Inc. logo"> Redo Developers Inc.
             </a>
-            <p class="text-sm text-gray-400">&copy; 2021-2023 Redo Developers Inc. All Rights Reserved.</p>
+            <p class="text-sm text-gray-700">&copy; 2021-2023 Redo Developers Inc. All Rights Reserved.</p>
             
         </div>
     </div>
