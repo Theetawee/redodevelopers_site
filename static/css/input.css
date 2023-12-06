@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.card{
+  @apply bg-white cursor-pointer rounded-md shadow;
+  transition: .5s ease-in-out;
+}
+.card:hover {
+        transform: scale(1.05);
+    }
+
+.start-up{
+  transition: .5s ease-in-out;
+  @apply cursor-pointer;
+}
+.start-up:hover{
+  transform: scale(1);
+}
+.start-up:not(:hover){
+  transform: scale(.9);
+}
 
 *{font-family: 'Rubik', sans-serif;}
 .active{
